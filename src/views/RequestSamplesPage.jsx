@@ -1,7 +1,7 @@
 import React from "react";
 import SideMenu from "../components/menu/SideMenu";
 
-const RequestProductPage = () => {
+const RequestSamplesPage = () => {
   return (
     <React.Fragment>
       <div className="hero">
@@ -19,4 +19,4 @@ const RequestProductPage = () => {
   );
 };
 
-export default RequestProductPage;
+export default RequestSamplesPage;
