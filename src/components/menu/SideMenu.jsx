@@ -6,26 +6,26 @@ import "./styles/SideMenu.css";
 const SideMenu = () => {
   return (
     <React.Fragment>
-      <div className="menu-section">
-        <Link to="/" className="btn btn-grey">
+      <div className="menu-section container">
+        <Link to="/" className="link">
           Home
         </Link>
-        <Link to="/about" className="btn btn-grey">
+        <Link to="/about" className="link">
           About Us
         </Link>
-        <Link to="/contact" className="btn btn-grey">
+        <Link to="/contact" className="link">
           Contact Us
         </Link>
-        <Link to="/free" className="btn btn-grey">
+        <Link to="/free" className="link">
           Request Samples
         </Link>
-        <Link to="/productinquiry" className="btn btn-grey">
+        <Link to="/productinquiry" className="link">
           Request Product Info
         </Link>
-        <Link to="/prefcust" className="btn btn-grey">
+        <Link to="/prefcust" className="link">
           Preferred Customer
         </Link>
-        <Link to="/customerservice" className="btn btn-grey">
+        <Link to="/customerservice" className="link">
           Customer Service
         </Link>
       </div>

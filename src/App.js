@@ -17,10 +17,10 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
-        <Route exact path="/free" component={Customer} />
+        <Route exact path="/free" component={RequestSamples} />
         <Route exact path="/prefcust" component={Preferred} />
         <Route exact path="/productinquiry" component={RequestProduct} />
-        <Route exact path="/customerservice" component={RequestSamples} />
+        <Route exact path="/customerservice" component={Customer} />
       </Switch>
     </BrowserRouter>
   );

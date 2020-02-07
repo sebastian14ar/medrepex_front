@@ -11,12 +11,29 @@
   text-decoration: none;
   font-weight: bold;
   width: 100%;
+  color: black;
   padding-left: 10px;
   padding-bottom: 5px;
 }
 .link:hover {
   text-decoration: none;
-  background-color: blueviolet;
+  background-color: #20232a;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.link-title {
+  text-decoration: none;
+  font-weight: bold;
+  background-color: darkgrey;
+  width: 100%;
+  color: white;
+  padding-left: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+}
+.link-title:hover {
+  text-decoration: none;
+  background-color: #20232a;
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }

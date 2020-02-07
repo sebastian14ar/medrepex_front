@@ -1,9 +1,7 @@
 body {
   margin: 0;
   background-color: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Segoe UI";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,13 +17,14 @@ body {
 }
 .navbar {
   grid-area: navbar;
-  background-color: #20232a;
+  background-color: #417ae8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 .menu {
   grid-area: menu;
   background-color: #f7f7f7;
   /* border: 1px solid greenyellow; */
-  padding: 30px 5px 5px;
+  padding: 0px 5px 5px;
 }
 .main {
   grid-area: main;
@@ -35,13 +34,22 @@ body {
 .btn {
   padding: 0.175rem 1rem;
   border-radius: 5px;
-  width: 120px;
+  width: 110px;
   margin-top: 5px;
   font-size: 0.75rem;
   text-decoration: none;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 .btn.btn-primary {
+  color: #fff;
+  max-width: 600px;
+  height: 30px;
+  font-size: 1em;
+  background-color: #20232a;
+  border: none;
+}
+.btn.btn-secondary {
   color: #fff;
   background-color: #7dcd40;
   border-color: #7dcd40;
@@ -54,10 +62,8 @@ body {
 .btn.btn-primary:not(:disabled):not(.disabled):hover {
   color: #fff;
   background-color: #7dcd40;
-  border-color: #7dcd40;
 }
 .btn.btn-primary:not(:disabled):not(.disabled):active {
   color: #fff;
   background-color: #7dcd40;
-  border-color: #7dcd40;
 }

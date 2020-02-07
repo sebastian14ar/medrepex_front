@@ -1,6 +1,8 @@
 import React from "react";
 import SideMenu from "../components/menu/SideMenu";
 
+import "./styles/ContactPage.css";
+
 const ContactPage = () => {
   return (
     <React.Fragment>
@@ -12,7 +14,30 @@ const ContactPage = () => {
           <SideMenu />
         </div>
         <div className="main ">
-          <h1>Main</h1>
+          <div className="main-container">
+            <h2 className="principal-title">Contact Us</h2>
+            <section className="text-container-contact">
+              <p className="text-special">Tool Free Phone: 877-740-9133</p>
+              <p className="text-special">Fax: 928-445-6267</p>
+              <p className="text-special">E-Mail: Sales@MedRepExpress.com</p>
+            </section>
+            <div className="form">
+              <label htmlFor="name">Your Name:</label>
+              <input type="email" placeholder="Your Name..." />
+              <label htmlFor="email">Your Email Address:</label>
+              <input type="text" placeholder="Your Email..." />
+              <label htmlFor="subject">Subject:</label>
+              <input type="text" placeholder="Subject..." />
+              <label htmlFor="message">Message</label>
+              <textarea
+                name="message"
+                placeholder="Write your message"
+                cols="30"
+                rows="10"
+              />
+              <button class="btn btn-primary">Submit</button>
+            </div>
+          </div>
         </div>
       </div>
     </React.Fragment>

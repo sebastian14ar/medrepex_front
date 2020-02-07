@@ -1,5 +1,6 @@
 import React from "react";
 import SideMenu from "../components/menu/SideMenu";
+import SideMenuProducts from "../components/menu/SideMenuProducts";
 
 import medicalImage from "../images/img-1.jpg";
 import "./styles/HomePage.css";
@@ -13,6 +14,7 @@ const HomePage = () => {
         </div>
         <div className="menu menu-section">
           <SideMenu />
+          <SideMenuProducts />
         </div>
         <div className="main">
           <div className="main-container">
@@ -56,10 +58,11 @@ const HomePage = () => {
               have any questions or comments, please click on "Customer Service"
               in the Menu and contact us by any one of the means listed there.
             </p>
-            <p>
-              Patricia Brafford, MA, CMC Manager - Customer Service MedRep
-              Express
+            <p className="text-special">
+              Patricia Brafford, MA, CMC MedRep Express
             </p>
+            <p className="text-special">Manager - Customer Service</p>
+            <p className="text-special">MedRep Express</p>
           </section>
         </div>
       </div>

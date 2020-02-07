@@ -21,9 +21,12 @@
 }
 .text-container {
   padding: 0 10px;
-
   text-align: justify;
 }
 .text-special {
   margin: 0 2px;
+}
+.text-subtitle {
+  text-align: center;
+  font-size: 1.5rem;
 }
