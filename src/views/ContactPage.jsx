@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/menu/Footer";
 import SideMenu from "../components/menu/SideMenu";
 
 import "./styles/ContactPage.css";
@@ -38,6 +39,9 @@ const ContactPage = () => {
               <button class="btn btn-primary">Submit</button>
             </div>
           </div>
+        </div>
+        <div className="footer-page">
+          <Footer />
         </div>
       </div>
     </React.Fragment>

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/menu/Footer";
 import SideMenu from "../components/menu/SideMenu";
 
 import "./styles/AboutPage.css";
@@ -53,6 +54,9 @@ const AboutPage = () => {
               you will agree.
             </p>
           </section>
+        </div>
+        <div className="footer-page">
+          <Footer />
         </div>
       </div>
     </React.Fragment>

@@ -1,23 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap");
 body {
   margin: 0;
+  /* overflow: hidden; */
   background-color: white;
-  font-family: "Segoe UI";
+  /* font-family: "Fira Sans Condensed", sans-serif; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 .hero {
   display: grid;
   grid-template-columns: 180px 1fr;
-  grid-template-rows: 80px 1fr;
+  grid-template-rows: 80px 1fr auto;
 
   grid-template-areas:
     "navbar navbar"
-    "menu main";
+    "menu main"
+    "footer-page footer-page";
   height: 100vh;
 }
 .navbar {
   grid-area: navbar;
-  background-color: #417ae8;
+  background-color: #021f59;
+  color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 .menu {
@@ -30,6 +38,9 @@ body {
   grid-area: main;
   padding: 10px;
 }
+.footer-page {
+  grid-area: footer-page;
+}
 
 .btn {
   padding: 0.175rem 1rem;
@@ -40,6 +51,29 @@ body {
   text-decoration: none;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.btn-special {
+  padding: 0.1rem 1rem;
+  border-radius: 2px;
+  width: auto;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.btn-special.btn-primary {
+  color: #fff;
+  max-width: 600px;
+  height: 30px;
+  font-size: 1em;
+  background-color: #417ae8;
+  border: none;
+}
+.btn-special.btn-primary:hover {
+  color: black;
+
+  background-color: white;
 }
 .btn.btn-primary {
   color: #fff;

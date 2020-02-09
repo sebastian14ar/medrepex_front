@@ -1,5 +1,6 @@
 import React from "react";
 import SideMenu from "../components/menu/SideMenu";
+import Footer from "../components/menu/Footer";
 import SideMenuProducts from "../components/menu/SideMenuProducts";
 
 import medicalImage from "../images/img-1.jpg";
@@ -64,6 +65,9 @@ const HomePage = () => {
             <p className="text-special">Manager - Customer Service</p>
             <p className="text-special">MedRep Express</p>
           </section>
+        </div>
+        <div className="footer-page">
+          <Footer />
         </div>
       </div>
     </React.Fragment>
