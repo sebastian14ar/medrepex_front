@@ -9,6 +9,7 @@ import Customer from "./views/CustomerPage";
 import Preferred from "./views/PreferredCustomerPage";
 import RequestProduct from "./views/RequestProductPage";
 import RequestSamples from "./views/RequestSamplesPage";
+import StoreSurgical from "./views/StoreSurgicalPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/prefcust" component={Preferred} />
         <Route exact path="/productinquiry" component={RequestProduct} />
         <Route exact path="/customerservice" component={Customer} />
+        <Route exact path="/store/surgical" component={StoreSurgical} />
       </Switch>
     </BrowserRouter>
   );

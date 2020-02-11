@@ -101,3 +101,26 @@ body::-webkit-scrollbar {
   color: #fff;
   background-color: #7dcd40;
 }
+
+.btn-gn {
+  padding: 0.175rem 1rem;
+  border-radius: 5px;
+  width: 110px;
+  cursor: pointer;
+  margin: 0 10px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.btn-gn.btn-dark {
+  color: #fff;
+  max-width: 600px;
+  height: 30px;
+  font-size: 0.9em;
+  background-color: #20232a;
+  border: none;
+}
+.btn-gn.btn-dark:not(:disabled):not(.disabled):hover {
+  color: #fff;
+  background-color: gray;
+}

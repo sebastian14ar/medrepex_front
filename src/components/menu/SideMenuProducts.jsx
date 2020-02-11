@@ -8,7 +8,9 @@ const SideMenuProducts = () => {
     <React.Fragment>
       <div className="container">
         <div className="menu-section">
-          <Link className="link-title">SUTURES</Link>
+          <Link to="/store/surgical" className="link-title">
+            SUTURES
+          </Link>
         </div>
         <div className="menu-section">
           <Link to="/" className="link">
