@@ -5,7 +5,6 @@ import SideMenuProducts from "../components/menu/SideMenuProducts";
 import StoreTitle from "../components/menu/StoreTitle";
 import StoreMenu from "../components/menu/StoreMenu";
 
-import medicalImage from "../images/img-1.jpg";
 import "./styles/StoreSurgicalPage.css";
 
 const PAGE = {

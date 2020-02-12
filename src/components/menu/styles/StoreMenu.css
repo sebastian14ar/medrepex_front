@@ -1,15 +1,16 @@
 .store-menu-container {
   display: flex;
+  justify-content: center;
 }
 .table-section-1 {
-  width: 50%;
+  width: 70%;
   padding-left: 10px;
   margin: 0 5px;
   display: flex;
   flex-direction: column;
 }
 .table-section-2 {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,4 +34,15 @@
   padding: 0.8rem;
   border-radius: 3px;
   margin-bottom: 10px;
+}
+.sub-section {
+  display: flex;
+}
+.section-1 h3 {
+  margin: 0 0 0.5rem;
+  color: #021f59;
+}
+.sub-section {
+  display: flex;
+  justify-content: space-between;
 }

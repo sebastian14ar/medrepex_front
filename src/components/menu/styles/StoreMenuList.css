@@ -1,0 +1,28 @@
+.list-container {
+  margin-right: 1rem;
+}
+.list-types {
+  list-style: none;
+  padding-left: 5px;
+  margin: 0;
+}
+.list-types li {
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+  color: #262626;
+  cursor: pointer;
+}
+.list-subtitle {
+  margin: 0 0.3rem;
+  font-size: 1.2rem;
+  color: #021f59;
+}
+.list-line {
+  border: 2px solid #021f59;
+  width: 85%;
+  margin: 0 0 5px;
+}
+.list-types li:hover {
+  color: #417ae8;
+}

@@ -36,7 +36,7 @@ const ContactPage = () => {
                 cols="30"
                 rows="10"
               />
-              <button class="btn btn-primary">Submit</button>
+              <button className="btn btn-primary">Submit</button>
             </div>
           </div>
         </div>
