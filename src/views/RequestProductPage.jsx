@@ -1,65 +1,138 @@
-import React from "react";
+import React, { Component } from "react";
 import Footer from "../components/menu/Footer";
 import SideMenu from "../components/menu/SideMenu";
 
 import "./styles/RequestSamplesPage.css";
+import logo from "../images/logo2.jpg";
+import { connect } from "react-redux";
 
-const RequestProductPage = () => {
-  return (
-    <React.Fragment>
-      <div className="hero">
-        <div className="navbar">
-          <h1>NavBar</h1>
-        </div>
-        <div className="menu menu-section">
-          <SideMenu />
-        </div>
-        <div className="main ">
-          <div className="main-container-request">
-            <h2 className="principal-title">Request Samples</h2>
+import * as storeActions from "../actions/storeActions";
+import storeReducers from "../reducers/storeReducers";
 
-            <section className="text-container-request">
-              <p>
-                We would be happy to provide additional information about any of
-                our products. Just call us Toll Free at 877-740-9133 or complete
-                the Email request below:
-              </p>
-            </section>
-            <div className="form">
-              <label htmlFor="name">Practice, Clinic or Business Name:</label>
-              <input type="text" placeholder="Name..." />
-              <label htmlFor="email">Requestor’s Name:</label>
-              <input type="text" placeholder="Requestor’s Name..." />
-              <label htmlFor="subject">Product Inquiry: </label>
-              <textarea
-                name="message"
-                placeholder="Product Application..."
-                cols="30"
-                rows="5"
-              />
-              <label htmlFor="name">Phone:</label>
-              <input type="text" placeholder="Phone..." />
-              <label htmlFor="name">Fax:</label>
-              <input type="text" placeholder="Fax..." />
-              <label htmlFor="name">Email:</label>
-              <input type="email" placeholder="Email..." />
-              <label htmlFor="message">Shipping Address</label>
-              <textarea
-                name="message"
-                placeholder="Shipping Address..."
-                cols="30"
-                rows="5"
-              />
-              <button class="btn btn-primary">Submit</button>
+class RequestProductPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      form: {
+        "businees-name": "",
+        name: "",
+        "product-inq": "",
+        phone: "",
+        fax: "",
+        email: "",
+        "shipping-address": ""
+      }
+    };
+  }
+
+  handleChange = event => {
+    this.setState({
+      form: {
+        ...this.state.form,
+        [event.target.name]: event.target.value
+      }
+    });
+  };
+
+  handleSubmit = event => {
+    event.preventDefault();
+    this.props.enviarInformacion(this.state.form);
+  };
+
+  render() {
+    return (
+      <React.Fragment>
+        <div className="hero">
+          <div className="navbar">
+            <div className="navbar-container">
+              <img src={logo} alt="logo" />
             </div>
           </div>
+          <div className="menu menu-section">
+            <SideMenu />
+          </div>
+          <div className="main ">
+            <div className="main-container-request">
+              <h2 className="principal-title">Request Samples</h2>
+
+              <section className="text-container-request">
+                <p>
+                  We would be happy to provide additional information about any
+                  of our products. Just call us Toll Free at 877-740-9133 or
+                  complete the Email request below:
+                </p>
+              </section>
+              <div className="form">
+                <label htmlFor="businees-name">
+                  Practice, Clinic or Business Name:
+                </label>
+                <input
+                  onChange={this.handleChange}
+                  name="businees-name"
+                  type="text"
+                  placeholder="Name..."
+                />
+                <label htmlFor="name">Requestor’s Name:</label>
+                <input
+                  onChange={this.handleChange}
+                  name="name"
+                  type="text"
+                  placeholder="Requestor’s Name..."
+                />
+                <label htmlFor="product-inq">Product Inquiry: </label>
+                <textarea
+                  name="product-inq"
+                  onChange={this.handleChange}
+                  placeholder="Product Application..."
+                  cols="30"
+                  rows="5"
+                />
+                <label htmlFor="phone">Phone:</label>
+                <input
+                  onChange={this.handleChange}
+                  name="phone"
+                  type="text"
+                  placeholder="Phone..."
+                />
+                <label htmlFor="fax">Fax:</label>
+                <input
+                  onChange={this.handleChange}
+                  name="fax"
+                  type="text"
+                  placeholder="Fax..."
+                />
+                <label htmlFor="email">Email:</label>
+                <input
+                  onChange={this.handleChange}
+                  name="email"
+                  type="email"
+                  placeholder="Email..."
+                />
+                <label htmlFor="shipping-address">Shipping Address</label>
+                <textarea
+                  name="shipping-address"
+                  onChange={this.handleChange}
+                  placeholder="Shipping Address..."
+                  cols="30"
+                  rows="5"
+                />
+                <button onClick={this.handleSubmit} className="btn btn-primary">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="footer-page">
+            <Footer />
+          </div>
         </div>
-        <div className="footer-page">
-          <Footer />
-        </div>
-      </div>
-    </React.Fragment>
-  );
+      </React.Fragment>
+    );
+  }
+}
+
+const mapStateToProps = reducers => {
+  return storeReducers;
 };
 
-export default RequestProductPage;
+export default connect(mapStateToProps, storeActions)(RequestProductPage);

@@ -10,6 +10,11 @@ import Preferred from "./views/PreferredCustomerPage";
 import RequestProduct from "./views/RequestProductPage";
 import RequestSamples from "./views/RequestSamplesPage";
 import StoreSurgical from "./views/StoreSurgicalPage";
+import Products from "./views/ProductsPage";
+import Cart from "./views/CartPage";
+import Item from "./views/ItemPage";
+import CheckOut from "./views/CheckOutPage";
+import Cardiac from "./views/CardiacPage";
 
 function App() {
   return (
@@ -17,12 +22,21 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/cart" component={Cart} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/free" component={RequestSamples} />
         <Route exact path="/prefcust" component={Preferred} />
         <Route exact path="/productinquiry" component={RequestProduct} />
         <Route exact path="/customerservice" component={Customer} />
-        <Route exact path="/store/surgical" component={StoreSurgical} />
+        <Route exact path="/store/:type" component={StoreSurgical} />
+        <Route exact path="/detail/:id" component={Item} />
+        <Route exact path="/checkout" component={CheckOut} />
+        <Route exact path="/cardiac" component={Cardiac} />
+        <Route
+          exact
+          path="/store/:category/:subtype/:type"
+          component={Products}
+        />
       </Switch>
     </BrowserRouter>
   );

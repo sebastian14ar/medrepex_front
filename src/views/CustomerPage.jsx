@@ -2,12 +2,16 @@ import React from "react";
 import Footer from "../components/menu/Footer";
 import SideMenu from "../components/menu/SideMenu";
 
+import logo from "../images/logo2.jpg";
+
 const CustomerPage = () => {
   return (
     <React.Fragment>
       <div className="hero">
         <div className="navbar">
-          <h1>NavBar</h1>
+          <div className="navbar-container">
+            <img src={logo} alt="logo" />
+          </div>
         </div>
         <div className="menu menu-section">
           <SideMenu />

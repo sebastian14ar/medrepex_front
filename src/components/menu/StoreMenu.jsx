@@ -9,23 +9,33 @@ const categorys = [
     types: [
       {
         id: "1",
-        type: "Vicryl - Braided (PGA)"
+        type: "Vicryl - Braided (PGA)",
+        subtype: "suturesvicryl",
+        path: "/store/sutures/suturesvicryl"
       },
       {
         id: "2",
-        type: "Vicryl Rapide - Fast Absorb (PGA)"
+        type: "Vicryl Rapide - Fast Absorb (PGA)",
+        subtype: "suturesvicrylrapide",
+        path: "/store/sutures/suturesvicrylrapide"
       },
       {
         id: "3",
-        type: "PDS II - Monofilament"
+        type: "PDS II - Monofilament",
+        subtype: "suturespds",
+        path: "/store/sutures/suturespds"
       },
       {
         id: "4",
-        type: "Monofilament (Poliglecaprone 25)"
+        type: "Monofilament (Poliglecaprone 25)",
+        subtype: "suturesmonoswift",
+        path: "/store/sutures/suturesmonoswift"
       },
       {
         id: "5",
-        type: "Ethicon - Gut & Chromic Gut"
+        type: "Ethicon - Gut & Chromic Gut",
+        subtype: "suturesethicon",
+        path: "/store/sutures/suturesethicon"
       }
     ]
   },
@@ -34,19 +44,27 @@ const categorys = [
     types: [
       {
         id: "6",
-        type: "Ethilon - Nylon Mono"
+        type: "Ethilon - Nylon Mono",
+        subtype: "suturesethilon",
+        path: "/store/sutures/suturesethilon"
       },
       {
         id: "7",
-        type: "Prolene - Blue Poly Pro"
+        type: "Prolene - Blue Poly Pro",
+        subtype: "suturesprolene",
+        path: "/store/sutures/suturesprolene"
       },
       {
         id: "8",
-        type: "Permahand - Silk Black Braided"
+        type: "Permahand - Silk Black Braided",
+        subtype: "suturesperma",
+        path: "/store/sutures/suturesperma"
       },
       {
         id: "9",
-        type: "Biopsy - Short Black Nylon"
+        type: "Biopsy - Short Black Nylon",
+        subtype: "suturesbiopsy",
+        path: "/store/sutures/suturesbiopsy"
       }
     ]
   },
@@ -55,27 +73,39 @@ const categorys = [
     types: [
       {
         id: "10",
-        type: "Scissors"
+        type: "Scissors",
+        subtype: "gscissors",
+        path: "/store/instruments/gscissors"
       },
       {
         id: "11",
-        type: "Towel Clamps"
+        type: "Towel Clamps",
+        subtype: "gtowelclamps",
+        path: "/store/instruments/gtowelclamps"
       },
       {
         id: "12",
-        type: "Needle Holders"
+        type: "Needle Holders",
+        subtype: "gneedleholders",
+        path: "/store/instruments/gneedleholders"
       },
       {
         id: "13",
-        type: "Retractors/Skin Hooks"
+        type: "Retractors/Skin Hooks",
+        subtype: "gretractors",
+        path: "/store/instruments/gretractors"
       },
       {
         id: "14",
-        type: "Nail Nippers"
+        type: "Nail Nippers",
+        subtype: "gnailnippers",
+        path: "/store/instruments/gnailnippers"
       },
       {
         id: "15",
-        type: "Forceps"
+        type: "Forceps",
+        subtype: "gforceps",
+        path: "/store/instruments/gforceps"
       }
     ]
   },
@@ -83,12 +113,10 @@ const categorys = [
     title: "Other Supplies",
     types: [
       {
-        id: "16",
-        type: "Surgical Instruments"
-      },
-      {
         id: "17",
-        type: "Surgical Blades"
+        type: "Surgical Blades",
+        subtype: "blades",
+        path: "/store/instruments/blades"
       }
     ]
   }
@@ -102,15 +130,15 @@ const StoreMenu = props => {
           <div className="section-1">
             <h3>SUTURES: Select Type to Compare</h3>
             <div className="sub-section">
-              <StoreMenuList category={categorys[0]} />
-              <StoreMenuList category={categorys[1]} />
+              <StoreMenuList type={props.typePage} category={categorys[0]} />
+              <StoreMenuList type={props.typePage} category={categorys[1]} />
             </div>
           </div>
           <div className="section-1">
-            <StoreMenuList category={categorys[2]} />
+            <StoreMenuList type={props.typePage} category={categorys[2]} />
           </div>
           <div className="section-1">
-            <StoreMenuList category={categorys[3]} />
+            <StoreMenuList type={props.typePage} category={categorys[3]} />
           </div>
         </div>
         {/* <div className="table-section-2">

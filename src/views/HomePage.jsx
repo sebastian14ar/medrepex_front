@@ -3,15 +3,22 @@ import SideMenu from "../components/menu/SideMenu";
 import Footer from "../components/menu/Footer";
 import SideMenuProducts from "../components/menu/SideMenuProducts";
 
-import medicalImage from "../images/img-1.jpg";
+import oral from "../images/diente.png";
+import cosmetic from "../images/labio.png";
+import surgical from "../images/sala-de-operaciones.png";
+import reserch from "../images/veterinario.png";
+import logo from "../images/logo2.jpg";
 import "./styles/HomePage.css";
+import link, { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
     <React.Fragment>
       <div className="hero">
         <div className="navbar">
-          <h1>NavBar</h1>
+          <div className="navbar-container">
+            <img src={logo} alt="logo" />
+          </div>
         </div>
         <div className="menu menu-section">
           <SideMenu />
@@ -22,12 +29,20 @@ const HomePage = () => {
             <h2 className="principal-title">Shop by Category</h2>
             <div className="images-container">
               <div className="images-row-container">
-                <img src={medicalImage} alt="medical" />
-                <img src={medicalImage} alt="medical" />
+                <Link to="/store/surgical">
+                  <img src={surgical} alt="medical" />
+                </Link>
+                <Link to="/store/oral">
+                  <img src={oral} alt="medical" />
+                </Link>
               </div>
               <div className="images-row-container">
-                <img src={medicalImage} alt="medical" />
-                <img src={medicalImage} alt="medical" />
+                <Link to="/store/cosmetic">
+                  <img src={cosmetic} alt="medical" />
+                </Link>
+                <Link to="/store/vet">
+                  <img src={reserch} alt="medical" />
+                </Link>
               </div>
             </div>
           </div>

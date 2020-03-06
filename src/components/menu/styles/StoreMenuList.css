@@ -23,6 +23,14 @@
   width: 85%;
   margin: 0 0 5px;
 }
-.list-types li:hover {
+.link-li:hover {
   color: #417ae8;
+}
+.link-li {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+  color: #262626;
+  cursor: pointer;
 }

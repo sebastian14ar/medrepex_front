@@ -13,19 +13,19 @@ const SideMenuProducts = () => {
           </Link>
         </div>
         <div className="menu-section">
-          <Link to="/" className="link">
+          <Link to="/store/surgical" className="link">
             General Surgery
           </Link>
-          <Link to="/about" className="link">
+          <Link to="/store/oral" className="link">
             Oral/Maxillofacial
           </Link>
-          <Link to="/contact" className="link">
+          <Link to="/store/cosmetic" className="link">
             Plastic/Cosmetic
           </Link>
-          <Link to="/free" className="link">
+          <Link to="/cardiac" className="link">
             Cardiac Surgery
           </Link>
-          <Link to="/productinquiry" className="link">
+          <Link to="/store/vet" className="link">
             Research
           </Link>
           <Link to="/prefcust" className="link">
