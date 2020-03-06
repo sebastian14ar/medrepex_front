@@ -14,21 +14,22 @@ class CheckOutPage extends Component {
     super(props);
     this.state = {
       form: {
-        "businees-name": "",
-        "first-name": "",
-        "last-name": "",
+        businessName: "",
+        firstName: "",
+        lastName: "",
         phone: "",
         fax: "",
         email: "",
         address: "",
-        "alt-address": "",
+        shippingAddress: "",
         state: "",
-        "zip-code": "",
+        zipCode: "",
         country: "",
-        "number-card": "",
-        "card-name-holder": "",
-        "number-exp-date": "",
-        "sec-code": ""
+        numberCard: "",
+        cardNameHolder: "",
+        numberExpDate: "",
+        secCode: "",
+        items: this.props.storeReducers.storeItems
       }
     };
   }
@@ -44,13 +45,8 @@ class CheckOutPage extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    this.props.enviarContacto({
-      ...this.state.form,
-      items: this.props.storeReducers.storeItems
-    });
-    console.log({
-      ...this.state.form,
-      items: this.props.storeReducers.storeItems
+    this.props.enviarCompra({
+      ...this.state.form
     });
   };
 
@@ -71,26 +67,26 @@ class CheckOutPage extends Component {
               <h2 className="principal-title">Checkout</h2>
 
               <div className="form">
-                <label htmlFor="businees-name">
+                <label htmlFor="businessName">
                   Practice, Clinic or Business Name:
                 </label>
                 <input
                   onChange={this.handleChange}
-                  name="businees-name"
+                  name="businessName"
                   type="text"
                   placeholder="Businness Name..."
                 />
-                <label htmlFor="first-name">First Name:</label>
+                <label htmlFor="firstName">First Name:</label>
                 <input
                   onChange={this.handleChange}
-                  name="first-name"
+                  name="firstName"
                   type="text"
                   placeholder="First Name..."
                 />
-                <label htmlFor="last-name">Last Name:</label>
+                <label htmlFor="lastName">Last Name:</label>
                 <input
                   onChange={this.handleChange}
-                  name="last-name"
+                  name="lastName"
                   type="text"
                   placeholder="Last Name..."
                 />
@@ -123,11 +119,11 @@ class CheckOutPage extends Component {
                   cols="30"
                   rows="10"
                 />
-                <label htmlFor="alt-address">
+                <label htmlFor="altAddress">
                   Alternative Shipping Address
                 </label>
                 <textarea
-                  name="alt-address"
+                  name="altAddress"
                   onChange={this.handleChange}
                   placeholder="Alternative Shipping Address..."
                   cols="30"
@@ -140,10 +136,10 @@ class CheckOutPage extends Component {
                   type="text"
                   placeholder="State..."
                 />
-                <label htmlFor="zip-code">Zip-Code:</label>
+                <label htmlFor="zipCode">Zip-Code:</label>
                 <input
                   onChange={this.handleChange}
-                  name="zip-code"
+                  name="zipCode"
                   type="text"
                   placeholder="Zip-code..."
                 />
@@ -154,31 +150,31 @@ class CheckOutPage extends Component {
                   type="text"
                   placeholder="Country..."
                 />
-                <label htmlFor="number-card">Number Card:</label>
+                <label htmlFor="numberCard">Number Card:</label>
                 <input
                   onChange={this.handleChange}
-                  name="number-card"
+                  name="numberCard"
                   type="text"
                   placeholder="Number card..."
                 />
-                <label htmlFor="card-name-holder">Card Name Holder:</label>
+                <label htmlFor="cardNameHolder">Card Name Holder:</label>
                 <input
                   onChange={this.handleChange}
-                  name="card-name-holder"
+                  name="cardNameHolder"
                   type="text"
                   placeholder="Card Name Holder..."
                 />
-                <label htmlFor="number-exp-date">Expedition Date:</label>
+                <label htmlFor="numberExpDate">Expedition Date:</label>
                 <input
                   onChange={this.handleChange}
-                  name="number-exp-date"
+                  name="numberExpDate"
                   type="text"
                   placeholder="Expedition Date..."
                 />
-                <label htmlFor="sec-code">Security Code:</label>
+                <label htmlFor="secCode">Security Code:</label>
                 <input
                   onChange={this.handleChange}
-                  name="sec-code"
+                  name="secCode"
                   type="text"
                   placeholder="Security Code..."
                 />

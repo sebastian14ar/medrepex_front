@@ -14,13 +14,13 @@ class RequestSamplesPage extends Component {
     super(props);
     this.state = {
       form: {
-        "bussinees-name": "",
+        businessName: "",
         name: "",
         phone: "",
         fax: "",
         email: "",
-        "shipping-address": "",
-        "product-app": ""
+        shippingAddress: "",
+        productApp: ""
       }
     };
   }
@@ -62,7 +62,6 @@ class RequestSamplesPage extends Component {
                   several Risk Free ways for you to try our products and judge
                   first hand for yourself:
                 </p>
-
                 <p className="text-special">
                   1. For Sutures, Surgical Blades, Gloves, Syringes, Cotton
                   Products & “Sani-Cloth” Products... purchase a Box Online or
@@ -78,12 +77,12 @@ class RequestSamplesPage extends Component {
                 </p>
               </section>
               <div className="form">
-                <label htmlFor="bussinees-name">
+                <label htmlFor="businessName">
                   Practice, Clinic or Business Name:
                 </label>
                 <input
                   onChange={this.handleChange}
-                  name="bussinees-name"
+                  name="businessName"
                   type="text"
                   placeholder="Name..."
                 />
@@ -94,9 +93,9 @@ class RequestSamplesPage extends Component {
                   type="text"
                   placeholder="Requestor’s Name..."
                 />
-                <label htmlFor="product-app">Product Application: </label>
+                <label htmlFor="productApp">Product Application: </label>
                 <textarea
-                  name="product-app"
+                  name="productApp"
                   onChange={this.handleChange}
                   placeholder="Product Application..."
                   cols="30"
@@ -123,9 +122,9 @@ class RequestSamplesPage extends Component {
                   type="email"
                   placeholder="Email..."
                 />
-                <label htmlFor="shipping-address">Shipping Address</label>
+                <label htmlFor="shippingAddress">Shipping Address</label>
                 <textarea
-                  name="shipping-address"
+                  name="shippingAddress"
                   onChange={this.handleChange}
                   placeholder="Shipping Address..."
                   cols="30"

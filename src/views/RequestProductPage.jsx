@@ -14,13 +14,13 @@ class RequestProductPage extends Component {
     super(props);
     this.state = {
       form: {
-        "businees-name": "",
+        businessName: "",
         name: "",
-        "product-inq": "",
+        productInq: "",
         phone: "",
         fax: "",
         email: "",
-        "shipping-address": ""
+        shippingAddress: ""
       }
     };
   }
@@ -63,12 +63,12 @@ class RequestProductPage extends Component {
                 </p>
               </section>
               <div className="form">
-                <label htmlFor="businees-name">
+                <label htmlFor="businessName">
                   Practice, Clinic or Business Name:
                 </label>
                 <input
                   onChange={this.handleChange}
-                  name="businees-name"
+                  name="businessName"
                   type="text"
                   placeholder="Name..."
                 />
@@ -79,9 +79,9 @@ class RequestProductPage extends Component {
                   type="text"
                   placeholder="Requestor’s Name..."
                 />
-                <label htmlFor="product-inq">Product Inquiry: </label>
+                <label htmlFor="productInq">Product Inquiry: </label>
                 <textarea
-                  name="product-inq"
+                  name="productInq"
                   onChange={this.handleChange}
                   placeholder="Product Application..."
                   cols="30"
@@ -108,9 +108,9 @@ class RequestProductPage extends Component {
                   type="email"
                   placeholder="Email..."
                 />
-                <label htmlFor="shipping-address">Shipping Address</label>
+                <label htmlFor="shippingAddress">Shipping Address</label>
                 <textarea
-                  name="shipping-address"
+                  name="shippingAddress"
                   onChange={this.handleChange}
                   placeholder="Shipping Address..."
                   cols="30"
