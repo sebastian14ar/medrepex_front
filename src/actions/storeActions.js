@@ -34,7 +34,7 @@ export const eliminarUno = item => dispatch => {
 export const enviarContacto = form => async dispatch => {
   try {
     const respuesta = await axios.post(
-      "http://localhost:8080/api/contact-us",
+      "http://medrepexpress.com:8080/api/contact-us",
       form
     );
     console.log(respuesta);
@@ -46,7 +46,7 @@ export const enviarContacto = form => async dispatch => {
 export const enviarPeticion = form => async dispatch => {
   try {
     const respuesta = await axios.post(
-      "http://localhost:8080/api/req-samples",
+      "http://medrepexpress.com:8080/api/req-samples",
       form
     );
     console.log(respuesta);
@@ -58,7 +58,7 @@ export const enviarPeticion = form => async dispatch => {
 export const enviarInformacion = form => async dispatch => {
   try {
     const respuesta = await axios.post(
-      "http://localhost:8080/api/req-product-info",
+      "http://medrepexpress.com:8080/api/req-product-info",
       form
     );
     console.log(respuesta);
@@ -69,7 +69,7 @@ export const enviarInformacion = form => async dispatch => {
 export const enviarCompra = form => async dispatch => {
   try {
     const respuesta = await axios.post(
-      "http://localhost:8080/api/shopping-cart",
+      "http://medrepexpress.com:8080/api/shopping-cart",
       form
     );
     console.log(respuesta);
