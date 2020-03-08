@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Footer from "../components/menu/Footer";
 import SideMenu from "../components/menu/SideMenu";
+import Modal from "../components/Modal";
 
 import "./styles/RequestSamplesPage.css";
 import logo from "../images/logo2.jpg";
@@ -13,6 +14,8 @@ class RequestSamplesPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      modalIsOpen: false,
+      text: "",
       form: {
         businessName: "",
         name: "",
@@ -36,7 +39,35 @@ class RequestSamplesPage extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    this.props.enviarPeticion(this.state.form);
+    this.props
+      .enviarPeticion(this.state.form)
+      .then(res => {
+        this.handleOpenModal(res);
+      })
+      .catch(rej => {
+        this.handleOpenModal("Error");
+      })
+      .finally(() => {
+        this.setState({
+          form: {
+            businessName: "",
+            name: "",
+            phone: "",
+            fax: "",
+            email: "",
+            shippingAddress: "",
+            productApp: ""
+          }
+        });
+      });
+  };
+
+  handleOpenModal = text => {
+    this.setState({ modalIsOpen: true, text: text });
+  };
+
+  handleCloseModal = e => {
+    this.setState({ modalIsOpen: false, text: "" });
   };
 
   render() {
@@ -82,6 +113,7 @@ class RequestSamplesPage extends Component {
                 </label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.businessName}
                   name="businessName"
                   type="text"
                   placeholder="Name..."
@@ -89,6 +121,7 @@ class RequestSamplesPage extends Component {
                 <label htmlFor="name">Requestor’s Name:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.name}
                   name="name"
                   type="text"
                   placeholder="Requestor’s Name..."
@@ -97,6 +130,7 @@ class RequestSamplesPage extends Component {
                 <textarea
                   name="productApp"
                   onChange={this.handleChange}
+                  value={this.state.form.productApp}
                   placeholder="Product Application..."
                   cols="30"
                   rows="10"
@@ -104,6 +138,7 @@ class RequestSamplesPage extends Component {
                 <label htmlFor="phone">Phone:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.phone}
                   name="phone"
                   type="text"
                   placeholder="Phone..."
@@ -111,6 +146,7 @@ class RequestSamplesPage extends Component {
                 <label htmlFor="fax">Fax:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.fax}
                   name="fax"
                   type="text"
                   placeholder="Fax..."
@@ -118,6 +154,7 @@ class RequestSamplesPage extends Component {
                 <label htmlFor="email">Email:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.email}
                   name="email"
                   type="email"
                   placeholder="Email..."
@@ -126,6 +163,7 @@ class RequestSamplesPage extends Component {
                 <textarea
                   name="shippingAddress"
                   onChange={this.handleChange}
+                  value={this.state.form.shippingAddress}
                   placeholder="Shipping Address..."
                   cols="30"
                   rows="10"
@@ -135,6 +173,12 @@ class RequestSamplesPage extends Component {
                 </button>
               </div>
             </div>
+            <Modal
+              onClose={this.handleCloseModal}
+              isOpen={this.state.modalIsOpen}
+            >
+              <h1>{this.state.text}</h1>
+            </Modal>
           </div>
           <div className="footer-page">
             <Footer />

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Footer from "../components/menu/Footer";
 import SideMenu from "../components/menu/SideMenu";
+import Modal from "../components/Modal";
 
 import "./styles/ContactPage.css";
 import logo from "../images/logo2.jpg";
@@ -13,6 +14,8 @@ class ContactPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      modalIsOpen: false,
+      text: "",
       form: {
         name: "",
         email: "",
@@ -31,9 +34,34 @@ class ContactPage extends Component {
     });
   };
 
+  handleOpenModal = text => {
+    this.setState({ modalIsOpen: true, text: text });
+  };
+
+  handleCloseModal = e => {
+    this.setState({ modalIsOpen: false, text: "" });
+  };
+
   handleSubmit = event => {
     event.preventDefault();
-    this.props.enviarContacto(this.state.form);
+    this.props
+      .enviarContacto(this.state.form)
+      .then(res => {
+        this.handleOpenModal(res);
+      })
+      .catch(rej => {
+        this.handleOpenModal("Error");
+      })
+      .finally(() => {
+        this.setState({
+          form: {
+            name: "",
+            email: "",
+            subject: "",
+            message: ""
+          }
+        });
+      });
   };
 
   render() {
@@ -95,6 +123,12 @@ class ContactPage extends Component {
                 </button>
               </div>
             </div>
+            <Modal
+              onClose={this.handleCloseModal}
+              isOpen={this.state.modalIsOpen}
+            >
+              <h1>{this.state.text}</h1>
+            </Modal>
           </div>
           <div className="footer-page">
             <Footer />

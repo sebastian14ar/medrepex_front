@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Footer from "../components/menu/Footer";
 import SideMenu from "../components/menu/SideMenu";
+import Modal from "../components/Modal";
 
 import "./styles/RequestSamplesPage.css";
 import logo from "../images/logo2.jpg";
@@ -13,6 +14,8 @@ class RequestProductPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      modalIsOpen: false,
+      text: "",
       form: {
         businessName: "",
         name: "",
@@ -36,7 +39,35 @@ class RequestProductPage extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    this.props.enviarInformacion(this.state.form);
+    this.props
+      .enviarInformacion(this.state.form)
+      .then(res => {
+        this.handleOpenModal(res);
+      })
+      .catch(rej => {
+        this.handleOpenModal("Error");
+      })
+      .finally(() => {
+        this.setState({
+          form: {
+            businessName: "",
+            name: "",
+            productInq: "",
+            phone: "",
+            fax: "",
+            email: "",
+            shippingAddress: ""
+          }
+        });
+      });
+  };
+
+  handleOpenModal = text => {
+    this.setState({ modalIsOpen: true, text: text });
+  };
+
+  handleCloseModal = e => {
+    this.setState({ modalIsOpen: false, text: "" });
   };
 
   render() {
@@ -68,6 +99,7 @@ class RequestProductPage extends Component {
                 </label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.businessName}
                   name="businessName"
                   type="text"
                   placeholder="Name..."
@@ -75,6 +107,7 @@ class RequestProductPage extends Component {
                 <label htmlFor="name">Requestor’s Name:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.name}
                   name="name"
                   type="text"
                   placeholder="Requestor’s Name..."
@@ -83,6 +116,7 @@ class RequestProductPage extends Component {
                 <textarea
                   name="productInq"
                   onChange={this.handleChange}
+                  value={this.state.form.productInq}
                   placeholder="Product Application..."
                   cols="30"
                   rows="5"
@@ -90,6 +124,7 @@ class RequestProductPage extends Component {
                 <label htmlFor="phone">Phone:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.phone}
                   name="phone"
                   type="text"
                   placeholder="Phone..."
@@ -97,6 +132,7 @@ class RequestProductPage extends Component {
                 <label htmlFor="fax">Fax:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.fax}
                   name="fax"
                   type="text"
                   placeholder="Fax..."
@@ -104,6 +140,7 @@ class RequestProductPage extends Component {
                 <label htmlFor="email">Email:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.email}
                   name="email"
                   type="email"
                   placeholder="Email..."
@@ -112,6 +149,7 @@ class RequestProductPage extends Component {
                 <textarea
                   name="shippingAddress"
                   onChange={this.handleChange}
+                  value={this.state.form.shippingAddress}
                   placeholder="Shipping Address..."
                   cols="30"
                   rows="5"
@@ -121,6 +159,12 @@ class RequestProductPage extends Component {
                 </button>
               </div>
             </div>
+            <Modal
+              onClose={this.handleCloseModal}
+              isOpen={this.state.modalIsOpen}
+            >
+              <h1>{this.state.text}</h1>
+            </Modal>
           </div>
           <div className="footer-page">
             <Footer />

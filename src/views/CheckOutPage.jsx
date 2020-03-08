@@ -5,6 +5,7 @@ import SideMenu from "../components/menu/SideMenu";
 import "./styles/RequestSamplesPage.css";
 import logo from "../images/logo2.jpg";
 import { connect } from "react-redux";
+import Modal from "../components/Modal";
 
 import * as storeActions from "../actions/storeActions";
 import storeReducers from "../reducers/storeReducers";
@@ -13,6 +14,8 @@ class CheckOutPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      modalIsOpen: false,
+      text: "",
       form: {
         businessName: "",
         firstName: "",
@@ -21,7 +24,7 @@ class CheckOutPage extends Component {
         fax: "",
         email: "",
         address: "",
-        shippingAddress: "",
+        altAddress: "",
         state: "",
         zipCode: "",
         country: "",
@@ -45,9 +48,46 @@ class CheckOutPage extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    this.props.enviarCompra({
-      ...this.state.form
-    });
+    this.props
+      .enviarCompra({
+        ...this.state.form
+      })
+      .then(res => {
+        this.handleOpenModal(res);
+        this.props.eliminarTodo();
+      })
+      .catch(rej => {
+        this.handleOpenModal("Error");
+      })
+      .finally(() => {
+        this.setState({
+          form: {
+            businessName: "",
+            firstName: "",
+            lastName: "",
+            phone: "",
+            fax: "",
+            email: "",
+            address: "",
+            altAddress: "",
+            state: "",
+            zipCode: "",
+            country: "",
+            numberCard: "",
+            cardNameHolder: "",
+            numberExpDate: "",
+            secCode: ""
+          }
+        });
+      });
+  };
+
+  handleOpenModal = text => {
+    this.setState({ modalIsOpen: true, text: text });
+  };
+
+  handleCloseModal = e => {
+    this.setState({ modalIsOpen: false, text: "" });
   };
 
   render() {
@@ -72,6 +112,7 @@ class CheckOutPage extends Component {
                 </label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.businessName}
                   name="businessName"
                   type="text"
                   placeholder="Businness Name..."
@@ -79,6 +120,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="firstName">First Name:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.firstName}
                   name="firstName"
                   type="text"
                   placeholder="First Name..."
@@ -86,6 +128,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="lastName">Last Name:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.lastName}
                   name="lastName"
                   type="text"
                   placeholder="Last Name..."
@@ -93,6 +136,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="phone">Phone:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.phone}
                   name="phone"
                   type="text"
                   placeholder="Phone..."
@@ -100,6 +144,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="fax">Fax:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.fax}
                   name="fax"
                   type="text"
                   placeholder="Fax..."
@@ -107,6 +152,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="email">Email:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.email}
                   name="email"
                   type="email"
                   placeholder="Email..."
@@ -115,16 +161,16 @@ class CheckOutPage extends Component {
                 <textarea
                   name="address"
                   onChange={this.handleChange}
+                  value={this.state.form.address}
                   placeholder="Shipping Address..."
                   cols="30"
                   rows="10"
                 />
-                <label htmlFor="altAddress">
-                  Alternative Shipping Address
-                </label>
+                <label htmlFor="altAddress">Alternative Shipping Address</label>
                 <textarea
                   name="altAddress"
                   onChange={this.handleChange}
+                  value={this.state.form.altAddress}
                   placeholder="Alternative Shipping Address..."
                   cols="30"
                   rows="10"
@@ -132,6 +178,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="state">State:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.state}
                   name="state"
                   type="text"
                   placeholder="State..."
@@ -139,6 +186,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="zipCode">Zip-Code:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.zipCode}
                   name="zipCode"
                   type="text"
                   placeholder="Zip-code..."
@@ -146,6 +194,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="country">Country:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.country}
                   name="country"
                   type="text"
                   placeholder="Country..."
@@ -153,6 +202,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="numberCard">Number Card:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.numberCard}
                   name="numberCard"
                   type="text"
                   placeholder="Number card..."
@@ -160,6 +210,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="cardNameHolder">Card Name Holder:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.cardNameHolder}
                   name="cardNameHolder"
                   type="text"
                   placeholder="Card Name Holder..."
@@ -167,6 +218,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="numberExpDate">Expedition Date:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.numberExpDate}
                   name="numberExpDate"
                   type="text"
                   placeholder="Expedition Date..."
@@ -174,6 +226,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="secCode">Security Code:</label>
                 <input
                   onChange={this.handleChange}
+                  value={this.state.form.secCode}
                   name="secCode"
                   type="text"
                   placeholder="Security Code..."
@@ -183,7 +236,14 @@ class CheckOutPage extends Component {
                 </button>
               </div>
             </div>
+            <Modal
+              onClose={this.handleCloseModal}
+              isOpen={this.state.modalIsOpen}
+            >
+              <h1>{this.state.text}</h1>
+            </Modal>
           </div>
+
           <div className="footer-page">
             <Footer />
           </div>

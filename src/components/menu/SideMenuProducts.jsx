@@ -28,17 +28,20 @@ const SideMenuProducts = () => {
           <Link to="/store/vet" className="link">
             Research
           </Link>
+
           <Link to="/prefcust" className="link">
             Surgical Steel
           </Link>
-          <Link to="/customerservice" className="link">
+          <Link to="/skin" className="link">
             Skin Stapler
           </Link>
         </div>
       </div>
       <div className="container">
         <div className="menu-section">
-          <Link className="link-title">SUPPLIES</Link>
+          <Link to="/store/surgical" className="link-title">
+            SUPPLIES
+          </Link>
         </div>
         <div className="menu-section">
           <Link to="/" className="link">

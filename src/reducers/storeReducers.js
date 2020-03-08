@@ -2,6 +2,7 @@ import {
   AGREGAR_UNO,
   CAMBIAR_CANTIDAD,
   BORRAR,
+  BORRAR_TODO,
   AGREGAR,
   BORRAR_UNO
 } from "../types/storeReducers";
@@ -68,6 +69,9 @@ export default (state = INITIAL_STATE, action) => {
       } else {
         return state;
       }
+
+    case BORRAR_TODO:
+      return { ...state, storeItems: [] };
 
     default:
       return state;
