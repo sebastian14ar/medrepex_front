@@ -9,6 +9,14 @@ import * as storeActions from "../actions/storeActions";
 import storeReducers from "../reducers/storeReducers";
 
 class CartTable extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: 0,
+      quantity: 0
+    };
+  }
+
   handleClick(e, item) {
     this.props.eliminar(item);
   }
@@ -20,7 +28,33 @@ class CartTable extends Component {
     this.props.eliminarUno(item);
   }
 
+  // componentDidMount() {
+  //   let totalTable = this.props.storeReducers.storeItems.reduce(
+  //     (acc, item) => Number(acc) + Number(item.price) * Number(item.cant),
+  //     0
+  //   );
+  //   let quantityTable = this.props.storeReducers.storeItems.reduce(
+  //     (acc, item) => Number(acc) + Number(item.cant),
+  //     0
+  //   );
+  //   totalTable = totalTable + 9.9;
+  //   this.setState({
+  //     total: totalTable.toFixed(2),
+  //     quantity: quantityTable.toFixed(0)
+  //   });
+  // }
+
   render() {
+    let totalTable = this.props.storeReducers.storeItems.reduce(
+      (acc, item) => Number(acc) + Number(item.price) * Number(item.cant),
+      0
+    );
+    let quantityTable = this.props.storeReducers.storeItems.reduce(
+      (acc, item) => Number(acc) + Number(item.cant),
+      0
+    );
+    totalTable = totalTable + 9.9;
+
     return (
       <React.Fragment>
         <div>
@@ -33,7 +67,7 @@ class CartTable extends Component {
                 <th className="custom-th-width-50" scope="col">
                   Description
                 </th>
-                <th className="custom-th-width-30" scope="col">
+                <th className="custom-th-width-30 quantity" scope="col">
                   Quantity
                 </th>
                 <th className="custom-th-width-10" scope="col">
@@ -55,7 +89,7 @@ class CartTable extends Component {
                       <td>
                         {item.description} {item.category}
                       </td>
-                      <td>
+                      <td className="quantity">
                         <img
                           onClick={e => this.handleClickDelete(e, item)}
                           className="icon"
@@ -89,6 +123,29 @@ class CartTable extends Component {
                   </React.Fragment>
                 );
               })}
+              <tr>
+                <td>SHIP-01</td>
+
+                <td>STANDAR GROUND SHIPPING</td>
+                <td className="quantity">N/A</td>
+                <td>$9.90</td>
+                <td>$9.90</td>
+                <td className="table-row-center"></td>
+              </tr>
+              <tr>
+                <td colSpan="6">
+                  <hr className="custom-width-100 line-table" />
+                </td>
+              </tr>
+              <tr>
+                <td>TOTAL</td>
+
+                <td></td>
+                <td className="quantity">{quantityTable.toFixed(0)}</td>
+                <td></td>
+                <td>${totalTable.toFixed(2)}</td>
+                <td className="table-row-center"></td>
+              </tr>
             </tbody>
           </table>
         </div>

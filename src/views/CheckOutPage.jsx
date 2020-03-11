@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Footer from "../components/menu/Footer";
 import SideMenu from "../components/menu/SideMenu";
 
-import "./styles/RequestSamplesPage.css";
+import "./styles/CheckOutPage.css";
 import logo from "../images/logo2.jpg";
 import { connect } from "react-redux";
 import Modal from "../components/Modal";
@@ -62,21 +62,27 @@ class CheckOutPage extends Component {
       .finally(() => {
         this.setState({
           form: {
+            //Bill
             businessName: "",
-            firstName: "",
-            lastName: "",
+
             phone: "",
-            fax: "",
             email: "",
             address: "",
-            altAddress: "",
             state: "",
             zipCode: "",
             country: "",
             numberCard: "",
             cardNameHolder: "",
             numberExpDate: "",
-            secCode: ""
+            // SHIP
+            businessName_ship: "",
+
+            phone_ship: "",
+            email_ship: "",
+            address_ship: "",
+            state_ship: "",
+            zipCode_ship: "",
+            country_ship: ""
           }
         });
       });
@@ -103,13 +109,11 @@ class CheckOutPage extends Component {
             <SideMenu />
           </div>
           <div className="main ">
+            <h2 className="principal-title">Checkout</h2>
             <div className="main-container-request">
-              <h2 className="principal-title">Checkout</h2>
-
-              <div className="form">
-                <label htmlFor="businessName">
-                  Practice, Clinic or Business Name:
-                </label>
+              <div className="form-ck">
+                <h3>Bill To</h3>
+                <label htmlFor="businessName">Name or Practice:</label>
                 <input
                   onChange={this.handleChange}
                   value={this.state.form.businessName}
@@ -117,64 +121,24 @@ class CheckOutPage extends Component {
                   type="text"
                   placeholder="Businness Name..."
                 />
-                <label htmlFor="firstName">First Name:</label>
-                <input
-                  onChange={this.handleChange}
-                  value={this.state.form.firstName}
-                  name="firstName"
-                  type="text"
-                  placeholder="First Name..."
-                />
-                <label htmlFor="lastName">Last Name:</label>
-                <input
-                  onChange={this.handleChange}
-                  value={this.state.form.lastName}
-                  name="lastName"
-                  type="text"
-                  placeholder="Last Name..."
-                />
-                <label htmlFor="phone">Phone:</label>
-                <input
-                  onChange={this.handleChange}
-                  value={this.state.form.phone}
-                  name="phone"
-                  type="text"
-                  placeholder="Phone..."
-                />
-                <label htmlFor="fax">Fax:</label>
-                <input
-                  onChange={this.handleChange}
-                  value={this.state.form.fax}
-                  name="fax"
-                  type="text"
-                  placeholder="Fax..."
-                />
-                <label htmlFor="email">Email:</label>
-                <input
-                  onChange={this.handleChange}
-                  value={this.state.form.email}
-                  name="email"
-                  type="email"
-                  placeholder="Email..."
-                />
-                <label htmlFor="address">Shipping Address</label>
+                <label htmlFor="address">Address</label>
                 <textarea
                   name="address"
                   onChange={this.handleChange}
                   value={this.state.form.address}
                   placeholder="Shipping Address..."
                   cols="30"
-                  rows="10"
+                  rows="6"
                 />
-                <label htmlFor="altAddress">Alternative Shipping Address</label>
-                <textarea
-                  name="altAddress"
+                <label htmlFor="city">City :</label>
+                <input
                   onChange={this.handleChange}
-                  value={this.state.form.altAddress}
-                  placeholder="Alternative Shipping Address..."
-                  cols="30"
-                  rows="10"
+                  value={this.state.form.city}
+                  name="city"
+                  type="text"
+                  placeholder="Country..."
                 />
+
                 <label htmlFor="state">State:</label>
                 <input
                   onChange={this.handleChange}
@@ -191,13 +155,35 @@ class CheckOutPage extends Component {
                   type="text"
                   placeholder="Zip-code..."
                 />
-                <label htmlFor="country">Country:</label>
+
+                <label htmlFor="phone">Phone:</label>
                 <input
                   onChange={this.handleChange}
-                  value={this.state.form.country}
-                  name="country"
+                  value={this.state.form.phone}
+                  name="phone"
                   type="text"
-                  placeholder="Country..."
+                  placeholder="Phone..."
+                />
+
+                <label htmlFor="email">Email:</label>
+                <input
+                  onChange={this.handleChange}
+                  value={this.state.form.email}
+                  name="email"
+                  type="email"
+                  placeholder="Email..."
+                />
+
+                <h3>Payment</h3>
+                <h3>Option 1: Credit Card Information</h3>
+
+                <label htmlFor="cardNameHolder">Card Name Holder:</label>
+                <input
+                  onChange={this.handleChange}
+                  value={this.state.form.cardNameHolder}
+                  name="cardNameHolder"
+                  type="text"
+                  placeholder="Card Name Holder..."
                 />
                 <label htmlFor="numberCard">Number Card:</label>
                 <input
@@ -207,14 +193,6 @@ class CheckOutPage extends Component {
                   type="text"
                   placeholder="Number card..."
                 />
-                <label htmlFor="cardNameHolder">Card Name Holder:</label>
-                <input
-                  onChange={this.handleChange}
-                  value={this.state.form.cardNameHolder}
-                  name="cardNameHolder"
-                  type="text"
-                  placeholder="Card Name Holder..."
-                />
                 <label htmlFor="numberExpDate">Expedition Date:</label>
                 <input
                   onChange={this.handleChange}
@@ -223,17 +201,72 @@ class CheckOutPage extends Component {
                   type="text"
                   placeholder="Expedition Date..."
                 />
-                <label htmlFor="secCode">Security Code:</label>
-                <input
-                  onChange={this.handleChange}
-                  value={this.state.form.secCode}
-                  name="secCode"
-                  type="text"
-                  placeholder="Security Code..."
-                />
+
                 <button onClick={this.handleSubmit} className="btn btn-primary">
                   Submit
                 </button>
+              </div>
+              <div className="form-ck">
+                <h3>Ship To</h3>
+                <label htmlFor="businessName_ship">Name or Practice:</label>
+                <input
+                  onChange={this.handleChange}
+                  value={this.state.form.businessName_ship}
+                  name="businessName_ship"
+                  type="text"
+                  placeholder="Businness Name..."
+                />
+                <label htmlFor="address">Address</label>
+                <textarea
+                  name="address_ship"
+                  onChange={this.handleChange}
+                  value={this.state.form.address_ship}
+                  placeholder="Shipping Address..."
+                  cols="30"
+                  rows="6"
+                />
+                <label htmlFor="country_ship">Country:</label>
+                <input
+                  onChange={this.handleChange}
+                  value={this.state.form.country_ship}
+                  name="country_ship"
+                  type="text"
+                  placeholder="Country..."
+                />
+                <label htmlFor="state_ship">State:</label>
+                <input
+                  onChange={this.handleChange}
+                  value={this.state.form.state_ship}
+                  name="state_ship"
+                  type="text"
+                  placeholder="State..."
+                />
+                <label htmlFor="zipCode_ship">Zip-Code:</label>
+                <input
+                  onChange={this.handleChange}
+                  value={this.state.form.zipCode_ship}
+                  name="zipCode_ship"
+                  type="text"
+                  placeholder="Zip-code..."
+                />
+
+                <label htmlFor="phone_ship">Phone:</label>
+                <input
+                  onChange={this.handleChange}
+                  value={this.state.form.phone_ship}
+                  name="phone_ship"
+                  type="text"
+                  placeholder="Phone..."
+                />
+
+                <label htmlFor="email_ship">Email:</label>
+                <input
+                  onChange={this.handleChange}
+                  value={this.state.form.email_ship}
+                  name="email_ship"
+                  type="email"
+                  placeholder="Email..."
+                />
               </div>
             </div>
             <Modal
