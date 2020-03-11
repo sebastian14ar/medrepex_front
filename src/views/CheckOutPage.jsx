@@ -18,20 +18,15 @@ class CheckOutPage extends Component {
       text: "",
       form: {
         businessName: "",
-        firstName: "",
-        lastName: "",
         phone: "",
-        fax: "",
         email: "",
         address: "",
-        altAddress: "",
         state: "",
         zipCode: "",
         country: "",
         numberCard: "",
         cardNameHolder: "",
         numberExpDate: "",
-        secCode: "",
         items: this.props.storeReducers.storeItems
       }
     };
@@ -61,28 +56,27 @@ class CheckOutPage extends Component {
       })
       .finally(() => {
         this.setState({
-          form: {
+          form: {            
             //Bill
             businessName: "",
-
-            phone: "",
-            email: "",
             address: "",
+            city: "",
             state: "",
             zipCode: "",
-            country: "",
-            numberCard: "",
+            phone: "",
+            email: "",
+            //PAYMENT
             cardNameHolder: "",
+            numberCard: "",
             numberExpDate: "",
             // SHIP
-            businessName_ship: "",
-
-            phone_ship: "",
-            email_ship: "",
+            businessName_ship: "",            
             address_ship: "",
+            city_ship: "",
             state_ship: "",
             zipCode_ship: "",
-            country_ship: ""
+            phone_ship: "",
+            email_ship: "",
           }
         });
       });
@@ -136,7 +130,7 @@ class CheckOutPage extends Component {
                   value={this.state.form.city}
                   name="city"
                   type="text"
-                  placeholder="Country..."
+                  placeholder="City..."
                 />
 
                 <label htmlFor="state">State:</label>
@@ -225,13 +219,13 @@ class CheckOutPage extends Component {
                   cols="30"
                   rows="6"
                 />
-                <label htmlFor="country_ship">Country:</label>
+                <label htmlFor="city_ship">City:</label>
                 <input
                   onChange={this.handleChange}
-                  value={this.state.form.country_ship}
-                  name="country_ship"
+                  value={this.state.form.city_ship}
+                  name="city_ship"
                   type="text"
-                  placeholder="Country..."
+                  placeholder="City..."
                 />
                 <label htmlFor="state_ship">State:</label>
                 <input
