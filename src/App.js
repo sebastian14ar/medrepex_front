@@ -15,6 +15,7 @@ import Cart from "./views/CartPage";
 import Item from "./views/ItemPage";
 import CheckOut from "./views/CheckOutPage";
 import Cardiac from "./views/CardiacPage";
+import Steel from "./views/SteelPage";
 import Skin from "./views/SkinPage";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route exact path="/detail/:id" component={Item} />
         <Route exact path="/checkout" component={CheckOut} />
         <Route exact path="/cardiac" component={Cardiac} />
+        <Route exact path="/steel" component={Steel} />
         <Route exact path="/skin" component={Skin} />
         <Route
           exact

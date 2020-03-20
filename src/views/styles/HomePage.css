@@ -14,11 +14,20 @@
 }
 .images-row-container {
   display: flex;
+  align-items: center;
+}
+.images-row-container a {
+  text-decoration: none;
 }
 .images-row-container img {
   width: 180px;
+  height: 140px;
   margin: 0.5rem;
   border-radius: 5px;
+}
+.images-row-container h5 {
+  text-align: center;
+  margin: 0.4rem 0 0;
 }
 .text-container {
   padding: 0 10px;
