@@ -40,7 +40,7 @@ export const enviarContacto = form => async dispatch => {
   try {
     const respuesta = await axios.post(
       // "http://localhost:3001/api/contact-us",
-      "http://medrepexpress.com:3001/api/contact-us",
+      "https://medrepexpress.com:3001/api/contact-us",
       form,
       {
         headers: {
@@ -64,7 +64,7 @@ export const enviarPeticion = form => async dispatch => {
   try {
     const respuesta = await axios.post(
       // "http://localhost:3001/api/req-samples",
-      "http://medrepexpress.com:3001/api/req-samples",
+      "https://medrepexpress.com:3001/api/req-samples",
       form,
       {
         headers: {
@@ -88,7 +88,7 @@ export const enviarInformacion = form => async dispatch => {
   try {
     const respuesta = await axios.post(
       // "http://localhost:3001/api/req-product-info",
-      "http://medrepexpress.com:3001/api/req-product-info",
+      "https://medrepexpress.com:3001/api/req-product-info",
       form,
       {
         headers: {
@@ -111,7 +111,7 @@ export const enviarCompra = form => async dispatch => {
   try {
     const respuesta = await axios.post(
       // "http://localhost:3001/api/shopping-cart",
-      "http://medrepexpress.com:3001/api/shopping-cart",
+      "https://medrepexpress.com:3001/api/shopping-cart",
       form,
       {
         headers: {
