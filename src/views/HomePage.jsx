@@ -16,7 +16,7 @@ class HomePage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      modalIsOpen: true,
+      modalIsOpen: false,
       text:
         "Our Website is temporarily closed for Maintenance.  Please call: 877-740-9133 or email: Sales@MedRepExpress.com to place an order or inquiry.  We apologize for the inconvenience."
     };
