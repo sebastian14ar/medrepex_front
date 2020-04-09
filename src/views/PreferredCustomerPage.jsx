@@ -22,21 +22,21 @@ const PreferredCustomerPage = () => {
           </div>
           <section className="text-container">
             <p>
-              CUSTOMER LOYALTY has long been a key contributor to the success of
-              MedRep Express. Our business continues to grow on the strength of
-              customers returning with repeat orders for their Disposable
-              Product needs. This in turn allows us to keep our overhead cost
-              related to marketing and advertising low which is why you will
-              find our prices, even on well known brands, lower than the
-              competition.
+              <strong>CUSTOMER LOYALTY</strong> has long been a key contributor
+              to the success of MedRep Express. Our business continues to grow
+              on the strength of customers returning with repeat orders. This in
+              turn allows us to keep our overhead cost related to marketing and
+              advertising low which is why you will find our prices, even on
+              well known brands, lower than the competition.
             </p>
             <p>
               One way we strive to build Customer Loyalty is through our
               "Preferred Customer Program". Eligibility for this Program is
               easy.... when your cumulative purchases from the day you begin
-              ordering from us, reach $1000.00.... you become a "Preferred
-              Customer". You never need to qualify again, from that day forward
-              you will always be a "Preferred Customer" of MedRep Express.
+              ordering from us, reach <strong>$1000.00....</strong> you become
+              a "Preferred Customer". You never need to qualify again, from that
+              day forward you will always be a{" "}
+              <strong>"Preferred Customer"</strong> of MedRep Express.
             </p>
 
             <p>
@@ -45,18 +45,19 @@ const PreferredCustomerPage = () => {
               benefits:
             </p>
             <p className="text-special">
-              1. Free Shipping on any size order to anywhere. No minimum order,
-              and no handling fees of $6.90 to $9.90 for small orders...... one
-              low flat rate, nominal handling fee of $4.90 applies to all of
-              your orders no matter what size.
+              1. <strong className="sp-strong">Flat Rate Shipping</strong> on
+              any size order to anywhere.  Just one low flat rate of $6.90
+              applies to all of your orders no matter what size or what the
+              actual shipping cost.
             </p>
             <p className="text-special">
-              2. Preferred Customer Specials which are published each month only
-              to "Preferred Customers".
+              2. Preferred Customer{" "}
+              <strong className="sp-strong">Specials</strong> which are
+              published each month only to "Preferred Customers".
             </p>
             <p className="text-special">
-              3. Priority Service 24/7 contact information available only to
-              "Preferred Customers".
+              3. <strong className="sp-strong">Priority Service 24/7</strong>{" "}
+              contact information available only to "Preferred Customers".
             </p>
             <p>
               For those of you who are already "Preferred Customers", we thank

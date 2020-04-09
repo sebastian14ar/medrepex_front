@@ -23,28 +23,28 @@ class RequestProductPage extends Component {
         phone: "",
         fax: "",
         email: "",
-        shippingAddress: ""
-      }
+        shippingAddress: "",
+      },
     };
   }
 
-  handleChange = event => {
+  handleChange = (event) => {
     this.setState({
       form: {
         ...this.state.form,
-        [event.target.name]: event.target.value
-      }
+        [event.target.name]: event.target.value,
+      },
     });
   };
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
     this.props
       .enviarInformacion(this.state.form)
-      .then(res => {
+      .then((res) => {
         this.handleOpenModal(res);
       })
-      .catch(rej => {
+      .catch((rej) => {
         this.handleOpenModal("Error");
       })
       .finally(() => {
@@ -56,17 +56,17 @@ class RequestProductPage extends Component {
             phone: "",
             fax: "",
             email: "",
-            shippingAddress: ""
-          }
+            shippingAddress: "",
+          },
         });
       });
   };
 
-  handleOpenModal = text => {
+  handleOpenModal = (text) => {
     this.setState({ modalIsOpen: true, text: text });
   };
 
-  handleCloseModal = e => {
+  handleCloseModal = (e) => {
     this.setState({ modalIsOpen: false, text: "" });
   };
 
@@ -83,7 +83,7 @@ class RequestProductPage extends Component {
             <SideMenu />
           </div>
           <div className="main ">
-            <div className="main-container-request">
+            <div className="main-container-request-sample">
               <h2 className="principal-title">Request Samples</h2>
 
               <section className="text-container-request">
@@ -175,7 +175,7 @@ class RequestProductPage extends Component {
   }
 }
 
-const mapStateToProps = reducers => {
+const mapStateToProps = (reducers) => {
   return storeReducers;
 };
 

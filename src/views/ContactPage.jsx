@@ -20,36 +20,36 @@ class ContactPage extends Component {
         name: "",
         email: "",
         subject: "",
-        message: ""
-      }
+        message: "",
+      },
     };
   }
 
-  handleChange = event => {
+  handleChange = (event) => {
     this.setState({
       form: {
         ...this.state.form,
-        [event.target.name]: event.target.value
-      }
+        [event.target.name]: event.target.value,
+      },
     });
   };
 
-  handleOpenModal = text => {
+  handleOpenModal = (text) => {
     this.setState({ modalIsOpen: true, text: text });
   };
 
-  handleCloseModal = e => {
+  handleCloseModal = (e) => {
     this.setState({ modalIsOpen: false, text: "" });
   };
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
     this.props
       .enviarContacto(this.state.form)
-      .then(res => {
+      .then((res) => {
         this.handleOpenModal(res);
       })
-      .catch(rej => {
+      .catch((rej) => {
         this.handleOpenModal("Error");
       })
       .finally(() => {
@@ -58,8 +58,8 @@ class ContactPage extends Component {
             name: "",
             email: "",
             subject: "",
-            message: ""
-          }
+            message: "",
+          },
         });
       });
   };
@@ -80,6 +80,7 @@ class ContactPage extends Component {
             <div className="main-container">
               <h2 className="principal-title">Contact Us</h2>
               <section className="text-container-contact">
+                <p>The word Toll is mispelled as Tool</p>
                 <p className="text-special">Tool Free Phone: 877-740-9133</p>
                 <p className="text-special">Fax: 928-445-6267</p>
                 <p className="text-special">E-Mail: Sales@MedRepExpress.com</p>
@@ -139,7 +140,7 @@ class ContactPage extends Component {
   }
 }
 
-const mapStateToProps = reducers => {
+const mapStateToProps = (reducers) => {
   return storeReducers;
 };
 

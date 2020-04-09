@@ -23,28 +23,28 @@ class RequestSamplesPage extends Component {
         fax: "",
         email: "",
         shippingAddress: "",
-        productApp: ""
-      }
+        productApp: "",
+      },
     };
   }
 
-  handleChange = event => {
+  handleChange = (event) => {
     this.setState({
       form: {
         ...this.state.form,
-        [event.target.name]: event.target.value
-      }
+        [event.target.name]: event.target.value,
+      },
     });
   };
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
     this.props
       .enviarPeticion(this.state.form)
-      .then(res => {
+      .then((res) => {
         this.handleOpenModal(res);
       })
-      .catch(rej => {
+      .catch((rej) => {
         this.handleOpenModal("Error");
       })
       .finally(() => {
@@ -56,17 +56,17 @@ class RequestSamplesPage extends Component {
             fax: "",
             email: "",
             shippingAddress: "",
-            productApp: ""
-          }
+            productApp: "",
+          },
         });
       });
   };
 
-  handleOpenModal = text => {
+  handleOpenModal = (text) => {
     this.setState({ modalIsOpen: true, text: text });
   };
 
-  handleCloseModal = e => {
+  handleCloseModal = (e) => {
     this.setState({ modalIsOpen: false, text: "" });
   };
 
@@ -83,22 +83,21 @@ class RequestSamplesPage extends Component {
             <SideMenu />
           </div>
           <div className="main ">
-            <div className="main-container-request">
+            <div className="main-container-request-sample">
               <h2 className="principal-title">Request Samples</h2>
 
               <section className="text-container-request">
                 <p>
                   It is not always easy to evaluate the suitability of an
                   unknown product for your application. This is why we offer
-                  several Risk Free ways for you to try our products and judge
-                  first hand for yourself:
+                  several Risk Free ways for you to sample CP Medical Surgical
+                  Sutures.
                 </p>
                 <p className="text-special">
-                  1. For Sutures, Surgical Blades, Gloves, Syringes, Cotton
-                  Products & “Sani-Cloth” Products... purchase a Box Online or
-                  by Phone or Fax and if you are not satisfied with the
-                  Product’s Performance, for any reason, we will refund the full
-                  purchase price with no return of the product required.
+                  1. Purchase as little as one box Online or by Phone or Fax and
+                  if you are not satisfied with the Product’s Performance, for
+                  any reason, we will refund the full purchase price including
+                  shipping with no return of the product required.
                 </p>
                 <p className="text-special">
                   2. Or... Provide us with the information below by completing
@@ -189,7 +188,7 @@ class RequestSamplesPage extends Component {
   }
 }
 
-const mapStateToProps = reducers => {
+const mapStateToProps = (reducers) => {
   return storeReducers;
 };
 

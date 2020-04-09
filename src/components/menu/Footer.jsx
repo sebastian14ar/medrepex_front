@@ -13,56 +13,111 @@ const Footer = () => {
           <hr />
           <div className="footer-links-menu">
             <div className="footer-links-sub">
-              <Link className="footer-url" to="/">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-url"
+                href="http://www.fda.gov/medwatch/safety.htm"
+              >
                 FDA
-              </Link>
-              <Link className="footer-url" to="/">
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-url"
+                href="http://www.nlm.nih.gov/medlineplus/drugandmedicaldevicesafety.html"
+              >
                 Medline Plus
-              </Link>
-              <Link className="footer-url" to="/">
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-url"
+                href="http://www.medicalsafetyglasses.com/pages/contact%20us%20page/contact%20us%20page.htm"
+              >
                 Medical Safety Glasses
-              </Link>
-              <Link className="footer-url" to="/">
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-url"
+                href="http://www.uhftips.org"
+              >
                 United Health
-              </Link>
-              <Link className="footer-url" to="/">
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-url"
+                href="http://durable-medical-equipment.medical-supplies-equipment-company.com/"
+              >
                 MSEC
-              </Link>
-              <Link className="footer-url" to="/">
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-url"
+                href="http://www.cms.hhs.gov/suppliers/dmepos/"
+              >
                 CMS
-              </Link>
+              </a>
             </div>
             <div className="footer-links-sub">
-              <Link className="footer-url" to="/">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-url"
+                href="http://medicalmailorder.com/"
+              >
                 Medical Mail Order
-              </Link>
-              <Link className="footer-url" to="/">
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-url"
+                href="http://www.bettersmile.com/articles/24.html"
+              >
                 Brush & Floss Dental
-              </Link>
-              <Link className="footer-url" to="/">
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-url"
+                href="http://www.scienceinthebox.com/en_UK/research/efficiencyofantibac_en.html"
+              >
                 Science In The Box
-              </Link>
-              <Link className="footer-url" to="/">
-                Science In The Box
-              </Link>
-              <Link className="footer-url" to="/">
+              </a>
+
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-url"
+                href="http://mercury.bio.uaf.edu/~john_blake/bio655/module3/3_suture.htm"
+              >
                 Sutures, Needles, and Suture Patterns
-              </Link>
-              <Link className="footer-url" to="/">
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-url"
+                href="http://www.eMedicine.com"
+              >
                 For up to date medical information, visit eMedicine.com
-              </Link>
+              </a>
             </div>
           </div>
         </div>
         <div className="footer-terms">
-          <a
+          {/* <a
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-special btn-primary"
+            
             href="https://google.com"
-          >
+          > */}
+          <Link to="/terms-conditions" className="btn-special btn-primary">
             Terms and Conditions
-          </a>
+          </Link>
+          {/* </a> */}
           <img width="90" src={cards} alt="cards" />
         </div>
       </div>

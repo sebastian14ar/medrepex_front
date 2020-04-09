@@ -11,33 +11,33 @@ const categorys = [
         id: "1",
         type: "Vicryl - Braided (PGA)",
         subtype: "suturesvicryl",
-        path: "/store/sutures/suturesvicryl"
+        path: "/store/sutures/suturesvicryl",
       },
       {
         id: "2",
         type: "Vicryl Rapide - Fast Absorb (PGA)",
         subtype: "suturesvicrylrapide",
-        path: "/store/sutures/suturesvicrylrapide"
+        path: "/store/sutures/suturesvicrylrapide",
       },
       {
         id: "3",
         type: "PDS II - Monofilament",
         subtype: "suturespds",
-        path: "/store/sutures/suturespds"
+        path: "/store/sutures/suturespds",
       },
       {
         id: "4",
         type: "Monofilament (Poliglecaprone 25)",
         subtype: "suturesmonoswift",
-        path: "/store/sutures/suturesmonoswift"
+        path: "/store/sutures/suturesmonoswift",
       },
       {
         id: "5",
         type: "Ethicon - Gut & Chromic Gut",
         subtype: "suturesethicon",
-        path: "/store/sutures/suturesethicon"
-      }
-    ]
+        path: "/store/sutures/suturesethicon",
+      },
+    ],
   },
   {
     title: "Non-Absorbable",
@@ -46,27 +46,27 @@ const categorys = [
         id: "6",
         type: "Ethilon - Nylon Mono",
         subtype: "suturesethilon",
-        path: "/store/sutures/suturesethilon"
+        path: "/store/sutures/suturesethilon",
       },
       {
         id: "7",
         type: "Prolene - Blue Poly Pro",
         subtype: "suturesprolene",
-        path: "/store/sutures/suturesprolene"
+        path: "/store/sutures/suturesprolene",
       },
       {
         id: "8",
         type: "Permahand - Silk Black Braided",
         subtype: "suturesperma",
-        path: "/store/sutures/suturesperma"
+        path: "/store/sutures/suturesperma",
       },
       {
         id: "9",
         type: "Biopsy - Short Black Nylon",
         subtype: "suturesbiopsy",
-        path: "/store/sutures/suturesbiopsy"
-      }
-    ]
+        path: "/store/sutures/suturesbiopsy",
+      },
+    ],
   },
   {
     title: "High Quality German Stainless Steel",
@@ -75,39 +75,39 @@ const categorys = [
         id: "10",
         type: "Scissors",
         subtype: "gscissors",
-        path: "/store/instruments/gscissors"
+        path: "/store/instruments/gscissors",
       },
       {
         id: "11",
         type: "Towel Clamps",
         subtype: "gtowelclamps",
-        path: "/store/instruments/gtowelclamps"
+        path: "/store/instruments/gtowelclamps",
       },
       {
         id: "12",
         type: "Needle Holders",
         subtype: "gneedleholders",
-        path: "/store/instruments/gneedleholders"
+        path: "/store/instruments/gneedleholders",
       },
       {
         id: "13",
         type: "Retractors/Skin Hooks",
         subtype: "gretractors",
-        path: "/store/instruments/gretractors"
+        path: "/store/instruments/gretractors",
       },
       {
         id: "14",
         type: "Nail Nippers",
         subtype: "gnailnippers",
-        path: "/store/instruments/gnailnippers"
+        path: "/store/instruments/gnailnippers",
       },
       {
         id: "15",
         type: "Forceps",
         subtype: "gforceps",
-        path: "/store/instruments/gforceps"
-      }
-    ]
+        path: "/store/instruments/gforceps",
+      },
+    ],
   },
   {
     title: "Other Supplies",
@@ -116,13 +116,15 @@ const categorys = [
         id: "17",
         type: "Surgical Blades",
         subtype: "blades",
-        path: "/store/instruments/blades"
-      }
-    ]
-  }
+        path: "/store/instruments/blades",
+      },
+    ],
+  },
 ];
 
-const StoreMenu = props => {
+const StoreMenu = (props) => {
+  console.log(props.typePage);
+
   return (
     <React.Fragment>
       <div className="store-menu-container">

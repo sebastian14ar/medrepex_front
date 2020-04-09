@@ -27,36 +27,36 @@ class CheckOutPage extends Component {
         numberCard: "",
         cardNameHolder: "",
         numberExpDate: "",
-        items: this.props.storeReducers.storeItems
-      }
+        items: this.props.storeReducers.storeItems,
+      },
     };
   }
 
-  handleChange = event => {
+  handleChange = (event) => {
     this.setState({
       form: {
         ...this.state.form,
-        [event.target.name]: event.target.value
-      }
+        [event.target.name]: event.target.value,
+      },
     });
   };
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
     this.props
       .enviarCompra({
-        ...this.state.form
+        ...this.state.form,
       })
-      .then(res => {
+      .then((res) => {
         this.handleOpenModal(res);
         this.props.eliminarTodo();
       })
-      .catch(rej => {
+      .catch((rej) => {
         this.handleOpenModal("Error");
       })
       .finally(() => {
         this.setState({
-          form: {            
+          form: {
             //Bill
             businessName: "",
             address: "",
@@ -70,23 +70,23 @@ class CheckOutPage extends Component {
             numberCard: "",
             numberExpDate: "",
             // SHIP
-            businessName_ship: "",            
+            businessName_ship: "",
             address_ship: "",
             city_ship: "",
             state_ship: "",
             zipCode_ship: "",
             phone_ship: "",
             email_ship: "",
-          }
+          },
         });
       });
   };
 
-  handleOpenModal = text => {
+  handleOpenModal = (text) => {
     this.setState({ modalIsOpen: true, text: text });
   };
 
-  handleCloseModal = e => {
+  handleCloseModal = (e) => {
     this.setState({ modalIsOpen: false, text: "" });
   };
 
@@ -196,8 +196,11 @@ class CheckOutPage extends Component {
                   placeholder="Expedition Date..."
                 />
 
-                <button onClick={this.handleSubmit} className="btn btn-primary">
-                  Submit
+                <button
+                  onClick={this.handleSubmit}
+                  className="btn-final btn-final-primary"
+                >
+                  Place Purchase Order
                 </button>
               </div>
               <div className="form-ck">
@@ -280,7 +283,7 @@ class CheckOutPage extends Component {
   }
 }
 
-const mapStateToProps = reducers => {
+const mapStateToProps = (reducers) => {
   return storeReducers;
 };
 

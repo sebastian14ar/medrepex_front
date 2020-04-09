@@ -44,3 +44,6 @@
   display: flex;
   align-items: center;
 }
+.sp-strong {
+  text-decoration: underline;
+}

@@ -150,3 +150,24 @@ body::-webkit-scrollbar {
   color: #fff;
   background-color: gray;
 }
+.btn-final {
+  padding: 0.175rem 1rem;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 0.75rem;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.btn-final.btn-final-primary {
+  color: #fff;
+  max-width: 600px;
+  height: 30px;
+  font-size: 1em;
+  background-color: #20232a;
+  border: none;
+}
+.btn-final.btn-final-primary:not(:disabled):not(.disabled):hover {
+  color: #fff;
+  background-color: #7dcd40;
+}
