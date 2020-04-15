@@ -1,14 +1,13 @@
 import {
   AGREGAR_UNO,
-  CAMBIAR_CANTIDAD,
   BORRAR,
   BORRAR_TODO,
   AGREGAR,
-  BORRAR_UNO
+  BORRAR_UNO,
 } from "../types/storeReducers";
 
 const INITIAL_STATE = {
-  storeItems: []
+  storeItems: [],
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -16,7 +15,7 @@ export default (state = INITIAL_STATE, action) => {
     case AGREGAR_UNO:
       let newStoreItemsAdd = [...state.storeItems];
       let getItem = state.storeItems.find(
-        item => item.code === action.payload.code
+        (item) => item.code === action.payload.code
       );
 
       let indexExist = state.storeItems.indexOf(getItem);
@@ -31,7 +30,7 @@ export default (state = INITIAL_STATE, action) => {
     case AGREGAR:
       let newStoreItemsAdd2 = [...state.storeItems];
       let getItem2 = state.storeItems.find(
-        item => item.code === action.payload.code
+        (item) => item.code === action.payload.code
       );
 
       let indexExist2 = state.storeItems.indexOf(getItem2);
@@ -55,7 +54,7 @@ export default (state = INITIAL_STATE, action) => {
     case BORRAR_UNO:
       let newStoreItemsDelete = [...state.storeItems];
       let getItemDelete = state.storeItems.find(
-        item => item.code === action.payload.code
+        (item) => item.code === action.payload.code
       );
 
       let indexExistDelete = state.storeItems.indexOf(getItemDelete);

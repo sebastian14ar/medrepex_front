@@ -15,6 +15,8 @@ class CheckOutPage extends Component {
     super(props);
     this.state = {
       modalIsOpen: false,
+      paymentMode: false,
+      shipCheck: false,
       text: "",
       form: {
         businessName: "",
@@ -24,9 +26,17 @@ class CheckOutPage extends Component {
         state: "",
         zipCode: "",
         country: "",
+        purchase_order: "",
         numberCard: "",
         cardNameHolder: "",
         numberExpDate: "",
+        businessName_ship: "",
+        address_ship: "",
+        city_ship: "",
+        state_ship: "",
+        zipCode_ship: "",
+        phone_ship: "",
+        email_ship: "",
         items: this.props.storeReducers.storeItems,
       },
     };
@@ -41,8 +51,113 @@ class CheckOutPage extends Component {
     });
   };
 
+  handleCheck = () => {
+    this.setState({
+      shipCheck: !this.state.shipCheck,
+    });
+    console.log(!this.state.shipCheck);
+
+    !this.state.shipCheck
+      ? this.setState({
+          form: {
+            businessName_ship: this.state.form.businessName,
+            address_ship: this.state.form.address,
+            city_ship: this.state.form.city,
+            state_ship: this.state.form.state,
+            zipCode_ship: this.state.form.zipCode,
+            phone_ship: this.state.form.phone,
+            email_ship: this.state.form.email,
+          },
+        })
+      : this.setState({
+          form: {
+            businessName_ship: "",
+            address_ship: "",
+            city_ship: "",
+            state_ship: "",
+            zipCode_ship: "",
+            phone_ship: "",
+            email_ship: "",
+          },
+        });
+  };
+  handlePayment1 = (event) => {
+    this.setState({
+      paymentMode: false,
+    });
+    this.setState({
+      form: {
+        purchase_order: "",
+      },
+    });
+  };
+  handlePayment2 = (event) => {
+    this.setState({
+      paymentMode: true,
+    });
+    this.setState({
+      form: {
+        numberCard: "",
+        cardNameHolder: "",
+        numberExpDate: "",
+      },
+    });
+  };
+
   handleSubmit = (event) => {
     event.preventDefault();
+    if (!this.state.form.businessName) {
+      this.handleOpenModal("The field Name is required");
+      return;
+    }
+    if (!this.state.form.address) {
+      this.handleOpenModal("The field Address is required");
+      return;
+    }
+    if (!this.state.form.city) {
+      this.handleOpenModal("The field City is required");
+      return;
+    }
+    if (!this.state.form.state) {
+      this.handleOpenModal("The field State is required");
+      return;
+    }
+    if (!this.state.form.zipCode) {
+      this.handleOpenModal("The field Zip-Code is required");
+      return;
+    }
+    if (!this.state.form.phone) {
+      this.handleOpenModal("The field Phone is required");
+      return;
+    }
+    if (!this.state.form.phone) {
+      this.handleOpenModal("The field Phone is required");
+      return;
+    }
+    if (!this.state.form.email) {
+      this.handleOpenModal("The field Email is required");
+      return;
+    }
+    if (this.state.paymentMode) {
+      if (!this.state.form.purchase_order) {
+        this.handleOpenModal("The field Purchase Order is required");
+        return;
+      }
+    } else {
+      if (!this.state.form.cardNameHolder) {
+        this.handleOpenModal("The field Card Name Holder is required");
+        return;
+      }
+      if (!this.state.form.numberCard) {
+        this.handleOpenModal("The field Number Card is required");
+        return;
+      }
+      if (!this.state.form.numberExpDate) {
+        this.handleOpenModal("The field Expedition Date is required");
+        return;
+      }
+    }
+
     this.props
       .enviarCompra({
         ...this.state.form,
@@ -58,7 +173,7 @@ class CheckOutPage extends Component {
         this.setState({
           form: {
             //Bill
-            businessName: "",
+            businessName: undefined,
             address: "",
             city: "",
             state: "",
@@ -69,6 +184,7 @@ class CheckOutPage extends Component {
             cardNameHolder: "",
             numberCard: "",
             numberExpDate: "",
+            purchase_order: "",
             // SHIP
             businessName_ship: "",
             address_ship: "",
@@ -110,7 +226,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="businessName">Name or Practice:</label>
                 <input
                   onChange={this.handleChange}
-                  value={this.state.form.businessName}
+                  defaultValue={this.state.form.businessName}
                   name="businessName"
                   type="text"
                   placeholder="Businness Name..."
@@ -119,7 +235,7 @@ class CheckOutPage extends Component {
                 <textarea
                   name="address"
                   onChange={this.handleChange}
-                  value={this.state.form.address}
+                  defaultValue={this.state.form.address}
                   placeholder="Shipping Address..."
                   cols="30"
                   rows="6"
@@ -127,7 +243,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="city">City :</label>
                 <input
                   onChange={this.handleChange}
-                  value={this.state.form.city}
+                  defaultValue={this.state.form.city}
                   name="city"
                   type="text"
                   placeholder="City..."
@@ -136,7 +252,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="state">State:</label>
                 <input
                   onChange={this.handleChange}
-                  value={this.state.form.state}
+                  defaultValue={this.state.form.state}
                   name="state"
                   type="text"
                   placeholder="State..."
@@ -144,7 +260,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="zipCode">Zip-Code:</label>
                 <input
                   onChange={this.handleChange}
-                  value={this.state.form.zipCode}
+                  defaultValue={this.state.form.zipCode}
                   name="zipCode"
                   type="text"
                   placeholder="Zip-code..."
@@ -153,7 +269,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="phone">Phone:</label>
                 <input
                   onChange={this.handleChange}
-                  value={this.state.form.phone}
+                  defaultValue={this.state.form.phone}
                   name="phone"
                   type="text"
                   placeholder="Phone..."
@@ -162,39 +278,71 @@ class CheckOutPage extends Component {
                 <label htmlFor="email">Email:</label>
                 <input
                   onChange={this.handleChange}
-                  value={this.state.form.email}
+                  defaultValue={this.state.form.email}
                   name="email"
                   type="email"
                   placeholder="Email..."
                 />
 
                 <h3>Payment</h3>
-                <h3>Option 1: Credit Card Information</h3>
+                <div className="option-payment">
+                  <button
+                    onClick={this.handlePayment1}
+                    className="btn btn-primary"
+                  >
+                    Option 1
+                  </button>
+                  <button
+                    onClick={this.handlePayment2}
+                    className="btn btn-primary"
+                  >
+                    Option 2
+                  </button>
+                </div>
+                {!this.state.paymentMode ? (
+                  <React.Fragment>
+                    <h3>Option 1: Credit Card Information</h3>
+                    <label htmlFor="cardNameHolder">Card Name Holder:</label>
+                    <input
+                      onChange={this.handleChange}
+                      defaultValue={this.state.form.cardNameHolder}
+                      name="cardNameHolder"
+                      type="text"
+                      placeholder="Card Name Holder..."
+                    />
+                    <label htmlFor="numberCard">Number Card:</label>
+                    <input
+                      onChange={this.handleChange}
+                      defaultValue={this.state.form.numberCard}
+                      name="numberCard"
+                      type="text"
+                      placeholder="Number card..."
+                    />
+                    <label htmlFor="numberExpDate">Expedition Date:</label>
+                    <input
+                      onChange={this.handleChange}
+                      defaultValue={this.state.form.numberExpDate}
+                      name="numberExpDate"
+                      type="text"
+                      placeholder="Expedition Date..."
+                    />
+                  </React.Fragment>
+                ) : null}
 
-                <label htmlFor="cardNameHolder">Card Name Holder:</label>
-                <input
-                  onChange={this.handleChange}
-                  value={this.state.form.cardNameHolder}
-                  name="cardNameHolder"
-                  type="text"
-                  placeholder="Card Name Holder..."
-                />
-                <label htmlFor="numberCard">Number Card:</label>
-                <input
-                  onChange={this.handleChange}
-                  value={this.state.form.numberCard}
-                  name="numberCard"
-                  type="text"
-                  placeholder="Number card..."
-                />
-                <label htmlFor="numberExpDate">Expedition Date:</label>
-                <input
-                  onChange={this.handleChange}
-                  value={this.state.form.numberExpDate}
-                  name="numberExpDate"
-                  type="text"
-                  placeholder="Expedition Date..."
-                />
+                {this.state.paymentMode ? (
+                  <React.Fragment>
+                    <h3>Option 2: Purchase Order, Net 30Days payment Terms.</h3>
+                    <label htmlFor="purchase_order">Purchase order:</label>
+                    <input
+                      disabled={this.paymentMode}
+                      onChange={this.handleChange}
+                      value={this.state.form.purchase_order}
+                      name="purchase_order"
+                      type="text"
+                      placeholder="Purchase order..."
+                    />
+                  </React.Fragment>
+                ) : null}
 
                 <button
                   onClick={this.handleSubmit}
@@ -205,10 +353,19 @@ class CheckOutPage extends Component {
               </div>
               <div className="form-ck">
                 <h3>Ship To</h3>
+                <label>
+                  <input
+                    name="ship_check"
+                    type="checkbox"
+                    onChange={this.handleCheck}
+                    checked={this.state.shipCheck}
+                  />{" "}
+                  Check if same as{" "}
+                </label>
                 <label htmlFor="businessName_ship">Name or Practice:</label>
                 <input
                   onChange={this.handleChange}
-                  value={this.state.form.businessName_ship}
+                  defaultValue={this.state.form.businessName_ship}
                   name="businessName_ship"
                   type="text"
                   placeholder="Businness Name..."
@@ -217,7 +374,7 @@ class CheckOutPage extends Component {
                 <textarea
                   name="address_ship"
                   onChange={this.handleChange}
-                  value={this.state.form.address_ship}
+                  defaultValue={this.state.form.address_ship}
                   placeholder="Shipping Address..."
                   cols="30"
                   rows="6"
@@ -225,7 +382,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="city_ship">City:</label>
                 <input
                   onChange={this.handleChange}
-                  value={this.state.form.city_ship}
+                  defaultValue={this.state.form.city_ship}
                   name="city_ship"
                   type="text"
                   placeholder="City..."
@@ -233,7 +390,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="state_ship">State:</label>
                 <input
                   onChange={this.handleChange}
-                  value={this.state.form.state_ship}
+                  defaultValue={this.state.form.state_ship}
                   name="state_ship"
                   type="text"
                   placeholder="State..."
@@ -241,7 +398,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="zipCode_ship">Zip-Code:</label>
                 <input
                   onChange={this.handleChange}
-                  value={this.state.form.zipCode_ship}
+                  defaultValue={this.state.form.zipCode_ship}
                   name="zipCode_ship"
                   type="text"
                   placeholder="Zip-code..."
@@ -250,7 +407,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="phone_ship">Phone:</label>
                 <input
                   onChange={this.handleChange}
-                  value={this.state.form.phone_ship}
+                  defaultValue={this.state.form.phone_ship}
                   name="phone_ship"
                   type="text"
                   placeholder="Phone..."
@@ -259,7 +416,7 @@ class CheckOutPage extends Component {
                 <label htmlFor="email_ship">Email:</label>
                 <input
                   onChange={this.handleChange}
-                  value={this.state.form.email_ship}
+                  defaultValue={this.state.form.email_ship}
                   name="email_ship"
                   type="email"
                   placeholder="Email..."

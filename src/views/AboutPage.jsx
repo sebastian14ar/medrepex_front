@@ -56,11 +56,6 @@ const AboutPage = () => {
               your needs sets us apart from other Distributors. Please give us a
               try and we think you will agree.
             </p>
-            <p>
-              We believe our VALUE ADDED approach to serving your needs sets us
-              apart from other Distributors. Please give us a try and we think
-              you will agree.
-            </p>
           </section>
         </div>
         <div className="footer-page">

@@ -80,8 +80,7 @@ class ContactPage extends Component {
             <div className="main-container">
               <h2 className="principal-title">Contact Us</h2>
               <section className="text-container-contact">
-                <p>The word Toll is mispelled as Tool</p>
-                <p className="text-special">Tool Free Phone: 877-740-9133</p>
+                <p className="text-special">Toll Free Phone: 877-740-9133</p>
                 <p className="text-special">Fax: 928-445-6267</p>
                 <p className="text-special">E-Mail: Sales@MedRepExpress.com</p>
               </section>
