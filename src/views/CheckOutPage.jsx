@@ -331,7 +331,10 @@ class CheckOutPage extends Component {
 
                 {this.state.paymentMode ? (
                   <React.Fragment>
-                    <h3>Option 2: Purchase Order, Net 30Days payment Terms.</h3>
+                    <h3>
+                      Option 2: Invoice Net 30 Day Payment Terms In the shadow
+                      box
+                    </h3>
                     <label htmlFor="purchase_order">Purchase order:</label>
                     <input
                       disabled={this.paymentMode}

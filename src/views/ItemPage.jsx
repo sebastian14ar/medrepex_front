@@ -6,6 +6,7 @@ import Footer from "../components/menu/Footer";
 import SideMenuProducts from "../components/menu/SideMenuProducts";
 
 import "./styles/ItemPage.css";
+import Alert from "../components/Alert";
 
 import * as storeActions from "../actions/storeActions";
 import storeReducers from "../reducers/storeReducers";
@@ -16,7 +17,8 @@ class ItemPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cant: 1
+      cant: 1,
+      alertIsOpen: false,
     };
   }
 
@@ -26,7 +28,16 @@ class ItemPage extends Component {
 
   handleClick(e, item) {
     this.props.agregar(item, this.state.cant);
+    this.handleOpenAlert();
+    setTimeout(this.handleCloseAlert, 1000);
   }
+  handleOpenAlert = () => {
+    this.setState({ alertIsOpen: true });
+  };
+
+  handleCloseAlert = () => {
+    this.setState({ alertIsOpen: false });
+  };
 
   render() {
     console.log(this.props.location.state.item);
@@ -57,13 +68,13 @@ class ItemPage extends Component {
             <div className="form-item">
               <label htmlFor="">Quantity</label>
               <input
-                onChange={e => this.handleChange(e)}
+                onChange={(e) => this.handleChange(e)}
                 type="number"
                 value={this.state.cant}
                 placeholder="1"
               />
               <button
-                onClick={e =>
+                onClick={(e) =>
                   this.handleClick(e, this.props.location.state.item)
                 }
                 className="btn btn-primary"
@@ -72,6 +83,10 @@ class ItemPage extends Component {
               </button>
             </div>
           </div>
+          <Alert
+            onClose={this.handleCloseAlert}
+            isOpen={this.state.alertIsOpen}
+          />
           <div className="footer-page">
             <Footer />
           </div>
@@ -81,7 +96,7 @@ class ItemPage extends Component {
   }
 }
 
-const mapStateToProps = reducers => {
+const mapStateToProps = (reducers) => {
   return storeReducers;
 };
 

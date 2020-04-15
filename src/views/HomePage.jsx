@@ -11,6 +11,10 @@ import reserch from "../images/research.jpg";
 import logo from "../images/logo2.jpg";
 import "./styles/HomePage.css";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+
+import * as storeActions from "../actions/storeActions";
+import storeReducers from "../reducers/storeReducers";
 
 class HomePage extends Component {
   constructor(props) {
@@ -18,15 +22,15 @@ class HomePage extends Component {
     this.state = {
       modalIsOpen: false,
       text:
-        "Our Website is temporarily closed for Maintenance.  Please call: 877-740-9133 or email: Sales@MedRepExpress.com to place an order or inquiry.  We apologize for the inconvenience."
+        "Our Website is temporarily closed for Maintenance.  Please call: 877-740-9133 or email: Sales@MedRepExpress.com to place an order or inquiry.  We apologize for the inconvenience.",
     };
   }
 
-  handleOpenModal = text => {
+  handleOpenModal = (text) => {
     this.setState({ modalIsOpen: true, text: text });
   };
 
-  handleCloseModal = e => {
+  handleCloseModal = (e) => {
     this.setState({ modalIsOpen: false, text: "" });
   };
 
@@ -37,6 +41,7 @@ class HomePage extends Component {
           <div className="navbar">
             <div className="navbar-container">
               <img src={logo} alt="logo" />
+              {/* <h4>{this.props.storeReducers.storeItems.length}</h4> */}
             </div>
           </div>
           <div className="menu menu-section">
@@ -113,4 +118,8 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+const mapStateToProps = (reducers) => {
+  return storeReducers;
+};
+
+export default connect(mapStateToProps, storeActions)(HomePage);

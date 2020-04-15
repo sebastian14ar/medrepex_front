@@ -3,15 +3,33 @@ import { connect } from "react-redux";
 import shopIcon from "../images/icons/carro-de-la-compra.svg";
 import { Link } from "react-router-dom";
 
+import Alert from "../components/Alert";
+
 import "./styles/ProductTable.css";
 
 import * as storeActions from "../actions/storeActions";
 import storeReducers from "../reducers/storeReducers";
 
 class ProductsTable extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      alertIsOpen: false,
+    };
+  }
   handleClick(e, item) {
     this.props.agregarUno(item);
+    this.handleOpenAlert();
+    setTimeout(this.handleCloseAlert, 1000);
   }
+
+  handleOpenAlert = () => {
+    this.setState({ alertIsOpen: true });
+  };
+
+  handleCloseAlert = () => {
+    this.setState({ alertIsOpen: false });
+  };
 
   render() {
     return (
@@ -51,7 +69,7 @@ class ProductsTable extends Component {
               </tr>
             </thead>
             <tbody>
-              {this.props.items.map(item => {
+              {this.props.items.map((item) => {
                 return (
                   <React.Fragment key={item.code}>
                     <tr>
@@ -60,8 +78,8 @@ class ProductsTable extends Component {
                           to={{
                             pathname: `/detail/${item.code}`,
                             state: {
-                              item: item
-                            }
+                              item: item,
+                            },
                           }}
                         >
                           {item.code}
@@ -79,7 +97,7 @@ class ProductsTable extends Component {
                       <td>${item.price}</td>
                       <td className="table-row-center">
                         <button
-                          onClick={e => this.handleClick(e, item)}
+                          onClick={(e) => this.handleClick(e, item)}
                           className="btn-shop btn-dark text-bolder"
                         >
                           <img
@@ -102,12 +120,16 @@ class ProductsTable extends Component {
             </tbody>
           </table>
         </div>
+        <Alert
+          onClose={this.handleCloseAlert}
+          isOpen={this.state.alertIsOpen}
+        />
       </React.Fragment>
     );
   }
 }
 
-const mapStateToProps = reducers => {
+const mapStateToProps = (reducers) => {
   return storeReducers;
 };
 
