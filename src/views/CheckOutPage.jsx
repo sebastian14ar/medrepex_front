@@ -238,7 +238,7 @@ class CheckOutPage extends Component {
                   defaultValue={this.state.form.address}
                   placeholder="Shipping Address..."
                   cols="30"
-                  rows="6"
+                  rows="3"
                 />
                 <label htmlFor="city">City :</label>
                 <input
@@ -377,7 +377,7 @@ class CheckOutPage extends Component {
                   defaultValue={this.state.form.address_ship}
                   placeholder="Shipping Address..."
                   cols="30"
-                  rows="6"
+                  rows="3"
                 />
                 <label htmlFor="city_ship">City:</label>
                 <input
