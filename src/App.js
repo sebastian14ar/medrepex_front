@@ -18,6 +18,7 @@ import Cardiac from "./views/CardiacPage";
 import Steel from "./views/SteelPage";
 import Skin from "./views/SkinPage";
 import Terms from "./views/TermsPage";
+import Search from "./views/SearchPage";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route exact path="/steel" component={Steel} />
         <Route exact path="/skin" component={Skin} />
         <Route exact path="/terms-conditions" component={Terms} />
+        <Route exact path="/search" component={Search} />
         <Route
           exact
           path="/store/:category/:subtype/:type"

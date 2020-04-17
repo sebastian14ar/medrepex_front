@@ -4,7 +4,7 @@ import "./styles/StoreMenuTitle.css";
 
 import stickerSamples from "../../images/menufree.gif";
 
-const StoreMenuTitle = props => {
+const StoreMenuTitle = (props) => {
   return (
     <React.Fragment>
       <div className="store-title-menu-container">
@@ -16,7 +16,9 @@ const StoreMenuTitle = props => {
           <Link to="/cart">
             <button className="btn-gn btn-dark text-bolder">CART</button>
           </Link>
-          <button className="btn-gn btn-dark text-bolder">SEARCH</button>
+          <Link to="/search">
+            <button className="btn-gn btn-dark text-bolder">SEARCH</button>
+          </Link>
         </div>
       </div>
     </React.Fragment>

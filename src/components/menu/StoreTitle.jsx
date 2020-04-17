@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./styles/StoreTitle.css";
 
-const StoreTitle = props => {
+const StoreTitle = (props) => {
   return (
     <React.Fragment>
       <div className="store-title-container">
@@ -14,7 +14,9 @@ const StoreTitle = props => {
           <Link to="/cart">
             <button className="btn-gn btn-dark text-bolder">CART</button>
           </Link>
-          <button className="btn-gn btn-dark text-bolder">SEARCH</button>
+          <Link to="/search">
+            <button className="btn-gn btn-dark text-bolder">SEARCH</button>
+          </Link>
         </div>
         <h4>
           SHOP by selecting a Product Category below for EASY ON-LINE ORDERING

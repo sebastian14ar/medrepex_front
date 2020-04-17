@@ -52,25 +52,29 @@ class CheckOutPage extends Component {
   };
 
   handleCheck = () => {
+    // let newValues = this.state.form.businessName ;
+    const clones = JSON.parse(JSON.stringify(this.state.form));
     this.setState({
       shipCheck: !this.state.shipCheck,
     });
-    console.log(!this.state.shipCheck);
+    // console.log(!this.state.shipCheck);
 
     !this.state.shipCheck
       ? this.setState({
           form: {
-            businessName_ship: this.state.form.businessName,
-            address_ship: this.state.form.address,
-            city_ship: this.state.form.city,
-            state_ship: this.state.form.state,
-            zipCode_ship: this.state.form.zipCode,
-            phone_ship: this.state.form.phone,
-            email_ship: this.state.form.email,
+            ...this.state.form,
+            businessName_ship: clones.businessName,
+            address_ship: clones.address,
+            city_ship: clones.city,
+            state_ship: clones.state,
+            zipCode_ship: clones.zipCode,
+            phone_ship: clones.phone,
+            email_ship: clones.email,
           },
         })
       : this.setState({
           form: {
+            ...this.state.form,
             businessName_ship: "",
             address_ship: "",
             city_ship: "",
@@ -87,6 +91,7 @@ class CheckOutPage extends Component {
     });
     this.setState({
       form: {
+        ...this.state.form,
         purchase_order: "",
       },
     });
@@ -97,6 +102,7 @@ class CheckOutPage extends Component {
     });
     this.setState({
       form: {
+        ...this.state.form,
         numberCard: "",
         cardNameHolder: "",
         numberExpDate: "",
