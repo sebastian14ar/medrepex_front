@@ -38,3 +38,18 @@
   height: 0.9rem;
   margin-right: 0.2rem;
 }
+.header-section {
+  margin-bottom: 1rem;
+}
+.header-section-title h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.header-section-content {
+  display: flex;
+}
+.header-section-content img {
+  width: 200px;
+  height: auto;
+  object-fit: scale-down;
+}

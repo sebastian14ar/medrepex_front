@@ -36,6 +36,19 @@ class SkinTable extends Component {
         {this.props.items.map((table) => {
           return (
             <div key={table.id}>
+              <div className="header-section">
+                <div className="header-section-title">
+                  <h2>{table.title}</h2>
+                </div>
+                <div className="header-section-content">
+                  <img src={table.imageSection} alt={table.title} />
+                  <ul>
+                    {table.list.map((sub) => {
+                      return <li key={sub.subtitle}>{sub.subtitle}</li>;
+                    })}
+                  </ul>
+                </div>
+              </div>
               <table className="custom-width-100 table-products">
                 <thead className="table-head">
                   <tr>

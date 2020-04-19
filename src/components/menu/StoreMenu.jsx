@@ -27,7 +27,7 @@ const categorys = [
       },
       {
         id: "4",
-        type: "Monofilament (Poliglecaprone 25)",
+        type: "Monocryl (Poliglecaprone 25)",
         subtype: "suturesmonoswift",
         path: "/store/sutures/suturesmonoswift",
       },

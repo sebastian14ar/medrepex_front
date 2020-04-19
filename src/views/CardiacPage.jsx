@@ -8,6 +8,13 @@ import StoreMenuTitle from "../components/menu/StoreMenuTitle";
 import "./styles/ProductsPage.css";
 import logo from "../images/logo2.jpg";
 
+// images
+import LeftSilkBlack from "../images/store/cardiac/leftsilkblack.gif";
+import LeftBluePoly from "../images/store/cardiac/leftbluepoly.gif";
+import PolyBond from "../images/store/cardiac/polybond.gif";
+import LeftVisorb from "../images/store/cardiac/leftvisorb.gif";
+import SteelSut from "../images/store/cardiac/steelsut.gif";
+
 const medicalItems = [
   {
     type: "cardiac",
@@ -15,1326 +22,1348 @@ const medicalItems = [
     subtype: "suturescardiac",
     items: [
       {
-        code: "63S",
+        id: "1",
+        title: `Silk Suture is a Braided Non-absorbable, sterile surgical suture composed of an organic protein called Fibroin. This protein is derived from the domesticated species Bombyx mori (B mori) of the family Bombycidae.`,
+        imageSection: LeftSilkBlack,
+        list: [
+          {
+            subtitle: `Smooth flow through tissue while maintaining optimal knot security`,
+          },
+        ],
+        codes: [
+          {
+            code: "63S",
+            ethicon_code: "SA63H",
+            description: "Silk Black Braided",
+            size: "4/0",
+            needle: "NONE",
+            length: "17-18 inch",
+            price: 84.8,
+          },
+
+          {
+            code: "65S",
+            ethicon_code: "",
+            description: "Silk Black Braided",
+            size: "2/0",
+            needle: "NONE",
+            length: "17-18 inch",
+            price: 84.8,
+          },
+
+          {
+            code: "66S",
+            ethicon_code: "SA66G",
+            description: "Silk Black Braided",
+            size: "0",
+            needle: "NONE",
+            length: "17-18 inch",
+            price: 84.8,
+          },
+
+          {
+            code: "85S",
+            ethicon_code: "",
+            description: "Silk Black Braided",
+            size: "2/0",
+            needle: "NONE",
+            length: "10-30 inch",
+            price: 84.8,
+          },
+
+          {
+            code: "303S",
+            ethicon_code: "A303H",
+            description: "Silk Black Braided",
+            size: "4/0",
+            needle: "NONE",
+            length: "12-30 inch",
+            price: 84.8,
+          },
+
+          {
+            code: "304S",
+            ethicon_code: "A304H",
+            description: "Silk Black Braided",
+            size: "3/0",
+            needle: "NONE",
+            length: "12-30 inch",
+            price: 84.8,
+          },
+
+          {
+            code: "305S",
+            ethicon_code: "A305H",
+            description: "Silk Black Braided",
+            size: "2/0",
+            needle: "NONE",
+            length: "12-30 inch",
+            price: 84.8,
+          },
+
+          {
+            code: "306S",
+            ethicon_code: "A306H",
+            description: "Silk Black Braided",
+            size: "0",
+            needle: "NONE",
+            length: "6-30 inch",
+            price: 84.8,
+          },
+
+          {
+            code: "307S",
+            ethicon_code: "A307H",
+            description: "Silk Black Braided",
+            size: "1",
+            needle: "NONE",
+            length: "6-30 inch",
+            price: 84.8,
+          },
+        ],
+      },
+      {
+        id: "2",
+        title: `"Polypro" Polypropylene is a Monofilament Non-absorbable, sterile surgical suture composed of a strand of polypropylene, a synthetic linear Polyolefin.`,
+        imageSection: LeftBluePoly,
+        list: [
+          { subtitle: `Uniform diameter of the suture` },
+          { subtitle: `Maximum flexibility of the strand` },
+          { subtitle: `Excellent security with snug and flattened knots` },
+          { subtitle: `Minimal memory and reduced fraying` },
+          { subtitle: `Consistent knot strength` },
+        ],
+        codes: [
+          {
+            code: "8521P",
 
-        ethicon_code: "SA63H",
+            ethicon_code: "8521H",
 
-        description: "Silk Black Braided",
+            description: "Polypro Blue Monofilament",
 
-        size: "4/0",
+            size: "4/0",
 
-        needle: "NONE",
+            needle: "NSH, NSH",
 
-        length: "17-18 inch",
+            length: "36 inch",
 
-        price: 84.8
-      },
-
-      {
-        code: "65S",
-
-        ethicon_code: "",
-
-        description: "Silk Black Braided",
-
-        size: "2/0",
-
-        needle: "NONE",
-
-        length: "17-18 inch",
-
-        price: 84.8
-      },
-
-      {
-        code: "66S",
-
-        ethicon_code: "SA66G",
-
-        description: "Silk Black Braided",
-
-        size: "0",
-
-        needle: "NONE",
-
-        length: "17-18 inch",
-
-        price: 84.8
-      },
-
-      {
-        code: "85S",
-
-        ethicon_code: "",
-
-        description: "Silk Black Braided",
-
-        size: "2/0",
-
-        needle: "NONE",
-
-        length: "10-30 inch",
-
-        price: 84.8
-      },
-
-      {
-        code: "303S",
-
-        ethicon_code: "A303H",
-
-        description: "Silk Black Braided",
-
-        size: "4/0",
-
-        needle: "NONE",
-
-        length: "12-30 inch",
-
-        price: 84.8
-      },
-
-      {
-        code: "304S",
-
-        ethicon_code: "A304H",
-
-        description: "Silk Black Braided",
-
-        size: "3/0",
-
-        needle: "NONE",
-
-        length: "12-30 inch",
-
-        price: 84.8
-      },
-
-      {
-        code: "305S",
-
-        ethicon_code: "A305H",
-
-        description: "Silk Black Braided",
-
-        size: "2/0",
-
-        needle: "NONE",
-
-        length: "12-30 inch",
-
-        price: 84.8
-      },
-
-      {
-        code: "306S",
-
-        ethicon_code: "A306H",
-
-        description: "Silk Black Braided",
-
-        size: "0",
-
-        needle: "NONE",
-
-        length: "6-30 inch",
-
-        price: 84.8
-      },
-
-      {
-        code: "307S",
-
-        ethicon_code: "A307H",
-
-        description: "Silk Black Braided",
-
-        size: "1",
-
-        needle: "NONE",
+            price: 103.9,
+          },
 
-        length: "6-30 inch",
+          {
+            code: "8522P",
 
-        price: 84.8
-      },
-
-      {
-        code: "8521P",
+            ethicon_code: "8522H",
 
-        ethicon_code: "8521H",
+            description: "Polypro Blue Monofilament",
 
-        description: "Polypro Blue Monofilament",
+            size: "3/0",
 
-        size: "4/0",
+            needle: "NSH, NSH",
 
-        needle: "NSH, NSH",
+            length: "36 inch",
 
-        length: "36 inch",
+            price: 103.9,
+          },
 
-        price: 103.9
-      },
-
-      {
-        code: "8522P",
+          {
+            code: "8523P",
 
-        ethicon_code: "8522H",
+            ethicon_code: "8523H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "3/0",
+            size: "2/0",
 
-        needle: "NSH, NSH",
+            needle: "NSH, NSH",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 103.9
-      },
+            price: 103.9,
+          },
 
-      {
-        code: "8523P",
+          {
+            code: "8524P",
 
-        ethicon_code: "8523H",
+            ethicon_code: "N/A",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "2/0",
+            size: "4/0",
 
-        needle: "NSH, NSH",
+            needle: "NSH-1",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 103.9
-      },
+            price: 103.9,
+          },
 
-      {
-        code: "8524P",
+          {
+            code: "8525P",
 
-        ethicon_code: "N/A",
+            ethicon_code: "",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "4/0",
+            size: "4/0",
 
-        needle: "NSH-1",
+            needle: "SH-1, SH-1",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 103.9
-      },
+            price: 99.9,
+          },
 
-      {
-        code: "8525P",
+          {
+            code: "8526P",
 
-        ethicon_code: "",
+            ethicon_code: "",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "4/0",
+            size: "4/0",
 
-        needle: "SH-1, SH-1",
+            needle: "SH-1, SH-1",
 
-        length: "36 inch",
+            length: "30 inch",
 
-        price: 99.9
-      },
+            price: 148.0,
+          },
 
-      {
-        code: "8526P",
+          {
+            code: "8533P",
 
-        ethicon_code: "",
+            ethicon_code: "",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "4/0",
+            size: "2/0",
 
-        needle: "SH-1, SH-1",
+            needle: "SH, SH",
 
-        length: "30 inch",
+            length: "48 inch",
 
-        price: 148.0
-      },
+            price: 148.0,
+          },
 
-      {
-        code: "8533P",
+          {
+            code: "8534P",
 
-        ethicon_code: "",
+            ethicon_code: "",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "2/0",
+            size: "3/0",
 
-        needle: "SH, SH",
+            needle: "SH, SH",
 
-        length: "48 inch",
+            length: "48 inch",
 
-        price: 148.0
-      },
+            price: 103.9,
+          },
 
-      {
-        code: "8534P",
+          {
+            code: "8556P",
 
-        ethicon_code: "",
+            ethicon_code: "8556H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "3/0",
+            size: "5/0",
 
-        needle: "SH, SH",
+            needle: "NRB-1, NRB-1",
 
-        length: "48 inch",
+            length: "36 inch",
 
-        price: 103.9
-      },
+            price: 109.8,
+          },
 
-      {
-        code: "8556P",
+          {
+            code: "8557P",
 
-        ethicon_code: "8556H",
+            ethicon_code: "8557H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "5/0",
+            size: "4/0",
 
-        needle: "NRB-1, NRB-1",
+            needle: "NRB-1, NRB-1",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 109.8
-      },
+            price: 113.9,
+          },
 
-      {
-        code: "8557P",
+          {
+            code: "8558P",
 
-        ethicon_code: "8557H",
+            ethicon_code: "",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "4/0",
+            size: "3/0",
 
-        needle: "NRB-1, NRB-1",
+            needle: "NSH, NSH",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 113.9
-      },
+            price: 113.9,
+          },
 
-      {
-        code: "8558P",
+          {
+            code: "5692P",
 
-        ethicon_code: "",
+            ethicon_code: "N/A",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "3/0",
+            size: "5/0",
 
-        needle: "NSH, NSH",
+            needle: "NSH-1, NSH-1",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 113.9
-      },
+            price: 99.9,
+          },
 
-      {
-        code: "5692P",
+          {
+            code: "8581P",
 
-        ethicon_code: "N/A",
+            ethicon_code: "8581H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "5/0",
+            size: "4/0",
 
-        needle: "NSH-1, NSH-1",
+            needle: "NBB, NBB",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 99.9
-      },
+            price: 148.0,
+          },
 
-      {
-        code: "8581P",
+          {
+            code: "8623P",
 
-        ethicon_code: "8581H",
+            ethicon_code: "8623H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "4/0",
+            size: "2/0",
 
-        needle: "NBB, NBB",
+            needle: "NKS",
 
-        length: "36 inch",
+            length: "30 inch",
 
-        price: 148.0
-      },
+            price: 99.9,
+          },
 
-      {
-        code: "8623P",
+          {
+            code: "8702P",
 
-        ethicon_code: "8623H",
+            ethicon_code: "8702H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "2/0",
+            size: "7/0",
 
-        needle: "NKS",
+            needle: "NBV-1, NBV-1",
 
-        length: "30 inch",
+            length: "24 inch",
 
-        price: 99.9
-      },
+            price: 218.0,
+          },
 
-      {
-        code: "8702P",
+          {
+            code: "8703P",
 
-        ethicon_code: "8702H",
+            ethicon_code: "8703H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "7/0",
+            size: "7/0",
 
-        needle: "NBV-1, NBV-1",
+            needle: "NBV-1, NBV-1",
 
-        length: "24 inch",
+            length: "30 inch",
 
-        price: 218.0
-      },
+            price: 218.0,
+          },
 
-      {
-        code: "8703P",
+          {
+            code: "8704P",
 
-        ethicon_code: "8703H",
+            ethicon_code: "8704H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "7/0",
+            size: "7/0",
 
-        needle: "NBV-1, NBV-1",
+            needle: "NCC, NCC",
 
-        length: "30 inch",
+            length: "24 inch",
 
-        price: 218.0
-      },
+            price: 244.6,
+          },
 
-      {
-        code: "8704P",
+          {
+            code: "8706P",
 
-        ethicon_code: "8704H",
+            ethicon_code: "8706H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "7/0",
+            size: "6/0",
 
-        needle: "NCC, NCC",
+            needle: "NC-1, NC-1",
 
-        length: "24 inch",
+            length: "30 inch",
 
-        price: 244.6
-      },
+            price: 188.0,
+          },
 
-      {
-        code: "8706P",
+          {
+            code: "8707P",
 
-        ethicon_code: "8706H",
+            ethicon_code: "8707H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "6/0",
+            size: "6/0",
 
-        needle: "NC-1, NC-1",
+            needle: "NCC-1, NCC-1",
 
-        length: "30 inch",
+            length: "30 inch",
 
-        price: 188.0
-      },
+            price: 288.0,
+          },
 
-      {
-        code: "8707P",
+          {
+            code: "8709P",
 
-        ethicon_code: "8707H",
+            ethicon_code: "8709H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "6/0",
+            size: "6/0",
 
-        needle: "NCC-1, NCC-1",
+            needle: "NBV-1, NBV-1",
 
-        length: "30 inch",
+            length: "30 inch",
 
-        price: 288.0
-      },
+            price: 178.0,
+          },
 
-      {
-        code: "8709P",
+          {
+            code: "8710P",
 
-        ethicon_code: "8709H",
+            ethicon_code: "8710H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "6/0",
+            size: "5/0",
 
-        needle: "NBV-1, NBV-1",
+            needle: "NRB-2, NRB-2",
 
-        length: "30 inch",
+            length: "30 inch",
 
-        price: 178.0
-      },
+            price: 99.9,
+          },
 
-      {
-        code: "8710P",
+          {
+            code: "8711P",
 
-        ethicon_code: "8710H",
+            ethicon_code: "8711H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "5/0",
+            size: "6/0",
 
-        needle: "NRB-2, NRB-2",
+            needle: "NRB-2, NRB-2",
 
-        length: "30 inch",
+            length: "30 inch",
 
-        price: 99.9
-      },
+            price: 99.9,
+          },
 
-      {
-        code: "8711P",
+          {
+            code: "8720P",
 
-        ethicon_code: "8711H",
+            ethicon_code: "8720H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "6/0",
+            size: "5/0",
 
-        needle: "NRB-2, NRB-2",
+            needle: "NC-1, NC-1",
 
-        length: "30 inch",
+            length: "36 inch",
 
-        price: 99.9
-      },
+            price: 129.5,
+          },
 
-      {
-        code: "8720P",
+          {
+            code: "8721P",
 
-        ethicon_code: "8720H",
+            ethicon_code: "8721H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "5/0",
+            size: "5/0",
 
-        needle: "NC-1, NC-1",
+            needle: "NCC-1, NCC-1",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 129.5
-      },
+            price: 163.0,
+          },
 
-      {
-        code: "8721P",
+          {
+            code: "8727P",
 
-        ethicon_code: "8721H",
+            ethicon_code: "",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "5/0",
+            size: "7/0",
 
-        needle: "NCC-1, NCC-1",
+            needle: "C-1, C-1",
 
-        length: "36 inch",
+            length: "24 inch",
 
-        price: 163.0
-      },
+            price: 143.0,
+          },
 
-      {
-        code: "8727P",
+          {
+            code: "8730P",
 
-        ethicon_code: "",
+            ethicon_code: "8730H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "7/0",
+            size: "8/0",
 
-        needle: "C-1, C-1",
+            needle: "NBV130-5, NBV130-5",
 
-        length: "24 inch",
+            length: "18 inch",
 
-        price: 143.0
-      },
+            price: 394.0,
+          },
 
-      {
-        code: "8730P",
+          {
+            code: "8731P",
 
-        ethicon_code: "8730H",
+            ethicon_code: "",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "8/0",
+            size: "7/0",
 
-        needle: "NBV130-5, NBV130-5",
+            needle: "NBV130-5, NBV130-5",
 
-        length: "18 inch",
+            length: "18 inch",
 
-        price: 394.0
-      },
+            price: 615.0,
+          },
 
-      {
-        code: "8731P",
+          {
+            code: "8732P",
 
-        ethicon_code: "",
+            ethicon_code: "8732H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "7/0",
+            size: "8/0",
 
-        needle: "NBV130-5, NBV130-5",
+            needle: "NBV130-5, NBV130-5",
 
-        length: "18 inch",
+            length: "24 inch",
 
-        price: 615.0
-      },
+            price: 461.0,
+          },
 
-      {
-        code: "8732P",
+          {
+            code: "8735P",
 
-        ethicon_code: "8732H",
+            ethicon_code: "8735H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "8/0",
+            size: "7/0",
 
-        needle: "NBV130-5, NBV130-5",
+            needle: "NBV175-6, NBV175-6",
 
-        length: "24 inch",
+            length: "24 inch",
 
-        price: 461.0
-      },
+            price: 461.0,
+          },
 
-      {
-        code: "8735P",
+          {
+            code: "8807P",
 
-        ethicon_code: "8735H",
+            ethicon_code: "",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "7/0",
+            size: "6/0",
 
-        needle: "NBV175-6, NBV175-6",
+            needle: "NCC, NCC",
 
-        length: "24 inch",
+            length: "24 inch",
 
-        price: 461.0
-      },
+            price: 294.0,
+          },
 
-      {
-        code: "8807P",
+          {
+            code: "8831P",
 
-        ethicon_code: "",
+            ethicon_code: "8831H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "6/0",
+            size: "4/0",
 
-        needle: "NCC, NCC",
+            needle: "NSH",
 
-        length: "24 inch",
+            length: "30 inch",
 
-        price: 294.0
-      },
+            price: 87.9,
+          },
 
-      {
-        code: "8831P",
+          {
+            code: "8832P",
 
-        ethicon_code: "8831H",
+            ethicon_code: "8832H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "4/0",
+            size: "3/0",
 
-        needle: "NSH",
+            needle: "NSH",
 
-        length: "30 inch",
+            length: "30 inch",
 
-        price: 87.9
-      },
+            price: 69.7,
+          },
 
-      {
-        code: "8832P",
+          {
+            code: "8833P",
 
-        ethicon_code: "8832H",
+            ethicon_code: "8833H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "3/0",
+            size: "2/0",
 
-        needle: "NSH",
+            needle: "NSH",
 
-        length: "30 inch",
+            length: "30 inch",
 
-        price: 69.7
-      },
+            price: 69.7,
+          },
 
-      {
-        code: "8833P",
+          {
+            code: "8840P",
 
-        ethicon_code: "8833H",
+            ethicon_code: "",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "2/0",
+            size: "2/0",
 
-        needle: "NSH",
+            needle: "SH",
 
-        length: "30 inch",
+            length: "60 inch",
 
-        price: 69.7
-      },
+            price: 138.0,
+          },
 
-      {
-        code: "8840P",
+          {
+            code: "8843P",
 
-        ethicon_code: "",
+            ethicon_code: "8843H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "2/0",
+            size: "2/0",
 
-        needle: "SH",
+            needle: "NMH, NMH",
 
-        length: "60 inch",
+            length: "36 inch",
 
-        price: 138.0
-      },
+            price: 87.9,
+          },
 
-      {
-        code: "8843P",
+          {
+            code: "8870P",
 
-        ethicon_code: "8843H",
+            ethicon_code: "8870H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "2/0",
+            size: "5/0",
 
-        needle: "NMH, NMH",
+            needle: "NRB-1",
 
-        length: "36 inch",
+            length: "30 inch",
 
-        price: 87.9
-      },
+            price: 69.9,
+          },
 
-      {
-        code: "8870P",
+          {
+            code: "8871P",
 
-        ethicon_code: "8870H",
+            ethicon_code: "8871H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "5/0",
+            size: "4/0",
 
-        needle: "NRB-1",
+            needle: "NRB-1",
 
-        length: "30 inch",
+            length: "30 inch",
 
-        price: 69.9
-      },
+            price: 57.7,
+          },
 
-      {
-        code: "8871P",
+          {
+            code: "8880P",
 
-        ethicon_code: "8871H",
+            ethicon_code: "",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "4/0",
+            size: "7/0",
 
-        needle: "NRB-1",
+            needle: "NC-1, NC-1",
 
-        length: "30 inch",
+            length: "18 inch",
 
-        price: 57.7
-      },
+            price: 99.8,
+          },
 
-      {
-        code: "8880P",
+          {
+            code: "8934P",
 
-        ethicon_code: "",
+            ethicon_code: "8934H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "7/0",
+            size: "5/0",
 
-        needle: "NC-1, NC-1",
+            needle: "NV-5, NV-5",
 
-        length: "18 inch",
+            length: "36 inch",
 
-        price: 99.8
-      },
+            price: 163.5,
+          },
 
-      {
-        code: "8934P",
+          {
+            code: "8935P",
 
-        ethicon_code: "8934H",
+            ethicon_code: "8935H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "5/0",
+            size: "4/0",
 
-        needle: "NV-5, NV-5",
+            needle: "NV-5, NV-5",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 163.5
-      },
+            price: 135.0,
+          },
 
-      {
-        code: "8935P",
+          {
+            code: "8974P",
 
-        ethicon_code: "8935H",
+            ethicon_code: "",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "4/0",
+            size: "5/0",
 
-        needle: "NV-5, NV-5",
+            needle: "V-5, V-5",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 135.0
-      },
+            price: 135.0,
+          },
 
-      {
-        code: "8974P",
+          {
+            code: "8975P",
 
-        ethicon_code: "",
+            ethicon_code: "8975H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "5/0",
+            size: "4/0",
 
-        needle: "V-5, V-5",
+            needle: "NV-7, NV-7",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 135.0
-      },
+            price: 135.0,
+          },
 
-      {
-        code: "8975P",
+          {
+            code: "8976P",
 
-        ethicon_code: "8975H",
+            ethicon_code: "8976H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "4/0",
+            size: "3/0",
 
-        needle: "NV-7, NV-7",
+            needle: "NV-7, NV-7",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 135.0
-      },
+            price: 135.0,
+          },
 
-      {
-        code: "8976P",
+          {
+            code: "8977P",
 
-        ethicon_code: "8976H",
+            ethicon_code: "8977H",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polypro Blue Monofilament",
 
-        size: "3/0",
+            size: "2/0",
 
-        needle: "NV-7, NV-7",
+            needle: "NV-7, NV-7",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 135.0
+            price: 135.0,
+          },
+        ],
       },
-
       {
-        code: "8977P",
+        id: "3",
+        title: `"Polybond" Suture is a Non-absorbable Braided Polyester sterile surgical suture, composed of Polyethylene Terepthalate.`,
+        imageSection: PolyBond,
+        list: [
+          {
+            subtitle: `High tensile strength, both linear and knotted, thus giving`,
+          },
+          { subtitle: `Maximum flexibility of the strand` },
+          {
+            subtitle: `Maximum security in approximation of tissues under stress conditions`,
+          },
+          {
+            subtitle: `Permanent support (tensile strength is retained indefinitely)`,
+          },
+          { subtitle: `Maximum security with prosthetic implants` },
+          {
+            subtitle: `Smooth flow through tissue while maintaining optimal knot security.`,
+          },
+        ],
+        codes: [
+          {
+            code: "CP43A",
 
-        ethicon_code: "8977H",
+            ethicon_code: "SXX43",
 
-        description: "Polypro Blue Monofilament",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "2/0",
+            size: "2/0",
 
-        needle: "NV-7, NV-7",
+            needle: "NRB-1, NRB-1",
 
-        length: "36 inch",
+            length: "5-30 inch",
 
-        price: 135.0
-      },
+            price: 750.0,
+          },
 
-      {
-        code: "CP43A",
+          {
+            code: "CP54A",
 
-        ethicon_code: "SXX43",
+            ethicon_code: "SXX54",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "2/0",
+            size: "2/0",
 
-        needle: "NRB-1, NRB-1",
+            needle: "NV-5, NV-5",
 
-        length: "5-30 inch",
+            length: "5-30 inch",
 
-        price: 750.0
-      },
+            price: 1020.0,
+          },
 
-      {
-        code: "CP54A",
+          {
+            code: "CP58SA",
 
-        ethicon_code: "SXX54",
+            ethicon_code: "N/A",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "2/0",
+            size: "3/0",
 
-        needle: "NV-5, NV-5",
+            needle: "NBB, NBB",
 
-        length: "5-30 inch",
+            length: "30 inch",
 
-        price: 1020.0
-      },
+            price: 93.0,
+          },
 
-      {
-        code: "CP58SA",
+          {
+            code: "CP77A",
 
-        ethicon_code: "N/A",
+            ethicon_code: "PXX77",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "3/0",
+            size: "2/0",
 
-        needle: "NBB, NBB",
+            needle: "NV-7, NV-7",
 
-        length: "30 inch",
+            length: "5-30 inch",
 
-        price: 93.0
-      },
+            price: 1020.0,
+          },
 
-      {
-        code: "CP77A",
+          {
+            code: "CP523A",
 
-        ethicon_code: "PXX77",
+            ethicon_code: "X523H",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "2/0",
+            size: "2/0",
 
-        needle: "NV-7, NV-7",
+            needle: "NSH, NSH",
 
-        length: "5-30 inch",
+            length: "36 inch",
 
-        price: 1020.0
-      },
+            price: 90.0,
+          },
 
-      {
-        code: "CP523A",
+          {
+            code: "CP553A",
+            ethicon_code: "",
 
-        ethicon_code: "X523H",
+            description: "Polybond Braided Polyester Coated",
 
-        description: "Polybond Braided Polyester Coated",
+            size: "2/0",
 
-        size: "2/0",
+            needle: "NRB-1, NRB-1",
 
-        needle: "NSH, NSH",
+            length: "4-30 inch",
 
-        length: "36 inch",
+            price: 240.0,
+          },
 
-        price: 90.0
-      },
+          {
+            code: "CP557A",
 
-      {
-        code: "CP553A",
-        ethicon_code: "",
+            ethicon_code: "X557H",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "2/0",
+            size: "4/0",
 
-        needle: "NRB-1, NRB-1",
+            needle: "NRB-1, NRB-1",
 
-        length: "4-30 inch",
+            length: "36 inch",
 
-        price: 240.0
-      },
+            price: 115.0,
+          },
 
-      {
-        code: "CP557A",
+          {
+            code: "CP558A",
 
-        ethicon_code: "X557H",
+            ethicon_code: "X558H",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "4/0",
+            size: "3/0",
 
-        needle: "NRB-1, NRB-1",
+            needle: "NRB-1, NRB-1",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 115.0
-      },
+            price: 103.0,
+          },
 
-      {
-        code: "CP558A",
+          {
+            code: "CP563A",
 
-        ethicon_code: "X558H",
+            ethicon_code: "X563H",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "3/0",
+            size: "2/0",
 
-        needle: "NRB-1, NRB-1",
+            needle: "NSH, NSH",
 
-        length: "36 inch",
+            length: "30 inch",
 
-        price: 103.0
-      },
+            price: 99.9,
+          },
 
-      {
-        code: "CP563A",
+          {
+            code: "CP588A",
 
-        ethicon_code: "X563H",
+            ethicon_code: "X588H",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "2/0",
+            size: "3/0",
 
-        needle: "NSH, NSH",
+            needle: "NBB, NBB",
 
-        length: "30 inch",
+            length: "30 inch",
 
-        price: 99.9
-      },
+            price: 103.0,
+          },
 
-      {
-        code: "CP588A",
+          {
+            code: "CP664A",
 
-        ethicon_code: "X588H",
+            ethicon_code: "",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "3/0",
+            size: "2/0",
 
-        needle: "NBB, NBB",
+            needle: "NSH",
 
-        length: "30 inch",
+            length: "36 inch",
 
-        price: 103.0
-      },
+            price: 69.9,
+          },
 
-      {
-        code: "CP664A",
+          {
+            code: "CP761A",
 
-        ethicon_code: "",
+            ethicon_code: "X761H",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "2/0",
+            size: "4/0",
 
-        needle: "NSH",
+            needle: "NSH-1, NSH-1",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 69.9
-      },
+            price: 103.0,
+          },
 
-      {
-        code: "CP761A",
+          {
+            code: "CP762A",
 
-        ethicon_code: "X761H",
+            ethicon_code: "X762H",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "4/0",
+            size: "3/0",
 
-        needle: "NSH-1, NSH-1",
+            needle: "NSH-1, NSH-1",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 103.0
-      },
+            price: 99.9,
+          },
 
-      {
-        code: "CP762A",
+          {
+            code: "CP763A",
 
-        ethicon_code: "X762H",
+            ethicon_code: "X763H",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "3/0",
+            size: "2/0",
 
-        needle: "NSH-1, NSH-1",
+            needle: "NSH-1, NSH-1",
 
-        length: "36 inch",
+            length: "36 inch",
 
-        price: 99.9
-      },
+            price: 99.9,
+          },
 
-      {
-        code: "CP763A",
+          {
+            code: "CP683A",
 
-        ethicon_code: "X763H",
+            ethicon_code: "X683G",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "2/0",
+            size: "4/0",
 
-        needle: "NSH-1, NSH-1",
+            needle: "NFS-2",
 
-        length: "36 inch",
+            length: "18 inch",
 
-        price: 99.9
-      },
+            price: 69.9,
+          },
 
-      {
-        code: "CP683A",
+          {
+            code: "CP833A",
 
-        ethicon_code: "X683G",
+            ethicon_code: "X833H",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "4/0",
+            size: "2/0",
 
-        needle: "NFS-2",
+            needle: "NSH",
 
-        length: "18 inch",
+            length: "30 inch",
 
-        price: 69.9
-      },
+            price: 69.9,
+          },
 
-      {
-        code: "CP833A",
+          {
+            code: "CP976A",
 
-        ethicon_code: "X833H",
+            ethicon_code: "X976H",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "2/0",
+            size: "3/0",
 
-        needle: "NSH",
+            needle: "NV-7, NV-7",
 
-        length: "30 inch",
+            length: "30 inch",
 
-        price: 69.9
-      },
+            price: 123.0,
+          },
 
-      {
-        code: "CP976A",
+          {
+            code: "CP977A",
 
-        ethicon_code: "X976H",
+            ethicon_code: "X977H",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "3/0",
+            size: "2/0",
 
-        needle: "NV-7, NV-7",
+            needle: "NV-7, NV-7",
 
-        length: "30 inch",
+            length: "30 inch",
 
-        price: 123.0
-      },
+            price: 113.0,
+          },
 
-      {
-        code: "CP977A",
+          {
+            code: "CP10X42A",
 
-        ethicon_code: "X977H",
+            ethicon_code: "10X42",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "2/0",
+            size: "2/0",
 
-        needle: "NV-7, NV-7",
+            needle: "NRB-1, NRB-1",
 
-        length: "30 inch",
+            length: "5-30 inch",
 
-        price: 113.0
-      },
+            price: 540.0,
+          },
 
-      {
-        code: "CP10X42A",
+          {
+            code: "CP10X52A",
 
-        ethicon_code: "10X42",
+            ethicon_code: "10X42",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "2/0",
+            size: "2/0",
 
-        needle: "NRB-1, NRB-1",
+            needle: "NV-5, NV-5",
 
-        length: "5-30 inch",
+            length: "5-30 inch",
 
-        price: 540.0
-      },
+            price: 684.0,
+          },
 
-      {
-        code: "CP10X52A",
+          {
+            code: "CP10X66A",
 
-        ethicon_code: "10X42",
+            ethicon_code: "10X66",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "2/0",
+            size: "2/0",
 
-        needle: "NV-5, NV-5",
+            needle: "NV-7, NV-7",
 
-        length: "5-30 inch",
+            length: "5-36 inch",
 
-        price: 684.0
-      },
+            price: 684.0,
+          },
 
-      {
-        code: "CP10X66A",
+          {
+            code: "CP10X72A",
 
-        ethicon_code: "10X66",
+            ethicon_code: "10X72",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "2/0",
+            size: "2/0",
 
-        needle: "NV-7, NV-7",
+            needle: "NV-7, NV-7",
 
-        length: "5-36 inch",
+            length: "10-30 inch",
 
-        price: 684.0
-      },
+            price: 684.0,
+          },
 
-      {
-        code: "CP10X72A",
+          {
+            code: "CP10X80A",
 
-        ethicon_code: "10X72",
+            ethicon_code: "N/A",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Polybond Braided Polyester Coated",
 
-        size: "2/0",
+            size: "2/0",
 
-        needle: "NV-7, NV-7",
+            needle: "NSH-1, NSH-1",
 
-        length: "10-30 inch",
+            length: "10-36 inch",
 
-        price: 684.0
+            price: 514.0,
+          },
+        ],
       },
-
       {
-        code: "CP10X80A",
+        id: "4",
+        title: `CP Medical "Visorb" Coated Absorbable Braided Suture (PGA) Polyglycolic Acid`,
+        imageSection: LeftVisorb,
+        list: [
+          {
+            subtitle: `Comparable to Vicryl®, a registered trademark of Ethicon¬®`,
+          },
+          {
+            subtitle: `Excellent tensile strength throughout the critical wound healing period`,
+          },
+          { subtitle: `Excellent knot security & Handling Characteristics` },
+        ],
+        codes: [
+          {
+            code: "904A",
 
-        ethicon_code: "N/A",
+            ethicon_code: "J904T",
 
-        description: "Polybond Braided Polyester Coated",
+            description: "Visorb (PGA)",
 
-        size: "2/0",
+            size: "3-0",
 
-        needle: "NSH-1, NSH-1",
+            needle: "None",
 
-        length: "10-36 inch",
+            length: "12-18 inch",
 
-        price: 514.0
-      },
+            price: 174.0,
+          },
 
-      {
-        code: "904A",
+          {
+            code: "905A",
 
-        ethicon_code: "J904T",
+            ethicon_code: "J905T",
 
-        description: "Visorb (PGA)",
+            description: "Visorb (PGA)",
 
-        size: "3-0",
+            size: "2-0",
 
-        needle: "None",
+            needle: "None",
 
-        length: "12-18 inch",
+            length: "12-18 inch",
 
-        price: 174.0
+            price: 174.0,
+          },
+        ],
       },
-
       {
-        code: "905A",
-
-        ethicon_code: "J905T",
-
-        description: "Visorb (PGA)",
-
-        size: "2-0",
+        id: "5",
+        title: `"Surgical Steel" is Stainless Steel Suture composed of 316L stainless steel conforming to ASTM Standard F138 Grade 2 stainless steel bar and wire for surgical implants.`,
+        imageSection: SteelSut,
+        list: [
+          {
+            subtitle: `"Surgical Steel" suture is indicated for use in abdominal wound closure, intestinal anastomosis, hernia repair, sternal closure, and certain orthopedic procedures (cerclage or tendon repair)`,
+          },
+          {
+            subtitle: `"Surgical Steel" suture meets all requirements established by the United States Pharmacopeia (USP) and European Pharmacopeia (EP) for nonabsorbable surgical sutures`,
+          },
+        ],
+        codes: [
+          {
+            code: "ST435",
+            ethicon_code: "M435G",
+            description: "STEEL 5",
+            size: "5",
+            needle: "NV-56",
+            length: "4-30 inch",
 
-        needle: "None",
+            price: 368.0,
+          },
 
-        length: "12-18 inch",
+          {
+            code: "ST649",
+            ethicon_code: "M649G",
+            description: "STEEL 6",
+            size: "6",
+            needle: "NV-40",
+            length: "4-18 inch",
 
-        price: 174.0
-      },
+            price: 451.0,
+          },
 
-      {
-        code: "ST435",
-        ethicon_code: "M435G",
-        description: "STEEL 5",
-        size: "5",
-        needle: "NV-56",
-        length: "4-30 inch",
-
-        price: 368.0
-      },
+          {
+            code: "ST650",
+            ethicon_code: "M650G",
+            description: "STEEL 5",
+            size: "5",
+            needle: "NV-40",
+            length: "4-18 inch",
 
-      {
-        code: "ST649",
-        ethicon_code: "M649G",
-        description: "STEEL 6",
-        size: "6",
-        needle: "NV-40",
-        length: "4-18 inch",
-
-        price: 451.0
-      },
+            price: 420.0,
+          },
 
-      {
-        code: "ST650",
-        ethicon_code: "M650G",
-        description: "STEEL 5",
-        size: "5",
-        needle: "NV-40",
-        length: "4-18 inch",
-
-        price: 420.0
-      },
+          {
+            code: "ST653",
+            ethicon_code: "M653G",
+            description: "STEEL 5",
+            size: "5",
+            needle: "NCCS",
+            length: "4-18 inch",
+            price: 405.0,
+          },
 
-      {
-        code: "ST653",
-        ethicon_code: "M653G",
-        description: "STEEL 5",
-        size: "5",
-        needle: "NCCS",
-        length: "4-18 inch",
-        price: 405.0
-      },
+          {
+            code: "ST654",
+            ethicon_code: "M654G",
+            description: "STEEL 6",
+            size: "6",
+            needle: "NCCS",
+            length: "4-18 inch",
+            price: 405.0,
+          },
 
-      {
-        code: "ST654",
-        ethicon_code: "M654G",
-        description: "STEEL 6",
-        size: "6",
-        needle: "NCCS",
-        length: "4-18 inch",
-        price: 405.0
-      },
+          {
+            code: "ST655",
+            ethicon_code: "M655G",
+            description: "STEEL 7",
+            size: "7",
+            needle: "NCCS",
+            length: "4-18 inch",
+            price: 420.0,
+          },
 
-      {
-        code: "ST655",
-        ethicon_code: "M655G",
-        description: "STEEL 7",
-        size: "7",
-        needle: "NCCS",
-        length: "4-18 inch",
-        price: 420.0
+          {
+            code: "ST657",
+            ethicon_code: "M657G",
+            description: "STEEL 5",
+            size: "5",
+            needle: "NCCS",
+            length: "2-18 inch",
+            price: 211.0,
+          },
+        ],
       },
-
-      {
-        code: "ST657",
-        ethicon_code: "M657G",
-        description: "STEEL 5",
-        size: "5",
-        needle: "NCCS",
-        length: "2-18 inch",
-        price: 211.0
-      }
-    ]
-  }
+    ],
+  },
 ];
 
 class CardiacPage extends Component {

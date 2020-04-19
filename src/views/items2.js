@@ -1,31 +1,3 @@
-import React, { Component } from "react";
-import SideMenu from "../components/menu/SideMenu";
-import Footer from "../components/menu/Footer";
-import ProductTable from "../components/ProductTable";
-import SideMenuProducts from "../components/menu/SideMenuProducts";
-import StoreMenuTitle from "../components/menu/StoreMenuTitle";
-
-import "./styles/ProductsPage.css";
-import logo from "../images/logo2.jpg";
-import { connect } from "react-redux";
-
-// images
-import Vicryl from "../images/store/vicryl/leftvisorb.gif";
-import VicrylRapide from "../images/store/vicryl-rapide/leftvisorbquick.gif";
-import Pds from "../images/store/pds/PDSII-leftmonodox.gif";
-import Monocryl from "../images/store/monocryl/Monocryl-leftmonoswift.gif";
-import Ethicon1 from "../images/store/ethicon/Ethicon-leftplaingut.gif";
-import Ethicon2 from "../images/store/ethicon/leftchromicgut.gif";
-import Ethilon from "../images/store/ethilon/Ethinol-leftmonomid.gif";
-import Prolene from "../images/store/prolene/Prolene-leftbluepoly.gif";
-import Permahand from "../images/store/permahand/Permahand-leftsilkblack.gif";
-import Biopsy from "../images/store/biopsy/Biopsy-leftmonomid.gif";
-import BladesSm from "../images/store/blades/bladessm.jpg";
-import BladeHandle from "../images/store/blades/bladehandle.gif";
-
-import * as storeActions from "../actions/storeActions";
-import storeReducers from "../reducers/storeReducers";
-
 const medicalItems = [
   {
     type: "surgical",
@@ -35,7 +7,7 @@ const medicalItems = [
       {
         id: "1",
         title: `CP Medical "Visorb" Coated Absorbable Braided Suture (PGA) Polyglycolic Acid`,
-        imageSection: Vicryl,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Vicryl®, a registered trademark of Ethicon­®`,
@@ -458,7 +430,7 @@ const medicalItems = [
       {
         id: "2",
         title: `“CP Medical” Visorb Quick (PGA) Fast Absorbing Braided Suture`,
-        imageSection: VicrylRapide,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Vicryl Rapide®, a registered trademark of Ethicon®`,
@@ -555,7 +527,7 @@ const medicalItems = [
       {
         id: "3",
         title: `CP Medical “Monodox” Synthetic Absorbable Monofilament Suture (PDS) Polydioxanone`,
-        imageSection: Pds,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to PDS II®, a registered trademark of Ethicon®`,
@@ -749,7 +721,7 @@ const medicalItems = [
       {
         id: "4",
         title: `"CP Medical" Monoswift (Polyglycolide-CO-Caprolactone) Fast Absorbing Monofilament Suture`,
-        imageSection: Monocryl,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Monocryl®, a registered trademark of Ethicon®`,
@@ -1040,7 +1012,7 @@ const medicalItems = [
       {
         id: "5",
         title: `CP Medical Plain Gut Absorbable Sutures`,
-        imageSection: Ethicon1,
+        imageSection: "",
         list: [
           { subtitle: `Natural Gut, Comparable to Ethicon® Plain Gut` },
           {
@@ -1225,7 +1197,7 @@ const medicalItems = [
       {
         id: "6",
         title: `CP Medical Chromic Gut Absorbable Sutures`,
-        imageSection: Ethicon2,
+        imageSection: "",
         list: [
           { subtitle: `Chromic Coated, Comparable to Ethicon® Chromic Gut` },
           {
@@ -1490,7 +1462,7 @@ const medicalItems = [
       {
         id: "7",
         title: `CP Medical "Monomid" Non-Absorbable Nylon Monofilament Suture Available in Black, Blue and CLEAR`,
-        imageSection: Ethilon,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Ethilon®, a registered trademark of Ethicon­®`,
@@ -1851,7 +1823,7 @@ const medicalItems = [
       {
         id: "8",
         title: `CP Medical Blue Polypropylene Non-Absorbable Sutures`,
-        imageSection: Prolene,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Prolene®, a registered trademark of Ethicon®`,
@@ -2138,7 +2110,7 @@ const medicalItems = [
       {
         id: "9",
         title: `CP Medical Silk Black Braided Non-Absorbable Sutures`,
-        imageSection: Permahand,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Perma-Hand, a registered trademark of Ethicon`,
@@ -2426,7 +2398,7 @@ const medicalItems = [
       {
         id: "10",
         title: `CP Medical Black Monomid Short Biopsy Sutures`,
-        imageSection: Biopsy,
+        imageSection: "",
         list: [
           { subtitle: `Non-Absorbable` },
           { subtitle: `Ideal for  3-4 punch closures` },
@@ -2484,7 +2456,7 @@ const medicalItems = [
       {
         id: "11",
         title: `CP Medical "Visorb" Coated Absorbable Braided Suture (PGA) Polyglycolic Acid`,
-        imageSection: Vicryl,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Vicryl®, a registered trademark of Ethicon­®`,
@@ -2598,7 +2570,7 @@ const medicalItems = [
       {
         id: "12",
         title: `“CP Medical” Visorb Quick (PGA) Fast Absorbing Braided Suture`,
-        imageSection: VicrylRapide,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Vicryl Rapide®, a registered trademark of Ethicon®`,
@@ -2682,7 +2654,7 @@ const medicalItems = [
   {
     type: "oral",
     title: "SUTURES Comparable to PDS II",
-    subtype: Pds,
+    subtype: "suturespdsoral",
     items: [
       {
         id: "13",
@@ -2881,7 +2853,7 @@ const medicalItems = [
       {
         id: "14",
         title: `"CP Medical" Monoswift (Polyglycolide-CO-Caprolactone) Fast Absorbing Monofilament Suture`,
-        imageSection: Monocryl,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Monocryl®, a registered trademark of Ethicon®`,
@@ -3016,7 +2988,7 @@ const medicalItems = [
       {
         id: "15",
         title: `CP Medical Plain Gut Absorbable Sutures`,
-        imageSection: Ethicon1,
+        imageSection: "",
         list: [
           { subtitle: `Natural Gut, Comparable to Ethicon® Plain Gut` },
           {
@@ -3051,7 +3023,7 @@ const medicalItems = [
       {
         id: "16",
         title: `CP Medical Chromic Gut Absorbable Sutures`,
-        imageSection: Ethicon2,
+        imageSection: "",
         list: [
           { subtitle: `Chromic Coated, Comparable to Ethicon® Chromic Gut` },
           {
@@ -3118,7 +3090,7 @@ const medicalItems = [
       {
         id: "17",
         title: `CP Medical "Monomid" Non-Absorbable Nylon Monofilament Suture Available in Black, Blue and CLEAR`,
-        imageSection: Ethilon,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Ethilon®, a registered trademark of Ethicon­®`,
@@ -3252,7 +3224,7 @@ const medicalItems = [
       {
         id: "18",
         title: `CP Medical Blue Polypropylene Non-Absorbable Sutures`,
-        imageSection: Prolene,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Prolene®, a registered trademark of Ethicon®`,
@@ -3343,7 +3315,7 @@ const medicalItems = [
       {
         id: "19",
         title: `CP Medical Silk Black Braided Non-Absorbable Sutures`,
-        imageSection: Permahand,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Perma-Hand, a registered trademark of Ethicon`,
@@ -3425,7 +3397,7 @@ const medicalItems = [
       {
         id: "20",
         title: `CP Medical Black Monomid Short Biopsy Sutures`,
-        imageSection: Biopsy,
+        imageSection: "",
         list: [
           { subtitle: `Non-Absorbable` },
           { subtitle: `Ideal for  3-4 punch closures` },
@@ -3483,7 +3455,7 @@ const medicalItems = [
       {
         id: "21",
         title: `CP Medical "Visorb" Coated Absorbable Braided Suture (PGA) Polyglycolic Acid`,
-        imageSection: Vicryl,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Vicryl®, a registered trademark of Ethicon­®`,
@@ -3578,7 +3550,7 @@ const medicalItems = [
       {
         id: "22",
         title: `“CP Medical” Visorb Quick (PGA) Fast Absorbing Braided Suture`,
-        imageSection: VicrylRapide,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Vicryl Rapide®, a registered trademark of Ethicon®`,
@@ -3650,7 +3622,7 @@ const medicalItems = [
       {
         id: "23",
         title: `CP Medical “Monodox” Synthetic Absorbable Monofilament Suture (PDS) Polydioxanone`,
-        imageSection: Pds,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to PDS II®, a registered trademark of Ethicon®`,
@@ -3844,7 +3816,7 @@ const medicalItems = [
       {
         id: "24",
         title: `"CP Medical" Monoswift (Polyglycolide-CO-Caprolactone) Fast Absorbing Monofilament Suture`,
-        imageSection: Monocryl,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Monocryl®, a registered trademark of Ethicon®`,
@@ -3943,7 +3915,7 @@ const medicalItems = [
       {
         id: "25",
         title: `CP Medical Plain Gut Absorbable Sutures`,
-        imageSection: Ethicon1,
+        imageSection: "",
         list: [
           { subtitle: `Natural Gut, Comparable to Ethicon® Plain Gut` },
           {
@@ -4044,7 +4016,7 @@ const medicalItems = [
       {
         id: "26",
         title: `CP Medical Chromic Gut Absorbable Sutures`,
-        imageSection: Ethicon2,
+        imageSection: "",
         list: [
           { subtitle: `Chromic Coated, Comparable to Ethicon® Chromic Gut` },
           {
@@ -4109,7 +4081,7 @@ const medicalItems = [
       {
         id: "27",
         title: `CP Medical "Monomid" Non-Absorbable Nylon Monofilament Suture Available in Black, Blue and CLEAR`,
-        imageSection: Ethilon,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Ethilon®, a registered trademark of Ethicon­®`,
@@ -4277,7 +4249,7 @@ const medicalItems = [
       {
         id: "28",
         title: `CP Medical Blue Polypropylene Non-Absorbable Sutures`,
-        imageSection: Prolene,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Prolene®, a registered trademark of Ethicon®`,
@@ -4408,7 +4380,7 @@ const medicalItems = [
       {
         id: "29",
         title: `CP Medical Silk Black Braided Non-Absorbable Sutures`,
-        imageSection: Permahand,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Perma-Hand, a registered trademark of Ethicon`,
@@ -4635,7 +4607,7 @@ const medicalItems = [
       {
         id: "30",
         title: `CP Medical Black Monomid Short Biopsy Sutures`,
-        imageSection: Biopsy,
+        imageSection: "",
         list: [
           { subtitle: `Non-Absorbable` },
           { subtitle: `Ideal for  3-4 punch closures` },
@@ -4693,7 +4665,7 @@ const medicalItems = [
       {
         id: "31",
         title: `CP Medical "Visorb" Coated Absorbable Braided Suture (PGA) Polyglycolic Acid`,
-        imageSection: Vicryl,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Vicryl®, a registered trademark of Ethicon­®`,
@@ -5263,7 +5235,7 @@ const medicalItems = [
       {
         id: "32",
         title: `“CP Medical” Visorb Quick (PGA) Fast Absorbing Braided Suture`,
-        imageSection: VicrylRapide,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Vicryl Rapide®, a registered trademark of Ethicon®`,
@@ -5360,7 +5332,7 @@ const medicalItems = [
       {
         id: "33",
         title: `CP Medical “Monodox” Synthetic Absorbable Monofilament Suture (PDS) Polydioxanone`,
-        imageSection: Pds,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to PDS II®, a registered trademark of Ethicon®`,
@@ -5734,7 +5706,7 @@ const medicalItems = [
       {
         id: "34",
         title: `"CP Medical" Monoswift (Polyglycolide-CO-Caprolactone) Fast Absorbing Monofilament Suture`,
-        imageSection: Monocryl,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Monocryl®, a registered trademark of Ethicon®`,
@@ -6025,7 +5997,7 @@ const medicalItems = [
       {
         id: "35",
         title: `CP Medical Plain Gut Absorbable Sutures`,
-        imageSection: Ethicon1,
+        imageSection: "",
         list: [
           { subtitle: `Natural Gut, Comparable to Ethicon® Plain Gut` },
           {
@@ -6231,7 +6203,7 @@ const medicalItems = [
       {
         id: "36",
         title: `CP Medical Chromic Gut Absorbable Sutures`,
-        imageSection: Ethicon2,
+        imageSection: "",
         list: [
           { subtitle: `Chromic Coated, Comparable to Ethicon® Chromic Gut` },
           {
@@ -6647,7 +6619,7 @@ const medicalItems = [
       {
         id: "37",
         title: `CP Medical "Monomid" Non-Absorbable Nylon Monofilament Suture Available in Black, Blue and CLEAR`,
-        imageSection: Ethilon,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Ethilon®, a registered trademark of Ethicon­®`,
@@ -7055,6 +7027,7 @@ const medicalItems = [
       },
     ],
   },
+
   {
     type: "vet",
     title: "SUTURES Comparable to Prolene",
@@ -7063,7 +7036,7 @@ const medicalItems = [
       {
         id: "38",
         title: `CP Medical Blue Polypropylene Non-Absorbable Sutures`,
-        imageSection: Prolene,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Prolene®, a registered trademark of Ethicon®`,
@@ -7460,7 +7433,7 @@ const medicalItems = [
       {
         id: "39",
         title: `CP Medical Silk Black Braided Non-Absorbable Sutures`,
-        imageSection: Permahand,
+        imageSection: "",
         list: [
           {
             subtitle: `Comparable to Perma-Hand, a registered trademark of Ethicon`,
@@ -7802,7 +7775,7 @@ const medicalItems = [
       {
         id: "40",
         title: `CP Medical Black Monomid Short Biopsy Sutures`,
-        imageSection: Biopsy,
+        imageSection: "",
         list: [
           { subtitle: `Non-Absorbable` },
           { subtitle: `Ideal for  3-4 punch closures` },
@@ -8910,7 +8883,7 @@ const medicalItems = [
       {
         id: "51",
         title: `Stainless Steel Surgical Blades`,
-        imageSection: BladesSm,
+        imageSection: "",
         list: [
           {
             subtitle: `The stainless steel technology of our blades provide excellent cutting control, sharpness, and strength. Packaged in a foil pouch with an inner liner for maximum protection of both blade and user`,
@@ -8968,7 +8941,7 @@ const medicalItems = [
       {
         id: "52",
         title: `Carbon Steel Surgical Blades`,
-        imageSection: BladesSm,
+        imageSection: "",
         list: [
           {
             subtitle: `The carbon steel technology of our blade provides excellent cutting control, sharpness, and strength. Packaged in a foil pouch with an inner liner for maximum protection of both blade and user`,
@@ -9027,7 +9000,7 @@ const medicalItems = [
         id: "53",
         title: `Scalpel (Surgical Blade) Handles
         Available in size #3, #4, or #7`,
-        imageSection: BladeHandle,
+        imageSection: "",
         list: [
           { subtitle: `These Handles are German Made, Stainless Steel:` },
           { subtitle: `Size #3 for Blades #10 thru #15` },
@@ -9063,71 +9036,3 @@ const medicalItems = [
     ],
   },
 ];
-
-const NO_RUTE = [
-  "gscissors",
-  "gtowelclamps",
-  "gneedleholders",
-  "gretractors",
-  "gnailnippers",
-  "gforceps",
-  "blades",
-];
-
-class ProductsPage extends Component {
-  render() {
-    let paramType = "";
-    const paramSubtype = this.props.match.params.subtype;
-    if (NO_RUTE.indexOf(paramSubtype) in NO_RUTE) {
-      paramType = "";
-    } else {
-      paramType = this.props.match.params.type;
-    }
-    const medicalPage = medicalItems.filter((mi) =>
-      mi.subtype
-        .toLowerCase()
-        .includes(`${paramSubtype.toLowerCase()}${paramType.toLowerCase()}`)
-    );
-
-    return (
-      <React.Fragment>
-        <div className="hero">
-          <div className="navbar">
-            <div className="navbar-container">
-              <img src={logo} alt="logo" />
-              <div>
-                {/* <h4>
-                  {this.props.storeReducers.storeItems.length
-                    ? this.props.storeReducers.storeItems.reduce(
-                        (count, item) => count + item.cant,
-                        0
-                      )
-                    : 0}
-                </h4> */}
-              </div>
-            </div>
-          </div>
-          <div className="menu menu-section">
-            <SideMenu />
-            <SideMenuProducts />
-          </div>
-          <div className="main">
-            <StoreMenuTitle title={medicalPage[0].title} />
-            <div className="product-container">
-              <ProductTable type={paramType} items={medicalPage[0].items} />
-            </div>
-          </div>
-          <div className="footer-page">
-            <Footer />
-          </div>
-        </div>
-      </React.Fragment>
-    );
-  }
-}
-
-const mapStateToProps = (reducers) => {
-  return storeReducers;
-};
-
-export default connect(mapStateToProps, storeActions)(ProductsPage);
