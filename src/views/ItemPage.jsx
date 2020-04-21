@@ -56,6 +56,14 @@ class ItemPage extends Component {
           </div>
           <div className="main">
             <h1>CODE: {this.props.location.state.item.code}</h1>
+            {this.props.location.state.item.imageItem ? (
+              <div>
+                <img
+                  src={this.props.location.state.item.imageItem}
+                  alt={this.props.location.state.item.code}
+                />
+              </div>
+            ) : null}
             <div>
               <h4>
                 Description: {this.props.location.state.item.description}{" "}
