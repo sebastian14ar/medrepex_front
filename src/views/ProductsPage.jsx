@@ -23,6 +23,104 @@ import Biopsy from "../images/store/biopsy/Biopsy-leftmonomid.gif";
 import BladesSm from "../images/store/blades/bladessm.jpg";
 import BladeHandle from "../images/store/blades/bladehandle.gif";
 
+// Scissors
+import VK1402084 from "../images/store/scissors/VK140-2084.jpg";
+// import VK1402511 from "../images/store/scissors/VK140-2511 VK140-2514 VK103-0216.jpg";
+// import VK1402514 from "../images/store/scissors/VK140-2511 VK140-2514 VK103-0216.jpg";
+// import VK1030216 from "../images/store/scissors/VK140-2511 VK140-2514 VK103-0216.jpg";
+// import VK1030211 from "../images/store/scissors/VK103-0211.jpg";
+import I01143 from "../images/store/scissors/01-143.jpg";
+import I01158 from "../images/store/scissors/01-158.jpg";
+import I01165 from "../images/store/scissors/01-165.jpg";
+import I01166 from "../images/store/scissors/01-166.jpg";
+import I02116 from "../images/store/scissors/02-116.jpg";
+import I12167 from "../images/store/scissors/12-167.jpg";
+import I12169 from "../images/store/scissors/12-169.jpg";
+import VK1022009 from "../images/store/scissors/VK102-2009 VK102-2011.jpg";
+import VK1022011 from "../images/store/scissors/VK102-2009 VK102-2011.jpg";
+import VK1022109 from "../images/store/scissors/VK102-2109 VK102-2111.jpg";
+import VK1022111 from "../images/store/scissors/VK102-2109 VK102-2111.jpg";
+// import VK1030614 from "../images/store/scissors/VK103-0216 VK103-0614 VK103-00616.jpg";
+// import VK1030616 from "../images/store/scissors/VK103-0216 VK103-0614 VK103-00616.jpg";
+import VK1030311 from "../images/store/scissors/VK103-0311 VK103-0314 VK103-0316.jpg";
+import VK1030314 from "../images/store/scissors/VK103-0311 VK103-0314 VK103-0316.jpg";
+import VK1030316 from "../images/store/scissors/VK103-0311 VK103-0314 VK103-0316.jpg";
+import VK1030411 from "../images/store/scissors/VK103-0411 VK103-0414 VK103-0415.jpg";
+import VK1030414 from "../images/store/scissors/VK103-0411 VK103-0414 VK103-0415.jpg";
+import VK1030415 from "../images/store/scissors/VK103-0411 VK103-0414 VK103-0415.jpg";
+import VK1030511 from "../images/store/scissors/VK103-0511 VK103-0514 VK103-0516.jpg";
+import VK1030514 from "../images/store/scissors/VK103-0511 VK103-0514 VK103-0516.jpg";
+import VK1030516 from "../images/store/scissors/VK103-0511 VK103-0514 VK103-0516.jpg";
+import VK1030711 from "../images/store/scissors/VK103-0711 VK103-0714 VK103-0716.jpg";
+import VK1030714 from "../images/store/scissors/VK103-0711 VK103-0714 VK103-0716.jpg";
+import VK1030716 from "../images/store/scissors/VK103-0711 VK103-0714 VK103-0716.jpg";
+import VK1035014 from "../images/store/scissors/VK103-5014 VK103-5017.jpg";
+import VK1035017 from "../images/store/scissors/VK103-5014 VK103-5017.jpg";
+import VK1035114 from "../images/store/scissors/VK103-5114 VK103-5117.jpg";
+import VK1035117 from "../images/store/scissors/VK103-5114 VK103-5117.jpg";
+import VK1043214 from "../images/store/scissors/VK104-3214 VK104-3218.jpg";
+import VK1043218 from "../images/store/scissors/VK104-3214 VK104-3218.jpg";
+import VK1043314 from "../images/store/scissors/VK104-3314 VK104-3318.jpg";
+import VK1043318 from "../images/store/scissors/VK104-3314 VK104-3318.jpg";
+import VK1140609 from "../images/store/scissors/VK114-0609.jpg";
+import VK1140614 from "../images/store/scissors/VK114-0614.jpg";
+import VK1431718 from "../images/store/scissors/VK143-1718.jpg";
+import VK1775520 from "../images/store/scissors/VK177-5520.jpg";
+import VK1402511 from "../images/store/scissors/VK140-2511 VK140-2514.jpg";
+import VK1402514 from "../images/store/scissors/VK140-2511 VK140-2514.jpg";
+import VK1030611 from "../images/store/scissors/VK103-0611 VK103-0614 VK103-0616.jpg";
+import VK1030614 from "../images/store/scissors/VK103-0611 VK103-0614 VK103-0616.jpg";
+import VK1030616 from "../images/store/scissors/VK103-0611 VK103-0614 VK103-0616.jpg";
+import VK1030211 from "../images/store/scissors/VK103-0211 VK103-0214 VK103-0216.jpg";
+import VK1030214 from "../images/store/scissors/VK103-0211 VK103-0214 VK103-0216.jpg";
+import VK1030216 from "../images/store/scissors/VK103-0211 VK103-0214 VK103-0216.jpg";
+
+// Towel clamps
+import VK1175008 from "../images/store/towel-clamps/VK117-5008.jpg";
+import VK1175503 from "../images/store/towel-clamps/VK117-5503 VK117-5513.jpg";
+import VK1175513 from "../images/store/towel-clamps/VK117-5503 VK117-5513.jpg";
+import VK1175709 from "../images/store/towel-clamps/VK117-5709 VK117-5714.jpg";
+import VK1175714 from "../images/store/towel-clamps/VK117-5709 VK117-5714.jpg";
+
+// Needle holders
+import I12118 from "../images/store/needle-holders/12-118  VK110-6014 VK110-6017.jpg";
+import VK1106014 from "../images/store/needle-holders/12-118  VK110-6014 VK110-6017.jpg";
+import VK1106017 from "../images/store/needle-holders/12-118  VK110-6014 VK110-6017.jpg";
+import I12121 from "../images/store/needle-holders/12-121  12-122  VK111-2014 VK111-2017.jpg";
+import I12122 from "../images/store/needle-holders/12-121  12-122  VK111-2014 VK111-2017.jpg";
+import VK1112014 from "../images/store/needle-holders/12-121  12-122  VK111-2014 VK111-2017.jpg";
+import VK1112017 from "../images/store/needle-holders/12-121  12-122  VK111-2014 VK111-2017.jpg";
+import I12151 from "../images/store/needle-holders/12-151.jpg";
+import VK1100212 from "../images/store/needle-holders/VK110-0212.jpg";
+import VK1101014 from "../images/store/needle-holders/VK110-1014.jpg";
+import VK1101414 from "../images/store/needle-holders/VK110-1414.jpg";
+import VK1101814 from "../images/store/needle-holders/VK110-1814 VK110-1815 VK110-1818 VK110-1820.jpg";
+import VK1101815 from "../images/store/needle-holders/VK110-1814 VK110-1815 VK110-1818 VK110-1820.jpg";
+import VK1101818 from "../images/store/needle-holders/VK110-1814 VK110-1815 VK110-1818 VK110-1820.jpg";
+import VK1101820 from "../images/store/needle-holders/VK110-1814 VK110-1815 VK110-1818 VK110-1820.jpg";
+import VK1102015 from "../images/store/needle-holders/VK110-2015 VK110-2020.jpg";
+import VK1102020 from "../images/store/needle-holders/VK110-2015 VK110-2020.jpg";
+import VK132159 from "../images/store/needle-holders/VK132-159 VK132-160 VK132-170.jpg";
+import VK132160 from "../images/store/needle-holders/VK132-159 VK132-160 VK132-170.jpg";
+import VK132170 from "../images/store/needle-holders/VK132-159 VK132-160 VK132-170.jpg";
+import VK132180 from "../images/store/needle-holders/VK132-180.jpg";
+import VK1321113 from "../images/store/needle-holders/VK132-1113 VK132-120 VK132-130.jpg";
+import VK132120 from "../images/store/needle-holders/VK132-1113 VK132-120 VK132-130.jpg";
+import VK132130 from "../images/store/needle-holders/VK132-1113 VK132-120 VK132-130.jpg";
+
+// Nail nippers
+import I35117 from "../images/store/nail-nippers/35-117.jpg";
+import I35121 from "../images/store/nail-nippers/35-121.jpg";
+import I35125 from "../images/store/nail-nippers/35-125  35-127.jpg";
+import I35127 from "../images/store/nail-nippers/35-125  35-127.jpg";
+import I35129 from "../images/store/nail-nippers/35-129.jpg";
+import I35130 from "../images/store/nail-nippers/35-130.jpg";
+import VK1437713 from "../images/store/nail-nippers/VK143-7713  35-136.jpg";
+import I35136 from "../images/store/nail-nippers/VK143-7713  35-136.jpg";
+import VK1437784 from "../images/store/nail-nippers/VK143-7784.jpg";
+import VK1437813 from "../images/store/nail-nippers/VK143-7813.jpg";
+import VK1437914 from "../images/store/nail-nippers/VK143-7914.jpg";
+
 import * as storeActions from "../actions/storeActions";
 import storeReducers from "../reducers/storeReducers";
 
@@ -8535,21 +8633,21 @@ const medicalItems = [
             code: "VK140-2084",
             description: `Knowles Bandage Scissors, 5 1/2`,
             price: 29.5,
-            imageItem: "",
+            imageItem: VK1402084,
           },
 
           {
             code: "VK140-2511",
             description: `Lister Bandage Scissors, 4 1/2`,
             price: 24.5,
-            imageItem: "",
+            imageItem: VK1402511,
           },
 
           {
             code: "VK140-2514",
             description: `Lister Bandage Scissors, 5 1/2`,
             price: 24.5,
-            imageItem: "",
+            imageItem: VK1402514,
           },
         ],
       },
@@ -8563,42 +8661,42 @@ const medicalItems = [
             code: "VK103-0211",
             description: `OR Scissors, Blunt/Blunt, 4 1/2", Straigh`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1030211,
           },
 
           {
             code: "VK103-0311",
             description: `OR Scissors, Blunt/Blunt, 4 1/2", Curve`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1030311,
           },
 
           {
             code: "VK103-0214",
             description: `OR Scissors, Blunt/Blunt, 5 1/2", Straigh`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1030214,
           },
 
           {
             code: "VK103-0314",
             description: `OR Scissors, Blunt/Blunt, 5 1/2", Curve`,
             price: 29.5,
-            imageItem: "",
+            imageItem: VK1030314,
           },
 
           {
             code: "VK103-0216",
             description: `OR Scissors, Blunt/Blunt, 6 1/2", Straigh`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1030216,
           },
 
           {
             code: "VK103-0316",
             description: `OR Scissors, Blunt/Blunt, 6 1/2", Curve`,
             price: 29.5,
-            imageItem: "",
+            imageItem: VK1030316,
           },
         ],
       },
@@ -8612,42 +8710,42 @@ const medicalItems = [
             code: "VK103-0611",
             description: `OR Scissors, Sharp/Blunt, 4 1/2", Straigh`,
             price: 28.5,
-            imageItem: "",
+            imageItem: VK1030611,
           },
 
           {
             code: "VK103-0711",
             description: `OR Scissors, Sharp/Blunt, 4 1/2", Curve`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1030711,
           },
 
           {
             code: "VK103-0614",
             description: `OR Scissors, Sharp/Blunt, 5 1/2", Straigh`,
             price: 24.5,
-            imageItem: "",
+            imageItem: VK1030614,
           },
 
           {
             code: "VK103-0714",
             description: `OR Scissors, Sharp/Blunt, 5 1/2", Curve`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1030714,
           },
 
           {
             code: "VK103-0616",
             description: `OR Scissors, Sharp/Blunt, 6 1/2", Straigh`,
             price: 29.5,
-            imageItem: "",
+            imageItem: VK1030616,
           },
 
           {
             code: "VK103-0716",
             description: `OR Scissors, Sharp/Blunt, 6 1/2", Curve`,
             price: 29.5,
-            imageItem: "",
+            imageItem: VK1030716,
           },
         ],
       },
@@ -8661,42 +8759,42 @@ const medicalItems = [
             code: "VK103-0411",
             description: `OR Scissors, Sharp/Sharp, 4 1/2", Straigh`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1030411,
           },
 
           {
             code: "VK103-0511",
             description: `OR Scissors, Sharp/Sharp, 4 1/2", Curve`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1030511,
           },
 
           {
             code: "VK103-0414",
             description: `OR Scissors, Sharp/Sharp, 5 1/2", Straigh`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1030414,
           },
 
           {
             code: "VK103-0514",
             description: `OR Scissors, Sharp/Sharp, 5 1/2", Curve`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1030514,
           },
 
           {
             code: "VK103-0415",
             description: `OR Scissors, Sharp/Sharp, 6 1/2", Straigh`,
             price: 29.5,
-            imageItem: "",
+            imageItem: VK1030415,
           },
 
           {
             code: "VK103-0516",
             description: `OR Scissors, Sharp/Sharp, 6 1/2", Curve`,
             price: 34.8,
-            imageItem: "",
+            imageItem: VK1030516,
           },
         ],
       },
@@ -8710,161 +8808,161 @@ const medicalItems = [
             code: "01-158",
             description: `Castroviejo Scissors, 4 1/4`,
             price: 36.0,
-            imageItem: "",
+            imageItem: I01158,
           },
 
           {
             code: "01-166",
             description: `Ear Cropping Scissors, Sharp/Blunt, 6 1/2", Curve`,
             price: 36.0,
-            imageItem: "",
+            imageItem: I01166,
           },
 
           {
             code: "01-165",
             description: `Ear Cropping Scissors, Blunt/Blunt, 6 1/2", Straigh`,
             price: 39.9,
-            imageItem: "",
+            imageItem: I01165,
           },
 
           {
             code: "VK102-2009",
             description: `Iris Scissors, 3 1/2", Straigh`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1022009,
           },
 
           {
             code: "VK102-2109",
             description: `Iris Scissors, 3 1/2", Curve`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1022109,
           },
 
           {
             code: "VK102-2011",
             description: `Iris Scissors, 4 1/2", Straigh`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1022011,
           },
 
           {
             code: "VK102-2111",
             description: `Iris Scissors, 4 1/2", Curve`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1022111,
           },
 
           {
             code: "VK114-0614",
             description: `Littauer Scissors, 5 1/2`,
             price: 24.5,
-            imageItem: "",
+            imageItem: VK1140614,
           },
 
           {
             code: "VK177-5520",
             description: `Martin Cartilage Scissors, 8", Curve`,
             price: 41.0,
-            imageItem: "",
+            imageItem: VK1775520,
           },
 
           {
             code: "VK103-5014",
             description: `Mayo Dissecting Scissors, 5 1/2", Straigh`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1035014,
           },
 
           {
             code: "VK103-5114",
             description: `Mayo Dissecting Scissors, 5 1/2", Curve`,
             price: 24.5,
-            imageItem: "",
+            imageItem: VK1035114,
           },
 
           {
             code: "VK103-5017",
             description: `Mayo Dissecting Scissors, 6 3/4", Straigh`,
             price: 24.5,
-            imageItem: "",
+            imageItem: VK1035017,
           },
 
           {
             code: "VK103-5117",
             description: `Mayo Dissecting Scissors, 6 3/4", Curve`,
             price: 26.5,
-            imageItem: "",
+            imageItem: VK1035117,
           },
 
           {
             code: "12-167",
             description: `Mayo-Stille Scissors, 5.5", Curve`,
             price: 49.5,
-            imageItem: "",
+            imageItem: I12167,
           },
 
           {
             code: "12-169",
             description: `Mayo-Stille Scissors, 6.75", Curve`,
             price: 49.5,
-            imageItem: "",
+            imageItem: I12169,
           },
 
           {
             code: "VK104-3214",
             description: `Metzenbaum Scissors, 5 1/2", Straigh`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1043214,
           },
 
           {
             code: "VK104-3314",
             description: `Metzenbaum Scissors, 5 1/2", Curve`,
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1043314,
           },
 
           {
             code: "VK104-3218",
             description: `Metzenbaum Scissors, 7", Straigh`,
             price: 29.5,
-            imageItem: "",
+            imageItem: VK1043218,
           },
 
           {
             code: "VK104-3318",
             description: `Metzenbaum Scissors, 7", Curve`,
             price: 33.8,
-            imageItem: "",
+            imageItem: VK1043318,
           },
 
           {
             code: "02-116",
             description: `Northbent Stitch Scissors, 4 1/2`,
             price: 39.0,
-            imageItem: "",
+            imageItem: I02116,
           },
 
           {
             code: "VK114-0609",
             description: `Spencer Stitch Scissors, 3 1/2`,
             price: 24.5,
-            imageItem: "",
+            imageItem: VK1140609,
           },
 
           {
             code: "01-143",
             description: `Strabismus Scissors, 4 1/4", Curved or Straig`,
             price: 34.9,
-            imageItem: "",
+            imageItem: I01143,
           },
 
           {
             code: "VK143-1718",
             description: `White Toenail Scissors, 4 3/4`,
             price: 49.0,
-            imageItem: "",
+            imageItem: VK1431718,
           },
         ],
       },
@@ -8887,7 +8985,7 @@ const medicalItems = [
             description: `Backhaus Towel Clamp, 3 1/2"`,
 
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1175503,
           },
 
           {
@@ -8896,7 +8994,7 @@ const medicalItems = [
             description: `Backhaus Towel Clamp, 5 1/4"`,
 
             price: 22.5,
-            imageItem: "",
+            imageItem: VK1175513,
           },
 
           {
@@ -8904,7 +9002,7 @@ const medicalItems = [
 
             description: `Jones Towel Clamp, 3"`,
             price: 23.9,
-            imageItem: "",
+            imageItem: VK1175008,
           },
 
           {
@@ -8913,7 +9011,7 @@ const medicalItems = [
             description: `Lorna Towel Clamp, Non-Perforating, 4"`,
 
             price: 28.8,
-            imageItem: "",
+            imageItem: VK1175709,
           },
 
           {
@@ -8922,7 +9020,7 @@ const medicalItems = [
             description: `Lorna Towel Clamp, Non-Perforating, 5 1/4"`,
 
             price: 28.8,
-            imageItem: "",
+            imageItem: VK1175714,
           },
         ],
       },
@@ -8943,84 +9041,84 @@ const medicalItems = [
             code: "VK110-1414",
             description: `Baumgartner Needle Holder, 5 1/4"`,
             price: 24.9,
-            imageItem: "",
+            imageItem: VK1101414,
           },
 
           {
             code: "VK110-2015",
             description: `Crile-Wood Needle Holder, 6"`,
             price: 28.0,
-            imageItem: "",
+            imageItem: VK1102015,
           },
 
           {
             code: "VK110-2020",
             description: `Crile-Wood Needle Holder, 8"`,
             price: 38.75,
-            imageItem: "",
+            imageItem: VK1102020,
           },
 
           {
             code: "VK110-0212",
             description: `Derf Needle Holder, 4 3/4"`,
             price: 38.8,
-            imageItem: "",
+            imageItem: VK1100212,
           },
 
           {
             code: "12-122",
             description: `Mathieu Needle Holder, 5"`,
             price: 26.5,
-            imageItem: "",
+            imageItem: I12122,
           },
 
           {
             code: "VK111-2014",
             description: `Mathieu Needle Holder, 5 1/2"`,
             price: 48.5,
-            imageItem: "",
+            imageItem: VK1112014,
           },
 
           {
             code: "VK111-2017",
             description: `Mathieu Needle Holder, 6 1/2"`,
             price: 48.5,
-            imageItem: "",
+            imageItem: VK1112017,
           },
 
           {
             code: "12-121",
             description: `Mathieu Needle Holder, 8"`,
             price: 41.75,
-            imageItem: "",
+            imageItem: I12121,
           },
 
           {
             code: "VK110-1814",
             description: `Mayo-Hegar Needle Holder, 5 1/2"`,
             price: 28.8,
-            imageItem: "",
+            imageItem: VK1101814,
           },
 
           {
             code: "VK110-1815",
             description: `Mayo-Hegar Needle Holder, 6"`,
             price: 26.5,
-            imageItem: "",
+            imageItem: VK1101815,
           },
 
           {
             code: "VK110-1818",
             description: `Mayo-Hegar Needle Holder, 7"`,
             price: 28.8,
-            imageItem: "",
+            imageItem: VK1101818,
           },
 
           {
             code: "VK110-1820",
             description: `Mayo-Hegar Needle Holder, 8"`,
             price: 33.75,
-            imageItem: "",
+            imageItem: VK1101820,
           },
 
           {
@@ -9028,7 +9126,7 @@ const medicalItems = [
             description: `Olsen-Hegar Needle Holder with Scissor Combo, 5 1/2"`,
 
             price: 38.75,
-            imageItem: "",
+            imageItem: VK1101820,
           },
 
           {
@@ -9036,7 +9134,7 @@ const medicalItems = [
             description: `Olsen-Hegar Needle Holder with Scissor Combo, 6 1/2"`,
 
             price: 38.75,
-            imageItem: "",
+            imageItem: VK1106017,
           },
 
           {
@@ -9044,14 +9142,14 @@ const medicalItems = [
             description: `Olsen-Hegar Needle Holder with Scissor Combo, 7 1/2"`,
 
             price: 31.8,
-            imageItem: "",
+            imageItem: I12118,
           },
 
           {
             code: "VK110-1014",
             description: `Webster Needle Holder, 4 3/4"`,
             price: 28.8,
-            imageItem: "",
+            imageItem: VK1101014,
           },
         ],
       },
@@ -9066,7 +9164,7 @@ const medicalItems = [
             description: `Webster Needle Holder w/ Tungsten Carbide Smooth Jaws, 5`,
 
             price: 63.0,
-            imageItem: "",
+            imageItem: I12151,
           },
 
           {
@@ -9074,7 +9172,7 @@ const medicalItems = [
             description: `Mayo-Hegar Needle Holder w/ Tungsten Carbide Jaws, 5 1/2"`,
 
             price: 88.0,
-            imageItem: "",
+            imageItem: VK1321113,
           },
 
           {
@@ -9082,7 +9180,7 @@ const medicalItems = [
             description: `Mayo-Hegar Needle Holder w/ Tungsten Carbide Jaws, 6"`,
 
             price: 88.0,
-            imageItem: "",
+            imageItem: VK132120,
           },
 
           {
@@ -9090,7 +9188,7 @@ const medicalItems = [
             description: `Mayo-Hegar Needle Holder w/ Tungsten Carbide Jaws, 7"`,
 
             price: 88.0,
-            imageItem: "",
+            imageItem: VK132130,
           },
 
           {
@@ -9098,7 +9196,7 @@ const medicalItems = [
             description: `Olsen-Hegar Needle Holder w/ Tungsten Carbide Jaws, 5"`,
 
             price: 98.0,
-            imageItem: "",
+            imageItem: VK132159,
           },
 
           {
@@ -9106,7 +9204,7 @@ const medicalItems = [
             description: `Olsen-Hegar Needle Holder w/ Tungsten Carbide Jaws, 5 1/2"`,
 
             price: 88.0,
-            imageItem: "",
+            imageItem: VK132160,
           },
 
           {
@@ -9114,7 +9212,7 @@ const medicalItems = [
             description: `Olsen-Hegar Needle Holder w/ Tungsten Carbide Jaws, 6 3/4"`,
 
             price: 88.0,
-            imageItem: "",
+            imageItem: VK132170,
           },
 
           {
@@ -9122,7 +9220,7 @@ const medicalItems = [
             description: `Olsen Hegar Needle Holder w/ Tungsten Carbide Jaws, 7.5"`,
 
             price: 124.8,
-            imageItem: "",
+            imageItem: VK132180,
           },
         ],
       },
@@ -9246,77 +9344,77 @@ const medicalItems = [
             description: `Anvil Nail Splitting Forcep , double spring, 5"`,
 
             price: 76.5,
-            imageItem: "",
+            imageItem: VK1437914,
           },
           {
             code: "35-121",
             description: `Nail Nipper, Single Spring, 6", Straight`,
 
             price: 37.5,
-            imageItem: "",
+            imageItem: I35121,
           },
           {
             code: "35-125",
             description: `Barrel Spring Nail Nipper, 4 1/2"`,
 
             price: 46.8,
-            imageItem: "",
+            imageItem: I35125,
           },
           {
             code: "35-127",
             description: `Barrel Spring Nail Nipper, 5 1/2"`,
 
             price: 57.8,
-            imageItem: "",
+            imageItem: I35127,
           },
           {
             code: "35-130",
             description: `Nail Nipper w/Double Spring 7", Straight`,
 
             price: 61.5,
-            imageItem: "",
+            imageItem: I35130,
           },
           {
             code: "VK143-7813",
             description: `Nail Nipper w/Double Spring, 6", straight`,
 
             price: 48.5,
-            imageItem: "",
+            imageItem: VK1437813,
           },
           {
             code: "VK143-7713",
             description: `Nail Nipper w/Double Spring, 5 1/2", concave`,
 
             price: 78.8,
-            imageItem: "",
+            imageItem: VK1437713,
           },
           {
             code: "35-136",
             description: `Nail Nipper w/Double Spring, 6 1/2", concave`,
 
             price: 48.5,
-            imageItem: "",
+            imageItem: I35136,
           },
           {
             code: "VK143-7784",
             description: `Nail Nipper w/Double Spring, 5 1/2", angled concave`,
 
             price: 62.75,
-            imageItem: "",
+            imageItem: VK1437784,
           },
           {
             code: "35-117",
             description: `Tissue & Cuticle Nipper, 4 1/2"`,
 
             price: 46.8,
-            imageItem: "",
+            imageItem: I35117,
           },
           {
             code: "35-129",
             description: `Double Action Nail Nipper, 6", Concave`,
 
             price: 77.0,
-            imageItem: "",
+            imageItem: I35129,
           },
         ],
       },

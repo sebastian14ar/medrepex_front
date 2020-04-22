@@ -1,0 +1,17 @@
+La página se divide en tres tablas, pero ninguna tiene encabezado.
+
+* La primer tabla contiene los items VK140-2084, VK140-2511 y VK140-2514
+
+* La segunda tabla contiene textos entre items, dividiento la tabla en tres subtablas con encabezados a la altura de la columna "DESCRIPTION"
+	1er subtabla: 
+		Encabezado: BLUNT/BLUNT OPERATING ROOM SCISSORS
+		Contiene los items: Del VK103-0211 al VK103-0316
+	2da subtabla: 
+		Encabezado: SHARP/BLUNT OPERATING ROOM SCISSORS
+		Contiene los items: Del VK103-0611 al VK103-0716
+	3er subtabla: 
+		Encabezado: SHARP/SHARP OPERATING ROOM SCISSORS
+		Contiene los items: Del VK103-0411 al VK103-0516
+
+* La tercer tabla contiene los items del 01-158 al VK143-1718
+		 
