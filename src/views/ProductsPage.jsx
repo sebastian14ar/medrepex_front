@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SideMenu from "../components/menu/SideMenu";
-import Footer from "../components/menu/Footer";
+// import Footer from "../components/menu/Footer";
 import ProductTable from "../components/ProductTable";
 import SideMenuProducts from "../components/menu/SideMenuProducts";
 import StoreMenuTitle from "../components/menu/StoreMenuTitle";
@@ -121,6 +121,63 @@ import VK1437784 from "../images/store/nail-nippers/VK143-7784.jpg";
 import VK1437813 from "../images/store/nail-nippers/VK143-7813.jpg";
 import VK1437914 from "../images/store/nail-nippers/VK143-7914.jpg";
 
+// Forceps
+import I07100 from "../images/store/forceps/07-100  07-102.jpg";
+import I07102 from "../images/store/forceps/07-100  07-102.jpg";
+import I07101 from "../images/store/forceps/07-101  07-104.jpg";
+import I07104 from "../images/store/forceps/07-101  07-104.jpg";
+import I07109 from "../images/store/forceps/07-109  07-111.jpg";
+import I07111 from "../images/store/forceps/07-109  07-111.jpg";
+import I07110 from "../images/store/forceps/07-110  07-112.jpg";
+import I07112 from "../images/store/forceps/07-110  07-112.jpg";
+import I07113 from "../images/store/forceps/07-113  07-115.jpg";
+import I07115 from "../images/store/forceps/07-113  07-115.jpg";
+import I07114 from "../images/store/forceps/07-114  07-116.jpg";
+import I07116 from "../images/store/forceps/07-114  07-116.jpg";
+import I07119 from "../images/store/forceps/07-119  07-123  07-137  07-139.jpg";
+import I07123 from "../images/store/forceps/07-119  07-123  07-137  07-139.jpg";
+import I07137 from "../images/store/forceps/07-119  07-123  07-137  07-139.jpg";
+import I07139 from "../images/store/forceps/07-119  07-123  07-137  07-139.jpg";
+import I07120 from "../images/store/forceps/07-120  07-124  07-138  07-140.jpg";
+import I07124 from "../images/store/forceps/07-120  07-124  07-138  07-140.jpg";
+import I07138 from "../images/store/forceps/07-120  07-124  07-138  07-140.jpg";
+import I07140 from "../images/store/forceps/07-120  07-124  07-138  07-140.jpg";
+import I07156 from "../images/store/forceps/07-156  07-157  07-158  07-159.jpg";
+import I07157 from "../images/store/forceps/07-156  07-157  07-158  07-159.jpg";
+import I07158 from "../images/store/forceps/07-156  07-157  07-158  07-159.jpg";
+import I07159 from "../images/store/forceps/07-156  07-157  07-158  07-159.jpg";
+import I09106 from "../images/store/forceps/09-106.jpg";
+import I10104 from "../images/store/forceps/10-104.jpg";
+import I13104 from "../images/store/forceps/13-104  14-122  14-132.jpg";
+import I14122 from "../images/store/forceps/13-104  14-122  14-132.jpg";
+import I14132 from "../images/store/forceps/13-104  14-122  14-132.jpg";
+import I13106 from "../images/store/forceps/13-106.jpg";
+import I15120 from "../images/store/forceps/15-120.jpg";
+import I15124 from "../images/store/forceps/15-124.jpg";
+import I15125 from "../images/store/forceps/15-125.jpg";
+import I15150 from "../images/store/forceps/15-150.jpg";
+import I16112 from "../images/store/forceps/16-112.jpg";
+import I17108 from "../images/store/forceps/17-108.jpg";
+import I17130 from "../images/store/forceps/17-130.jpg";
+import I17132 from "../images/store/forceps/17-132.jpg";
+import I20145 from "../images/store/forceps/20-145  20-147  20-149.jpg";
+import I20147 from "../images/store/forceps/20-145  20-147  20-149.jpg";
+import I20149 from "../images/store/forceps/20-145  20-147  20-149.jpg";
+import I21147 from "../images/store/forceps/21-147.jpg";
+import I33142 from "../images/store/forceps/33-142  33-146.jpg";
+import I33146 from "../images/store/forceps/33-142  33-146.jpg";
+import I33150 from "../images/store/forceps/33-150.jpg";
+import I3506 from "../images/store/forceps/3506.jpg";
+import I7334 from "../images/store/forceps/7334.jpg";
+import I7337 from "../images/store/forceps/7337.jpg";
+import I7338 from "../images/store/forceps/7338.jpg";
+import V307A from "../images/store/forceps/V-307A.jpg";
+import V307B from "../images/store/forceps/V-307B.jpg";
+import V307C from "../images/store/forceps/V-307C.jpg";
+import V307D from "../images/store/forceps/V-307D.jpg";
+import V375B from "../images/store/forceps/V-375B  V-375.jpg";
+import V375 from "../images/store/forceps/V-375B  V-375.jpg";
+
 import * as storeActions from "../actions/storeActions";
 import storeReducers from "../reducers/storeReducers";
 
@@ -133,6 +190,7 @@ const medicalItems = [
       {
         id: "1",
         title: `CP Medical "Visorb" Coated Absorbable Braided Suture (PGA) Polyglycolic Acid`,
+        subHeader: "",
         imageSection: Vicryl,
         list: [
           {
@@ -600,6 +658,7 @@ const medicalItems = [
       {
         id: "2",
         title: `“CP Medical” Visorb Quick (PGA) Fast Absorbing Braided Suture`,
+        subHeader: "",
         imageSection: VicrylRapide,
         list: [
           {
@@ -705,6 +764,7 @@ const medicalItems = [
       {
         id: "3",
         title: `CP Medical “Monodox” Synthetic Absorbable Monofilament Suture (PDS) Polydioxanone`,
+        subHeader: "",
         imageSection: Pds,
         list: [
           {
@@ -917,6 +977,7 @@ const medicalItems = [
       {
         id: "4",
         title: `"CP Medical" Monoswift (Polyglycolide-CO-Caprolactone) Fast Absorbing Monofilament Suture`,
+        subHeader: "",
         imageSection: Monocryl,
         list: [
           {
@@ -1230,6 +1291,7 @@ const medicalItems = [
       {
         id: "5",
         title: `CP Medical Plain Gut Absorbable Sutures`,
+        subHeader: "",
         imageSection: Ethicon1,
         list: [
           { subtitle: `Natural Gut, Comparable to Ethicon® Plain Gut` },
@@ -1432,6 +1494,7 @@ const medicalItems = [
       {
         id: "6",
         title: `CP Medical Chromic Gut Absorbable Sutures`,
+        subHeader: "",
         imageSection: Ethicon2,
         list: [
           { subtitle: `Chromic Coated, Comparable to Ethicon® Chromic Gut` },
@@ -1719,6 +1782,7 @@ const medicalItems = [
       {
         id: "7",
         title: `CP Medical "Monomid" Non-Absorbable Nylon Monofilament Suture Available in Black, Blue and CLEAR`,
+        subHeader: "",
         imageSection: Ethilon,
         list: [
           {
@@ -2111,6 +2175,7 @@ const medicalItems = [
       {
         id: "8",
         title: `CP Medical Blue Polypropylene Non-Absorbable Sutures`,
+        subHeader: "",
         imageSection: Prolene,
         list: [
           {
@@ -2425,6 +2490,7 @@ const medicalItems = [
       {
         id: "9",
         title: `CP Medical Silk Black Braided Non-Absorbable Sutures`,
+        subHeader: "",
         imageSection: Permahand,
         list: [
           {
@@ -2735,6 +2801,7 @@ const medicalItems = [
       {
         id: "10",
         title: `CP Medical Black Monomid Short Biopsy Sutures`,
+        subHeader: "",
         imageSection: Biopsy,
         list: [
           { subtitle: `Non-Absorbable` },
@@ -2796,6 +2863,7 @@ const medicalItems = [
       {
         id: "11",
         title: `CP Medical "Visorb" Coated Absorbable Braided Suture (PGA) Polyglycolic Acid`,
+        subHeader: "",
         imageSection: Vicryl,
         list: [
           {
@@ -2920,6 +2988,7 @@ const medicalItems = [
       {
         id: "12",
         title: `“CP Medical” Visorb Quick (PGA) Fast Absorbing Braided Suture`,
+        subHeader: "",
         imageSection: VicrylRapide,
         list: [
           {
@@ -3016,6 +3085,7 @@ const medicalItems = [
       {
         id: "13",
         title: `CP Medical “Monodox” Synthetic Absorbable Monofilament Suture (PDS) Polydioxanone`,
+        subHeader: "",
         imageSection: "",
         list: [
           {
@@ -3228,6 +3298,7 @@ const medicalItems = [
       {
         id: "14",
         title: `"CP Medical" Monoswift (Polyglycolide-CO-Caprolactone) Fast Absorbing Monofilament Suture`,
+        subHeader: "",
         imageSection: Monocryl,
         list: [
           {
@@ -3372,6 +3443,7 @@ const medicalItems = [
       {
         id: "15",
         title: `CP Medical Plain Gut Absorbable Sutures`,
+        subHeader: "",
         imageSection: Ethicon1,
         list: [
           { subtitle: `Natural Gut, Comparable to Ethicon® Plain Gut` },
@@ -3409,6 +3481,7 @@ const medicalItems = [
       {
         id: "16",
         title: `CP Medical Chromic Gut Absorbable Sutures`,
+        subHeader: "",
         imageSection: Ethicon2,
         list: [
           { subtitle: `Chromic Coated, Comparable to Ethicon® Chromic Gut` },
@@ -3480,6 +3553,7 @@ const medicalItems = [
       {
         id: "17",
         title: `CP Medical "Monomid" Non-Absorbable Nylon Monofilament Suture Available in Black, Blue and CLEAR`,
+        subHeader: "",
         imageSection: Ethilon,
         list: [
           {
@@ -3624,6 +3698,7 @@ const medicalItems = [
       {
         id: "18",
         title: `CP Medical Blue Polypropylene Non-Absorbable Sutures`,
+        subHeader: "",
         imageSection: Prolene,
         list: [
           {
@@ -3722,6 +3797,7 @@ const medicalItems = [
       {
         id: "19",
         title: `CP Medical Silk Black Braided Non-Absorbable Sutures`,
+        subHeader: "",
         imageSection: Permahand,
         list: [
           {
@@ -3809,6 +3885,7 @@ const medicalItems = [
       {
         id: "20",
         title: `CP Medical Black Monomid Short Biopsy Sutures`,
+        subHeader: "",
         imageSection: Biopsy,
         list: [
           { subtitle: `Non-Absorbable` },
@@ -3870,6 +3947,7 @@ const medicalItems = [
       {
         id: "21",
         title: `CP Medical "Visorb" Coated Absorbable Braided Suture (PGA) Polyglycolic Acid`,
+        subHeader: "",
         imageSection: Vicryl,
         list: [
           {
@@ -3973,6 +4051,7 @@ const medicalItems = [
       {
         id: "22",
         title: `“CP Medical” Visorb Quick (PGA) Fast Absorbing Braided Suture`,
+        subHeader: "",
         imageSection: VicrylRapide,
         list: [
           {
@@ -4050,6 +4129,7 @@ const medicalItems = [
       {
         id: "23",
         title: `CP Medical “Monodox” Synthetic Absorbable Monofilament Suture (PDS) Polydioxanone`,
+        subHeader: "",
         imageSection: Pds,
         list: [
           {
@@ -4262,6 +4342,7 @@ const medicalItems = [
       {
         id: "24",
         title: `"CP Medical" Monoswift (Polyglycolide-CO-Caprolactone) Fast Absorbing Monofilament Suture`,
+        subHeader: "",
         imageSection: Monocryl,
         list: [
           {
@@ -4367,6 +4448,7 @@ const medicalItems = [
       {
         id: "25",
         title: `CP Medical Plain Gut Absorbable Sutures`,
+        subHeader: "",
         imageSection: Ethicon1,
         list: [
           { subtitle: `Natural Gut, Comparable to Ethicon® Plain Gut` },
@@ -4476,6 +4558,7 @@ const medicalItems = [
       {
         id: "26",
         title: `CP Medical Chromic Gut Absorbable Sutures`,
+        subHeader: "",
         imageSection: Ethicon2,
         list: [
           { subtitle: `Chromic Coated, Comparable to Ethicon® Chromic Gut` },
@@ -4545,6 +4628,7 @@ const medicalItems = [
       {
         id: "27",
         title: `CP Medical "Monomid" Non-Absorbable Nylon Monofilament Suture Available in Black, Blue and CLEAR`,
+        subHeader: "",
         imageSection: Ethilon,
         list: [
           {
@@ -4726,6 +4810,7 @@ const medicalItems = [
       {
         id: "28",
         title: `CP Medical Blue Polypropylene Non-Absorbable Sutures`,
+        subHeader: "",
         imageSection: Prolene,
         list: [
           {
@@ -4868,6 +4953,7 @@ const medicalItems = [
       {
         id: "29",
         title: `CP Medical Silk Black Braided Non-Absorbable Sutures`,
+        subHeader: "",
         imageSection: Permahand,
         list: [
           {
@@ -5112,6 +5198,7 @@ const medicalItems = [
       {
         id: "30",
         title: `CP Medical Black Monomid Short Biopsy Sutures`,
+        subHeader: "",
         imageSection: Biopsy,
         list: [
           { subtitle: `Non-Absorbable` },
@@ -5173,6 +5260,7 @@ const medicalItems = [
       {
         id: "31",
         title: `CP Medical "Visorb" Coated Absorbable Braided Suture (PGA) Polyglycolic Acid`,
+        subHeader: "",
         imageSection: Vicryl,
         list: [
           {
@@ -5811,6 +5899,7 @@ const medicalItems = [
       {
         id: "32",
         title: `“CP Medical” Visorb Quick (PGA) Fast Absorbing Braided Suture`,
+        subHeader: "",
         imageSection: VicrylRapide,
         list: [
           {
@@ -5916,6 +6005,7 @@ const medicalItems = [
       {
         id: "33",
         title: `CP Medical “Monodox” Synthetic Absorbable Monofilament Suture (PDS) Polydioxanone`,
+        subHeader: "",
         imageSection: Pds,
         list: [
           {
@@ -6326,6 +6416,7 @@ const medicalItems = [
       {
         id: "34",
         title: `"CP Medical" Monoswift (Polyglycolide-CO-Caprolactone) Fast Absorbing Monofilament Suture`,
+        subHeader: "",
         imageSection: Monocryl,
         list: [
           {
@@ -6639,6 +6730,7 @@ const medicalItems = [
       {
         id: "35",
         title: `CP Medical Plain Gut Absorbable Sutures`,
+        subHeader: "",
         imageSection: Ethicon1,
         list: [
           { subtitle: `Natural Gut, Comparable to Ethicon® Plain Gut` },
@@ -6862,6 +6954,7 @@ const medicalItems = [
       {
         id: "36",
         title: `CP Medical Chromic Gut Absorbable Sutures`,
+        subHeader: "",
         imageSection: Ethicon2,
         list: [
           { subtitle: `Chromic Coated, Comparable to Ethicon® Chromic Gut` },
@@ -7315,6 +7408,7 @@ const medicalItems = [
       {
         id: "37",
         title: `CP Medical "Monomid" Non-Absorbable Nylon Monofilament Suture Available in Black, Blue and CLEAR`,
+        subHeader: "",
         imageSection: Ethilon,
         list: [
           {
@@ -7767,6 +7861,7 @@ const medicalItems = [
       {
         id: "38",
         title: `CP Medical Blue Polypropylene Non-Absorbable Sutures`,
+        subHeader: "",
         imageSection: Prolene,
         list: [
           {
@@ -8196,6 +8291,7 @@ const medicalItems = [
       {
         id: "39",
         title: `CP Medical Silk Black Braided Non-Absorbable Sutures`,
+        subHeader: "",
         imageSection: Permahand,
         list: [
           {
@@ -8565,6 +8661,7 @@ const medicalItems = [
       {
         id: "40",
         title: `CP Medical Black Monomid Short Biopsy Sutures`,
+        subHeader: "",
         imageSection: Biopsy,
         list: [
           { subtitle: `Non-Absorbable` },
@@ -8626,6 +8723,7 @@ const medicalItems = [
       {
         id: "41",
         title: "",
+        subHeader: "",
         imageSection: "",
         list: [],
         codes: [
@@ -8654,6 +8752,7 @@ const medicalItems = [
       {
         id: "42",
         title: "BLUNT/BLUNT OPERATING ROOM SCISSORS",
+        subHeader: "",
         imageSection: "",
         list: [],
         codes: [
@@ -8703,6 +8802,7 @@ const medicalItems = [
       {
         id: "43",
         title: "SHARP/BLUNT OPERATING ROOM SCISSORS",
+        subHeader: "",
         imageSection: "",
         list: [],
         codes: [
@@ -8752,6 +8852,7 @@ const medicalItems = [
       {
         id: "43",
         title: "SHARP/SHARP OPERATING ROOM SCISSORS",
+        subHeader: "",
         imageSection: "",
         list: [],
         codes: [
@@ -8801,6 +8902,7 @@ const medicalItems = [
       {
         id: "44",
         title: "",
+        subHeader: "",
         imageSection: "",
         list: [],
         codes: [
@@ -8976,6 +9078,7 @@ const medicalItems = [
       {
         id: "45",
         title: ``,
+        subHeader: "",
         imageSection: "",
         list: [],
         codes: [
@@ -9034,6 +9137,7 @@ const medicalItems = [
       {
         id: "46",
         title: ``,
+        subHeader: "",
         imageSection: "",
         list: [],
         codes: [
@@ -9126,7 +9230,7 @@ const medicalItems = [
             description: `Olsen-Hegar Needle Holder with Scissor Combo, 5 1/2"`,
 
             price: 38.75,
-            imageItem: VK1101820,
+            imageItem: VK1106014,
           },
 
           {
@@ -9156,6 +9260,7 @@ const medicalItems = [
       {
         id: "47",
         title: ``,
+        subHeader: "",
         imageSection: "",
         list: [],
         codes: [
@@ -9234,6 +9339,7 @@ const medicalItems = [
       {
         id: "48",
         title: ``,
+        subHeader: "",
         imageSection: "",
         list: [],
         codes: [
@@ -9336,6 +9442,7 @@ const medicalItems = [
       {
         id: "49",
         title: ``,
+        subHeader: "",
         imageSection: "",
         list: [],
         codes: [
@@ -9428,6 +9535,7 @@ const medicalItems = [
       {
         id: "50",
         title: ``,
+        subHeader: "",
         imageSection: "",
         list: [],
         codes: [
@@ -9435,385 +9543,385 @@ const medicalItems = [
             code: "15-125",
             description: `Adson Brown Forcep, 4 3/4", 7x7 Teeth"`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I15125,
           },
 
           {
             code: "15-120",
             description: `Adson Dressing Forcep, 4 3/4", Serrated`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I15120,
           },
 
           {
             code: "15-124",
             description: `Adson Tissue Forcep, 4 3/4", 1x2 Teeth`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I15124,
           },
 
           {
             code: "15-150",
             description: `Iris Delicate Forcep, 4", Straight, 1x2 Teeth, Serrated`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I15150,
           },
 
           {
             code: "16-112",
             description: `Carmalt Splinter Forceps, 4 ½” Curved`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I16112,
           },
 
           {
             code: "13-106",
             description: `Thumb Dressing Forcep, 5 1/2", Serrated`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I13106,
           },
 
           {
             code: "13-104",
             description: `Thumb Dressing Forcep, 5 1/2", 1x2 Teeth`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I13104,
           },
 
           {
             code: "14-122",
             description: `Thumb Tissue Forcep, 5 1/2", 2x3 Teeth`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I14122,
           },
 
           {
             code: "14-132",
             description: `Thumb Tissue Forcep, 5 1/2", 3x4 Teeth`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I14132,
           },
 
           {
             code: "17-108",
             description: `Allis Tissue Forcep, 6", 5x6 Teeth`,
             price: 29.8,
-            imageItem: "",
+            imageItem: I17108,
           },
 
           {
             code: "33-142",
             description: `Baby Kern Bone Holding Forceps w/Ratchet, Jaw Cap, 1/4" - 7/8", 5 3/4"`,
             price: 78.5,
-            imageItem: "",
+            imageItem: I33142,
           },
 
           {
             code: "33-146",
             description: `Baby Kern Bone Holding Forceps w/Ratchet, Jaw Cap, 1/4" - 1 1/8", 9" `,
             price: 94.5,
-            imageItem: "",
+            imageItem: I33146,
           },
 
           {
             code: "3506",
             description: `Bone Fragment Forceps, Smaller Fragment Forceps`,
             price: 46.5,
-            imageItem: "",
+            imageItem: I3506,
           },
 
           {
             code: "33-150",
             description: `Bone Holding Forceps, 7"`,
             price: 46.5,
-            imageItem: "",
+            imageItem: I33150,
           },
 
           {
             code: "07-113",
             description: `Crile Forcep, 5 1/2", Straight`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07113,
           },
 
           {
             code: "07-114",
             description: `Crile Forcep, 5 1/2", Curved`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07114,
           },
 
           {
             code: "07-115",
             description: `Crile Forcep, 6 1/4", Straight`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07115,
           },
 
           {
             code: "07-116",
             description: `Crile Forcep, 6 1/4", Curved`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07116,
           },
 
           {
             code: "20-145",
             description: `Desmarres Chalazion Forcep, 16mm, 3 1/2"`,
             price: 59.5,
-            imageItem: "",
+            imageItem: I20145,
           },
 
           {
             code: "20-147",
             description: `Desmarres Chalazion Forcep, 20mm, 3 1/2"`,
             price: 59.5,
-            imageItem: "",
+            imageItem: I20147,
           },
 
           {
             code: "20-149",
             description: `Desmarres Chalazion Forcep, 26mm, 3 1/2"`,
             price: 59.5,
-            imageItem: "",
+            imageItem: I20149,
           },
 
           {
             code: "17-130",
             description: `Doyen Intestinal Forcep, 9", Straight`,
             price: 31.5,
-            imageItem: "",
+            imageItem: I17130,
           },
 
           {
             code: "17-132",
             description: `Doyen Intestinal Forcep, 9", Curved`,
             price: 31.5,
-            imageItem: "",
+            imageItem: I17132,
           },
 
           {
             code: "07-156",
             description: `Ferguson Angiotribe Forcep, 6 1/4", or Straight`,
             price: 31.5,
-            imageItem: "",
+            imageItem: I07156,
           },
 
           {
             code: "07-157",
             description: `Ferguson Angiotribe Forcep, 6 1/4", or Curved`,
             price: 31.5,
-            imageItem: "",
+            imageItem: I07157,
           },
 
           {
             code: "07-158",
             description: `Ferguson Angiotribe Forcep, 7 1/2", or Straight`,
             price: 36.5,
-            imageItem: "",
+            imageItem: I07158,
           },
 
           {
             code: "07-159",
             description: `Ferguson Angiotribe Forcep, 7 1/2", or Curved`,
             price: 36.5,
-            imageItem: "",
+            imageItem: I07159,
           },
 
           {
             code: "09-106",
             description: `Foerster Sponge Forcep, 9 1/2", Serrated, Straight`,
             price: 24.9,
-            imageItem: "",
+            imageItem: I09106,
           },
 
           {
             code: "21-147",
             description: `Hartman Alligator Serrated Forcep, 5 1/2"`,
             price: 78.0,
-            imageItem: "",
+            imageItem: I21147,
           },
 
           {
             code: "07-109",
             description: `Kelly Forcep, 5 1/2", Straight`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07109,
           },
 
           {
             code: "07-110",
             description: `Kelly Forcep, 5 1/2", Curved`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07110,
           },
 
           {
             code: "07-111",
             description: `Kelly Forcep, 6 1/4", Straight`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07111,
           },
 
           {
             code: "07-112",
             description: `Kelly Forcep, 6 1/4", Curved`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07112,
           },
 
           {
             code: "07-100",
             description: `Mosquito Forcep, 3 1/2", Straight`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07100,
           },
 
           {
             code: "07-101",
             description: `Mosquito Forcep, 3 1/2", Curved`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07101,
           },
 
           {
             code: "07-102",
             description: `Mosquito Forcep, 5", Straight`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07102,
           },
 
           {
             code: "07-104",
             description: `Mosquito Forcep, 5", Curved`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07104,
           },
 
           {
             code: "07-137",
             description: `Rochester-Carmalt Forcep, 6 1/4", Straight`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07137,
           },
 
           {
             code: "07-138",
             description: `Rochester-Carmalt Forcep, 6 1/4", Curved`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07138,
           },
 
           {
             code: "07-139",
             description: `Rochester-Carmalt Forcep, 8", Straight`,
             price: 27.8,
-            imageItem: "",
+            imageItem: I07139,
           },
 
           {
             code: "07-140",
             description: `Rochester-Carmalt Forcep, 8", Curved`,
             price: 27.8,
-            imageItem: "",
+            imageItem: I07140,
           },
 
           {
             code: "07-119",
             description: `Rochester-Pean Forcep, 6 1/4", Straight`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07119,
           },
 
           {
             code: "07-120",
             description: `Rochester-Pean Forcep, 6 1/4", Curved`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I07120,
           },
 
           {
             code: "07-123",
             description: `Rochester-Pean Forcep, 8", Straight `,
             price: 25.8,
-            imageItem: "",
+            imageItem: I07123,
           },
 
           {
             code: "07-124",
             description: `Rochester-Pean Forcep, 8", Curved`,
             price: 25.8,
-            imageItem: "",
+            imageItem: I07124,
           },
 
           {
             code: "V-375B",
             description: `Ruskin-Liston Bone Cutting Forceps, Double Action, 7 1/2", Curved`,
             price: 98.0,
-            imageItem: "",
+            imageItem: V375B,
           },
 
           {
             code: "V-375",
             description: `Ruskin-Liston Bone Cutting Forceps, Double Action, 7 1/2", Straight`,
             price: 98.0,
-            imageItem: "",
+            imageItem: V375,
           },
 
           {
             code: "10-104",
             description: `Sterilizer Forceps, three prong"`,
             price: 25.8,
-            imageItem: "",
+            imageItem: I10104,
           },
 
           {
             code: "V-307A",
             description: `Universal Extracting Forceps, 7"`,
             price: 78.5,
-            imageItem: "",
+            imageItem: V307A,
           },
 
           {
             code: "V-307B",
             description: `Splitter/Separator Extracting Forceps, 7"`,
             price: 78.5,
-            imageItem: "",
+            imageItem: V307B,
           },
 
           {
             code: "V-307C",
             description: `Incisor/Bicuspid Extracting Forceps, 7"`,
             price: 68.5,
-            imageItem: "",
+            imageItem: V307C,
           },
 
           {
             code: "V-307D",
             description: `Molar Extracting Forceps, 7"`,
             price: 68.5,
-            imageItem: "",
+            imageItem: V307D,
           },
 
           {
             code: "7334",
             description: `Magill Forceps Infant (Small)`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I7334,
           },
 
           {
             code: "7337",
             description: `Magill Forceps Child (Medium)`,
             price: 22.5,
-            imageItem: "",
+            imageItem: I7337,
           },
 
           {
             code: "7338",
             description: `Magill Forceps Adult (Large)`,
             price: 25.8,
-            imageItem: "",
+            imageItem: I7338,
           },
         ],
       },
@@ -9827,6 +9935,7 @@ const medicalItems = [
       {
         id: "51",
         title: `Stainless Steel Surgical Blades`,
+        subHeader: "",
         imageSection: BladesSm,
         list: [
           {
@@ -9838,61 +9947,69 @@ const medicalItems = [
             code: "SS10",
             descrption: "Size 10 Stainless Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
           {
             code: "SS11",
             description: "Size 11 Stainless Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
 
           {
             code: "SS12",
             description: "Size 12 Stainless Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
 
           {
             code: "SS15",
             description: "Size 15 Stainless Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
 
           {
             code: "SS20",
             description: "Size 20 Stainless Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
 
           {
             code: "SS21",
             description: "Size 21 Stainless Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
 
           {
             code: "SS22",
             description: "Size 22 Stainless Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
 
           {
             code: "SS23",
             description: "Size 23 Stainless Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
         ],
       },
       {
         id: "52",
         title: `Carbon Steel Surgical Blades`,
+        subHeader: {
+          subHeaders: [
+            { name: "FDA Certified" },
+            { name: "ISO Certified" },
+            { name: "CE Certified" },
+          ],
+          imageSubHeader: BladesSm,
+        },
         imageSection: BladesSm,
         list: [
           {
@@ -9904,55 +10021,55 @@ const medicalItems = [
             code: "CS10",
             description: "Size 10 Carbon Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
 
           {
             code: "CS11",
             description: "Size 11 Carbon Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
 
           {
             code: "CS12",
             description: "Size 12 Carbon Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
 
           {
             code: "CS15",
             description: "Size 15 Carbon Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
 
           {
             code: "CS20",
             description: "Size 20 Carbon Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
           {
             code: "CS21",
             description: "Size 21 Carbon Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
 
           {
             code: "CS22",
             description: "Size 22 Carbon Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
 
           {
             code: "CS23",
             description: "Size 23 Carbon Steel Surgical Blade - 100/box",
             price: 18.9,
-            imageItem: "",
+            imageItem: BladesSm,
           },
         ],
       },
@@ -9960,6 +10077,7 @@ const medicalItems = [
         id: "53",
         title: `Scalpel (Surgical Blade) Handles
         Available in size #3, #4, or #7`,
+        subHeader: "",
         imageSection: BladeHandle,
         list: [
           { subtitle: `These Handles are German Made, Stainless Steel:` },
@@ -9974,7 +10092,7 @@ const medicalItems = [
             description:
               "SIZE #3 Scalpel Handle, Stainless Steel For use with blades #10-#15 - Unit",
             price: 9.95,
-            imageItem: "",
+            imageItem: BladeHandle,
           },
 
           {
@@ -9983,7 +10101,7 @@ const medicalItems = [
             description:
               "SIZE #4 Scalpel Handle, Stainless Steel For use with blades #20-#25 - Unit",
             price: 9.95,
-            imageItem: "",
+            imageItem: BladeHandle,
           },
 
           {
@@ -9992,7 +10110,7 @@ const medicalItems = [
             description:
               "SIZE #7 Scalpel Handle, Stainless Steel For use with blades #10-#15 - Unit",
             price: 18.95,
-            imageItem: "",
+            imageItem: BladeHandle,
           },
         ],
       },
@@ -10053,9 +10171,9 @@ class ProductsPage extends Component {
               <ProductTable type={paramType} items={medicalPage[0].items} />
             </div>
           </div>
-          <div className="footer-page">
+          {/* <div className="footer-page">
             <Footer />
-          </div>
+          </div> */}
         </div>
       </React.Fragment>
     );

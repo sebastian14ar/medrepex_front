@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 import SideMenu from "../components/menu/SideMenu";
-import Footer from "../components/menu/Footer";
+// import Footer from "../components/menu/Footer";
 import SideMenuProducts from "../components/menu/SideMenuProducts";
 
 import "./styles/ItemPage.css";
@@ -95,9 +95,9 @@ class ItemPage extends Component {
             onClose={this.handleCloseAlert}
             isOpen={this.state.alertIsOpen}
           />
-          <div className="footer-page">
+          {/* <div className="footer-page">
             <Footer />
-          </div>
+          </div> */}
         </div>
       </React.Fragment>
     );

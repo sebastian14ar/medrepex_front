@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import SideMenu from "../components/menu/SideMenu";
-import Footer from "../components/menu/Footer";
+// import Footer from "../components/menu/Footer";
 import SideMenuProducts from "../components/menu/SideMenuProducts";
-import StoreTitle from "../components/menu/StoreTitle";
+// import StoreTitle from "../components/menu/StoreTitle";
 import CartTable from "../components/CartTable";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
@@ -45,16 +45,16 @@ class CartPage extends Component {
               <CartTable />
             </div>
           </div>
-          <div className="footer-page">
+          {/* <div className="footer-page">
             <Footer />
-          </div>
+          </div> */}
         </div>
       </React.Fragment>
     );
   }
 }
 
-const mapStateToProps = reducers => {
+const mapStateToProps = (reducers) => {
   return storeReducers;
 };
 

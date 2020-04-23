@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Footer from "../components/menu/Footer";
+// import Footer from "../components/menu/Footer";
 import SideMenu from "../components/menu/SideMenu";
 import Modal from "../components/Modal";
 
@@ -166,9 +166,9 @@ class RequestProductPage extends Component {
               <h1>{this.state.text}</h1>
             </Modal>
           </div>
-          <div className="footer-page">
+          {/* <div className="footer-page">
             <Footer />
-          </div>
+          </div> */}
         </div>
       </React.Fragment>
     );

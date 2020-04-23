@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import SideMenu from "../components/menu/SideMenu";
-import Footer from "../components/menu/Footer";
+// import Footer from "../components/menu/Footer";
 import SideMenuProducts from "../components/menu/SideMenuProducts";
 import StoreTitle from "../components/menu/StoreTitle";
 import StoreMenu from "../components/menu/StoreMenu";
+import { Link } from "react-router-dom";
 
 import "./styles/StoreSurgicalPage.css";
 import logo from "../images/logo2.jpg";
@@ -12,29 +13,30 @@ const page = [
   {
     id: 1,
     type: "surgical",
-    title: "Surgical Supplies"
+    title:
+      "Oral/Maxilofacial, Plastic/Cosmetic/Dermatology, and Research/Veterinary",
   },
   {
     id: 2,
     type: "oral",
-    title: "Oral/Maxilofacial"
+    title: "Oral/Maxilofacial",
   },
   {
     id: 3,
     type: "cosmetic",
-    title: "Plastic/Cosmetic/Dermatology"
+    title: "Plastic/Cosmetic/Dermatology",
   },
   {
     id: 4,
     type: "vet",
-    title: "Research/Veterinary"
-  }
+    title: "Research/Veterinary",
+  },
 ];
 
 class StoreSurgicalPage extends Component {
   render() {
     const paramType = this.props.match.params.type;
-    const actualPage = page.filter(ap =>
+    const actualPage = page.filter((ap) =>
       ap.type.toLowerCase().includes(paramType.toLowerCase())
     );
 
@@ -53,10 +55,15 @@ class StoreSurgicalPage extends Component {
           <div className="main">
             <StoreTitle title={actualPage[0].title} />
             <StoreMenu typePage={actualPage[0].type} />
+            <Link to="/warranty">
+              <h2 className="warranty-sec">
+                Instrument Warranty and Care and Handling
+              </h2>
+            </Link>
           </div>
-          <div className="footer-page">
+          {/* <div className="footer-page">
             <Footer />
-          </div>
+          </div> */}
         </div>
       </React.Fragment>
     );

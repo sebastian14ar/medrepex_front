@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SideMenu from "../components/menu/SideMenu";
-import Footer from "../components/menu/Footer";
+// import Footer from "../components/menu/Footer";
 import SkinTable from "../components/SkinTable";
 import SideMenuProducts from "../components/menu/SideMenuProducts";
 import StoreMenuTitle from "../components/menu/StoreMenuTitle";
@@ -43,6 +43,7 @@ const medicalItems = [
             description: `Lever Action Disposable Skin Stapler with 35 WIDE Staples
             (7.2mm x 4.3mm after closure)`,
             price: 11.9,
+            imageItem: SkinStapler,
           },
         ],
       },
@@ -62,6 +63,7 @@ const medicalItems = [
             code: "S-REM",
             description: `Disposable Skin Staple Remover – Tweezer Style`,
             price: 4.95,
+            imageItem: StapleRemover,
           },
         ],
       },
@@ -92,9 +94,9 @@ class SkinPage extends Component {
               />
             </div>
           </div>
-          <div className="footer-page">
+          {/* <div className="footer-page">
             <Footer />
-          </div>
+          </div> */}
         </div>
       </React.Fragment>
     );

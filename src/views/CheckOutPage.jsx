@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Footer from "../components/menu/Footer";
+// import Footer from "../components/menu/Footer";
 import SideMenu from "../components/menu/SideMenu";
 
 import "./styles/CheckOutPage.css";
@@ -63,25 +63,25 @@ class CheckOutPage extends Component {
       ? this.setState({
           form: {
             ...this.state.form,
-            businessName_ship: clones.businessName,
-            address_ship: clones.address,
-            city_ship: clones.city,
-            state_ship: clones.state,
-            zipCode_ship: clones.zipCode,
-            phone_ship: clones.phone,
-            email_ship: clones.email,
+            businessName: clones.businessName_ship,
+            address: clones.address_ship,
+            city: clones.city_ship,
+            state: clones.state_ship,
+            zipCode: clones.zipCode_ship,
+            phone: clones.phone_ship,
+            email: clones.email_ship,
           },
         })
       : this.setState({
           form: {
             ...this.state.form,
-            businessName_ship: "",
-            address_ship: "",
-            city_ship: "",
-            state_ship: "",
-            zipCode_ship: "",
-            phone_ship: "",
-            email_ship: "",
+            businessName: "",
+            address: "",
+            city: "",
+            state: "",
+            zipCode: "",
+            phone: "",
+            email: "",
           },
         });
   };
@@ -112,35 +112,32 @@ class CheckOutPage extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    if (!this.state.form.businessName) {
+    if (!this.state.form.businessName_ship) {
       this.handleOpenModal("The field Name is required");
       return;
     }
-    if (!this.state.form.address) {
+    if (!this.state.form.address_ship) {
       this.handleOpenModal("The field Address is required");
       return;
     }
-    if (!this.state.form.city) {
+    if (!this.state.form.city_ship) {
       this.handleOpenModal("The field City is required");
       return;
     }
-    if (!this.state.form.state) {
+    if (!this.state.form.state_ship) {
       this.handleOpenModal("The field State is required");
       return;
     }
-    if (!this.state.form.zipCode) {
+    if (!this.state.form.zipCode_ship) {
       this.handleOpenModal("The field Zip-Code is required");
       return;
     }
-    if (!this.state.form.phone) {
+    if (!this.state.form.phone_ship) {
       this.handleOpenModal("The field Phone is required");
       return;
     }
-    if (!this.state.form.phone) {
-      this.handleOpenModal("The field Phone is required");
-      return;
-    }
-    if (!this.state.form.email) {
+
+    if (!this.state.form.email_ship) {
       this.handleOpenModal("The field Email is required");
       return;
     }
@@ -179,7 +176,7 @@ class CheckOutPage extends Component {
         this.setState({
           form: {
             //Bill
-            businessName: undefined,
+            businessName: "",
             address: "",
             city: "",
             state: "",
@@ -228,64 +225,63 @@ class CheckOutPage extends Component {
             <h2 className="principal-title">Checkout</h2>
             <div className="main-container-request">
               <div className="form-ck">
-                <h3>Bill To</h3>
-                <label htmlFor="businessName">Name or Practice:</label>
+                <h3>Ship To</h3>
+                <label htmlFor="businessName_ship">Name or Practice:</label>
                 <input
                   onChange={this.handleChange}
-                  defaultValue={this.state.form.businessName}
-                  name="businessName"
+                  defaultValue={this.state.form.businessName_ship}
+                  name="businessName_ship"
                   type="text"
                   placeholder="Businness Name..."
                 />
                 <label htmlFor="address">Address</label>
                 <textarea
-                  name="address"
+                  name="address_ship"
                   onChange={this.handleChange}
-                  defaultValue={this.state.form.address}
+                  defaultValue={this.state.form.address_ship}
                   placeholder="Shipping Address..."
                   cols="30"
                   rows="3"
                 />
-                <label htmlFor="city">City :</label>
+                <label htmlFor="city_ship">City:</label>
                 <input
                   onChange={this.handleChange}
-                  defaultValue={this.state.form.city}
-                  name="city"
+                  defaultValue={this.state.form.city_ship}
+                  name="city_ship"
                   type="text"
                   placeholder="City..."
                 />
-
-                <label htmlFor="state">State:</label>
+                <label htmlFor="state_ship">State:</label>
                 <input
                   onChange={this.handleChange}
-                  defaultValue={this.state.form.state}
-                  name="state"
+                  defaultValue={this.state.form.state_ship}
+                  name="state_ship"
                   type="text"
                   placeholder="State..."
                 />
-                <label htmlFor="zipCode">Zip-Code:</label>
+                <label htmlFor="zipCode_ship">Zip-Code:</label>
                 <input
                   onChange={this.handleChange}
-                  defaultValue={this.state.form.zipCode}
-                  name="zipCode"
+                  defaultValue={this.state.form.zipCode_ship}
+                  name="zipCode_ship"
                   type="text"
                   placeholder="Zip-code..."
                 />
 
-                <label htmlFor="phone">Phone:</label>
+                <label htmlFor="phone_ship">Phone:</label>
                 <input
                   onChange={this.handleChange}
-                  defaultValue={this.state.form.phone}
-                  name="phone"
+                  defaultValue={this.state.form.phone_ship}
+                  name="phone_ship"
                   type="text"
                   placeholder="Phone..."
                 />
 
-                <label htmlFor="email">Email:</label>
+                <label htmlFor="email_ship">Email:</label>
                 <input
                   onChange={this.handleChange}
-                  defaultValue={this.state.form.email}
-                  name="email"
+                  defaultValue={this.state.form.email_ship}
+                  name="email_ship"
                   type="email"
                   placeholder="Email..."
                 />
@@ -361,7 +357,7 @@ class CheckOutPage extends Component {
                 </button>
               </div>
               <div className="form-ck">
-                <h3>Ship To</h3>
+                <h3>Bill To</h3>
                 <label>
                   <input
                     name="ship_check"
@@ -369,64 +365,65 @@ class CheckOutPage extends Component {
                     onChange={this.handleCheck}
                     checked={this.state.shipCheck}
                   />{" "}
-                  Check if same as{" "}
+                  Check if same as Ship to{" "}
                 </label>
-                <label htmlFor="businessName_ship">Name or Practice:</label>
+                <label htmlFor="businessName">Name or Practice:</label>
                 <input
                   onChange={this.handleChange}
-                  defaultValue={this.state.form.businessName_ship}
-                  name="businessName_ship"
+                  defaultValue={this.state.form.businessName}
+                  name="businessName"
                   type="text"
                   placeholder="Businness Name..."
                 />
                 <label htmlFor="address">Address</label>
                 <textarea
-                  name="address_ship"
+                  name="address"
                   onChange={this.handleChange}
-                  defaultValue={this.state.form.address_ship}
+                  defaultValue={this.state.form.address}
                   placeholder="Shipping Address..."
                   cols="30"
                   rows="3"
                 />
-                <label htmlFor="city_ship">City:</label>
+                <label htmlFor="city">City :</label>
                 <input
                   onChange={this.handleChange}
-                  defaultValue={this.state.form.city_ship}
-                  name="city_ship"
+                  defaultValue={this.state.form.city}
+                  name="city"
                   type="text"
                   placeholder="City..."
                 />
-                <label htmlFor="state_ship">State:</label>
+
+                <label htmlFor="state">State:</label>
                 <input
                   onChange={this.handleChange}
-                  defaultValue={this.state.form.state_ship}
-                  name="state_ship"
+                  defaultValue={this.state.form.state}
+                  name="state"
                   type="text"
                   placeholder="State..."
                 />
-                <label htmlFor="zipCode_ship">Zip-Code:</label>
+                <label htmlFor="zipCode">Zip-Code:</label>
                 <input
                   onChange={this.handleChange}
-                  defaultValue={this.state.form.zipCode_ship}
-                  name="zipCode_ship"
+                  defaultValue={this.state.form.zipCode}
+                  name="zipCode"
                   type="text"
                   placeholder="Zip-code..."
                 />
 
-                <label htmlFor="phone_ship">Phone:</label>
+                <label htmlFor="phone">Phone:</label>
                 <input
                   onChange={this.handleChange}
-                  defaultValue={this.state.form.phone_ship}
-                  name="phone_ship"
+                  defaultValue={this.state.form.phone}
+                  name="phone"
                   type="text"
                   placeholder="Phone..."
                 />
 
-                <label htmlFor="email_ship">Email:</label>
+                <label htmlFor="email">Email:</label>
                 <input
                   onChange={this.handleChange}
-                  defaultValue={this.state.form.email_ship}
-                  name="email_ship"
+                  defaultValue={this.state.form.email}
+                  name="email"
                   type="email"
                   placeholder="Email..."
                 />
@@ -440,9 +437,9 @@ class CheckOutPage extends Component {
             </Modal>
           </div>
 
-          <div className="footer-page">
+          {/* <div className="footer-page">
             <Footer />
-          </div>
+          </div> */}
         </div>
       </React.Fragment>
     );

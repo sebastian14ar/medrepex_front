@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SideMenu from "../components/menu/SideMenu";
-import Footer from "../components/menu/Footer";
+// import Footer from "../components/menu/Footer";
 import ProductTable from "../components/CardiacTable";
 import SideMenuProducts from "../components/menu/SideMenuProducts";
 import StoreMenuTitle from "../components/menu/StoreMenuTitle";
@@ -131,9 +131,9 @@ class SteelPage extends Component {
               />
             </div>
           </div>
-          <div className="footer-page">
+          {/* <div className="footer-page">
             <Footer />
-          </div>
+          </div> */}
         </div>
       </React.Fragment>
     );

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import SideMenu from "../components/menu/SideMenu";
-import Footer from "../components/menu/Footer";
 import ProductTable from "../components/CardiacTable";
 import SideMenuProducts from "../components/menu/SideMenuProducts";
 import StoreMenuTitle from "../components/menu/StoreMenuTitle";
@@ -39,6 +38,7 @@ const medicalItems = [
             needle: "NONE",
             length: "17-18 inch",
             price: 84.8,
+            imageItem: LeftSilkBlack,
           },
 
           {
@@ -49,6 +49,7 @@ const medicalItems = [
             needle: "NONE",
             length: "17-18 inch",
             price: 84.8,
+            imageItem: LeftSilkBlack,
           },
 
           {
@@ -59,6 +60,7 @@ const medicalItems = [
             needle: "NONE",
             length: "17-18 inch",
             price: 84.8,
+            imageItem: LeftSilkBlack,
           },
 
           {
@@ -69,6 +71,7 @@ const medicalItems = [
             needle: "NONE",
             length: "10-30 inch",
             price: 84.8,
+            imageItem: LeftSilkBlack,
           },
 
           {
@@ -79,6 +82,7 @@ const medicalItems = [
             needle: "NONE",
             length: "12-30 inch",
             price: 84.8,
+            imageItem: LeftSilkBlack,
           },
 
           {
@@ -89,6 +93,7 @@ const medicalItems = [
             needle: "NONE",
             length: "12-30 inch",
             price: 84.8,
+            imageItem: LeftSilkBlack,
           },
 
           {
@@ -99,6 +104,7 @@ const medicalItems = [
             needle: "NONE",
             length: "12-30 inch",
             price: 84.8,
+            imageItem: LeftSilkBlack,
           },
 
           {
@@ -109,6 +115,7 @@ const medicalItems = [
             needle: "NONE",
             length: "6-30 inch",
             price: 84.8,
+            imageItem: LeftSilkBlack,
           },
 
           {
@@ -119,6 +126,7 @@ const medicalItems = [
             needle: "NONE",
             length: "6-30 inch",
             price: 84.8,
+            imageItem: LeftSilkBlack,
           },
         ],
       },
@@ -148,6 +156,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 103.9,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -164,6 +173,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 103.9,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -180,6 +190,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 103.9,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -196,6 +207,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 103.9,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -212,6 +224,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 99.9,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -228,6 +241,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 148.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -244,6 +258,7 @@ const medicalItems = [
             length: "48 inch",
 
             price: 148.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -260,6 +275,7 @@ const medicalItems = [
             length: "48 inch",
 
             price: 103.9,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -276,6 +292,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 109.8,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -292,6 +309,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 113.9,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -308,6 +326,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 113.9,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -324,6 +343,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 99.9,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -340,6 +360,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 148.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -356,6 +377,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 99.9,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -372,6 +394,7 @@ const medicalItems = [
             length: "24 inch",
 
             price: 218.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -388,6 +411,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 218.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -404,6 +428,7 @@ const medicalItems = [
             length: "24 inch",
 
             price: 244.6,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -420,6 +445,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 188.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -436,6 +462,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 288.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -452,6 +479,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 178.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -468,6 +496,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 99.9,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -484,6 +513,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 99.9,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -500,6 +530,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 129.5,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -516,6 +547,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 163.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -532,6 +564,7 @@ const medicalItems = [
             length: "24 inch",
 
             price: 143.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -548,6 +581,7 @@ const medicalItems = [
             length: "18 inch",
 
             price: 394.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -564,6 +598,7 @@ const medicalItems = [
             length: "18 inch",
 
             price: 615.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -580,6 +615,7 @@ const medicalItems = [
             length: "24 inch",
 
             price: 461.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -596,6 +632,7 @@ const medicalItems = [
             length: "24 inch",
 
             price: 461.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -612,6 +649,7 @@ const medicalItems = [
             length: "24 inch",
 
             price: 294.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -628,6 +666,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 87.9,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -644,6 +683,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 69.7,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -660,6 +700,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 69.7,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -676,6 +717,7 @@ const medicalItems = [
             length: "60 inch",
 
             price: 138.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -692,6 +734,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 87.9,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -708,6 +751,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 69.9,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -724,6 +768,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 57.7,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -740,6 +785,7 @@ const medicalItems = [
             length: "18 inch",
 
             price: 99.8,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -756,6 +802,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 163.5,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -772,6 +819,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 135.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -788,6 +836,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 135.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -804,6 +853,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 135.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -820,6 +870,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 135.0,
+            imageItem: LeftBluePoly,
           },
 
           {
@@ -836,6 +887,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 135.0,
+            imageItem: LeftBluePoly,
           },
         ],
       },
@@ -874,6 +926,7 @@ const medicalItems = [
             length: "5-30 inch",
 
             price: 750.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -890,6 +943,7 @@ const medicalItems = [
             length: "5-30 inch",
 
             price: 1020.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -906,6 +960,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 93.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -922,6 +977,7 @@ const medicalItems = [
             length: "5-30 inch",
 
             price: 1020.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -938,6 +994,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 90.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -953,6 +1010,7 @@ const medicalItems = [
             length: "4-30 inch",
 
             price: 240.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -969,6 +1027,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 115.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -985,6 +1044,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 103.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -1001,6 +1061,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 99.9,
+            imageItem: PolyBond,
           },
 
           {
@@ -1017,6 +1078,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 103.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -1033,6 +1095,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 69.9,
+            imageItem: PolyBond,
           },
 
           {
@@ -1049,6 +1112,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 103.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -1065,6 +1129,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 99.9,
+            imageItem: PolyBond,
           },
 
           {
@@ -1081,6 +1146,7 @@ const medicalItems = [
             length: "36 inch",
 
             price: 99.9,
+            imageItem: PolyBond,
           },
 
           {
@@ -1097,6 +1163,7 @@ const medicalItems = [
             length: "18 inch",
 
             price: 69.9,
+            imageItem: PolyBond,
           },
 
           {
@@ -1113,6 +1180,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 69.9,
+            imageItem: PolyBond,
           },
 
           {
@@ -1129,6 +1197,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 123.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -1145,6 +1214,7 @@ const medicalItems = [
             length: "30 inch",
 
             price: 113.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -1161,6 +1231,7 @@ const medicalItems = [
             length: "5-30 inch",
 
             price: 540.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -1177,6 +1248,7 @@ const medicalItems = [
             length: "5-30 inch",
 
             price: 684.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -1193,6 +1265,7 @@ const medicalItems = [
             length: "5-36 inch",
 
             price: 684.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -1209,6 +1282,7 @@ const medicalItems = [
             length: "10-30 inch",
 
             price: 684.0,
+            imageItem: PolyBond,
           },
 
           {
@@ -1225,6 +1299,7 @@ const medicalItems = [
             length: "10-36 inch",
 
             price: 514.0,
+            imageItem: PolyBond,
           },
         ],
       },
@@ -1256,6 +1331,7 @@ const medicalItems = [
             length: "12-18 inch",
 
             price: 174.0,
+            imageItem: LeftVisorb,
           },
 
           {
@@ -1272,6 +1348,7 @@ const medicalItems = [
             length: "12-18 inch",
 
             price: 174.0,
+            imageItem: LeftVisorb,
           },
         ],
       },
@@ -1297,6 +1374,7 @@ const medicalItems = [
             length: "4-30 inch",
 
             price: 368.0,
+            imageItem: SteelSut,
           },
 
           {
@@ -1308,6 +1386,7 @@ const medicalItems = [
             length: "4-18 inch",
 
             price: 451.0,
+            imageItem: SteelSut,
           },
 
           {
@@ -1319,6 +1398,7 @@ const medicalItems = [
             length: "4-18 inch",
 
             price: 420.0,
+            imageItem: SteelSut,
           },
 
           {
@@ -1329,6 +1409,7 @@ const medicalItems = [
             needle: "NCCS",
             length: "4-18 inch",
             price: 405.0,
+            imageItem: SteelSut,
           },
 
           {
@@ -1339,6 +1420,7 @@ const medicalItems = [
             needle: "NCCS",
             length: "4-18 inch",
             price: 405.0,
+            imageItem: SteelSut,
           },
 
           {
@@ -1349,6 +1431,7 @@ const medicalItems = [
             needle: "NCCS",
             length: "4-18 inch",
             price: 420.0,
+            imageItem: SteelSut,
           },
 
           {
@@ -1359,6 +1442,7 @@ const medicalItems = [
             needle: "NCCS",
             length: "2-18 inch",
             price: 211.0,
+            imageItem: SteelSut,
           },
         ],
       },
@@ -1389,9 +1473,9 @@ class CardiacPage extends Component {
               />
             </div>
           </div>
-          <div className="footer-page">
+          {/* <div className="footer-page">
             <Footer />
-          </div>
+          </div> */}
         </div>
       </React.Fragment>
     );

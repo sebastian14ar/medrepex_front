@@ -37,6 +37,19 @@ class ProductsTable extends Component {
         {this.props.items.map((table) => {
           return (
             <div key={table.id}>
+              {table.subHeader ? (
+                <div className="sub-header">
+                  <ul>
+                    {table.subHeader.subHeaders.map((sub) => {
+                      return <li key={sub.name}>{sub.name}</li>;
+                    })}
+                  </ul>
+                  <div className="sub-header-image">
+                    <img src={table.subHeader.imageSubHeader} alt="" />
+                  </div>
+                </div>
+              ) : null}
+
               <div className="header-section">
                 <div className="header-section-title">
                   {table.title ? <h2>{table.title}</h2> : null}

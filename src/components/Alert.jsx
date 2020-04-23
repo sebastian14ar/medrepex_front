@@ -15,7 +15,7 @@ function Modal(props) {
             X
           </button>
 
-          <span>Added item</span>
+          <span>Item added</span>
         </div>
       </div>,
       document.getElementById("alert")

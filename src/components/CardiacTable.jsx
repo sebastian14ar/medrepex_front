@@ -39,10 +39,12 @@ class ProductsTable extends Component {
             <div key={table.id}>
               <div className="header-section">
                 <div className="header-section-title">
-                  <h2>{table.title}</h2>
+                  {table.title ? <h2>{table.title}</h2> : null}
                 </div>
                 <div className="header-section-content">
-                  <img src={table.imageSection} alt={table.title} />
+                  {table.imageSection ? (
+                    <img src={table.imageSection} alt={table.title} />
+                  ) : null}
                   <ul>
                     {table.list.map((sub) => {
                       return <li key={sub.subtitle}>{sub.subtitle}</li>;

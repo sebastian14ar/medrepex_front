@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../components/menu/Footer";
+// import Footer from "../components/menu/Footer";
 import SideMenu from "../components/menu/SideMenu";
 
 import logo from "../images/logo2.jpg";
@@ -86,9 +86,9 @@ const TermsPage = () => {
             </p>
           </section>
         </div>
-        <div className="footer-page">
+        {/* <div className="footer-page">
           <Footer />
-        </div>
+        </div> */}
       </div>
     </React.Fragment>
   );

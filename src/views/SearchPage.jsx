@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SideMenu from "../components/menu/SideMenu";
-import Footer from "../components/menu/Footer";
+// import Footer from "../components/menu/Footer";
 import SearchTable from "../components/SearchTable";
 import SideMenuProducts from "../components/menu/SideMenuProducts";
 import StoreMenuTitle from "../components/menu/StoreMenuTitle";
@@ -5268,9 +5268,9 @@ class SearchPage extends Component {
               <SearchTable items={this.state.items} />
             </div>
           </div>
-          <div className="footer-page">
+          {/* <div className="footer-page">
             <Footer />
-          </div>
+          </div> */}
         </div>
       </React.Fragment>
     );
