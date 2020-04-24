@@ -44,7 +44,7 @@ const SideMenuProducts = () => {
           </Link>
         </div>
         <div className="menu-section">
-          <Link to="/store/surgical" className="link">
+          <Link to="/store/instruments" className="link">
             Instruments
           </Link>
           <Link to="/store/instruments/blades/surgical" className="link">

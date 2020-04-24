@@ -31,6 +31,11 @@ const page = [
     type: "vet",
     title: "Research/Veterinary",
   },
+  {
+    id: 5,
+    type: "instruments",
+    title: "Instruments",
+  },
 ];
 
 class StoreSurgicalPage extends Component {

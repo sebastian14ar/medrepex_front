@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 import SideMenu from "../components/menu/SideMenu";
 // import Footer from "../components/menu/Footer";
@@ -23,13 +24,17 @@ class ItemPage extends Component {
   }
 
   handleChange(e) {
-    this.setState({ cant: e.target.value });
+    let newCant = e.target.value.replace(/[^\d]/g, "");
+
+    this.setState({ cant: newCant });
   }
 
   handleClick(e, item) {
-    this.props.agregar(item, this.state.cant);
-    this.handleOpenAlert();
-    setTimeout(this.handleCloseAlert, 1000);
+    if (this.state.cant) {
+      this.props.agregar(item, this.state.cant);
+      this.handleOpenAlert();
+      setTimeout(this.handleCloseAlert, 1000);
+    }
   }
   handleOpenAlert = () => {
     this.setState({ alertIsOpen: true });
@@ -55,6 +60,11 @@ class ItemPage extends Component {
             <SideMenuProducts />
           </div>
           <div className="main">
+            <div className="cart-section">
+              <Link to="/cart">
+                <button className="btn-gn btn-dark text-bolder">CART</button>
+              </Link>
+            </div>
             <h1>CODE: {this.props.location.state.item.code}</h1>
             {this.props.location.state.item.imageItem ? (
               <div>

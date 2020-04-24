@@ -50,27 +50,37 @@ class HomePage extends Component {
           </div>
           <div className="main">
             <div className="main-container">
-              <h2 className="principal-title">Surgical Sutures</h2>
+              {/* <h2 className="principal-title">Surgical Sutures</h2> */}
               {/* <h2 className="principal-title"></h2> */}
+              <div className="surgical-content">
+                <h2 className="surgical-title">Surgical Sutures</h2>
+                <h3 className="surgical-subtitle">
+                  General
+                  Surgery....Oral/Maxilofacial....Plasti/Cosmetic....Ophthalmology....Orthopedic
+                </h3>
+                <Link to="/store/surgical">
+                  <img
+                    className="surgical-image"
+                    src={surgical}
+                    alt="medical"
+                  />
+                </Link>
+              </div>
               <div className="images-container">
                 <div className="images-row-container">
-                  <Link to="/store/surgical">
-                    <img src={surgical} alt="medical" />
-                    <h5>General Surgery</h5>
-                  </Link>
-                  <Link to="/store/oral">
+                  <Link to="/store/instruments">
+                    <h4>Instruments</h4>
                     <img src={oral} alt="medical" />
-                    <h5>Oral/Maxillofacial</h5>
                   </Link>
                 </div>
                 <div className="images-row-container">
-                  <Link to="/store/cosmetic">
+                  <Link to="/store/instruments/blades/surgical">
+                    <h4>Blades</h4>
                     <img src={cosmetic} alt="medical" />
-                    <h5>Plastic/Cosmetic</h5>
                   </Link>
                   <Link to="/store/vet">
+                    <h4>Veterinary/Research</h4>
                     <img src={reserch} alt="medical" />
-                    <h5>Research</h5>
                   </Link>
                 </div>
               </div>

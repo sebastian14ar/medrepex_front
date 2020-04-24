@@ -10137,6 +10137,9 @@ class ProductsPage extends Component {
     } else {
       paramType = this.props.match.params.type;
     }
+    if (paramType == "instruments") {
+      paramType = "surgical";
+    }
     const medicalPage = medicalItems.filter((mi) =>
       mi.subtype
         .toLowerCase()
