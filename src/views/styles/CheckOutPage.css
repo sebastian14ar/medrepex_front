@@ -92,3 +92,13 @@
   display: flex;
   justify-content: space-evenly;
 }
+.special-label {
+  margin-left: 0.5rem;
+}
+.special-label small {
+  font-size: 0.9rem !important;
+  font-weight: bold;
+}
+.special-text-btn {
+  font-size: 0.8rem;
+}

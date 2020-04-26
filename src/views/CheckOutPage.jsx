@@ -290,20 +290,24 @@ class CheckOutPage extends Component {
                 <div className="option-payment">
                   <button
                     onClick={this.handlePayment1}
-                    className="btn btn-primary"
+                    className="btn-check btn-primary"
                   >
-                    Option 1
+                    Option 1 <br />
+                    <span className="special-text-btn">Credit Card Info</span>
                   </button>
                   <button
                     onClick={this.handlePayment2}
-                    className="btn btn-primary"
+                    className="btn-check btn-primary"
                   >
-                    Option 2
+                    Option 2<br />
+                    <span className="special-text-btn">
+                      Only if pre-approved
+                    </span>
                   </button>
                 </div>
                 {!this.state.paymentMode ? (
                   <React.Fragment>
-                    <h3>Option 1: Credit Card Information</h3>
+                    {/* <h3>Option 1: Credit Card Information</h3> */}
                     <label htmlFor="cardNameHolder">Card Name Holder:</label>
                     <input
                       onChange={this.handleChange}
@@ -312,36 +316,36 @@ class CheckOutPage extends Component {
                       type="text"
                       placeholder="Card Name Holder..."
                     />
-                    <label htmlFor="numberCard">Number Card:</label>
+                    <label htmlFor="numberCard">Card Number:</label>
                     <input
                       onChange={this.handleChange}
                       defaultValue={this.state.form.numberCard}
                       name="numberCard"
                       type="text"
-                      placeholder="Number card..."
+                      placeholder="Card number..."
                     />
-                    <label htmlFor="numberExpDate">Expedition Date:</label>
+                    <label htmlFor="numberExpDate">Expiration Date:</label>
                     <input
                       onChange={this.handleChange}
                       defaultValue={this.state.form.numberExpDate}
                       name="numberExpDate"
                       type="text"
-                      placeholder="Expedition Date..."
+                      placeholder="Expiration Date..."
                     />
                   </React.Fragment>
                 ) : null}
 
                 {this.state.paymentMode ? (
                   <React.Fragment>
-                    <h3>Option 2: Invoice Net 30 Day Payment Terms</h3>
-                    <label htmlFor="purchase_order">Purchase order:</label>
+                    <h3>Invoice Net 30 Day Payment Terms</h3>
+                    {/* <label htmlFor="purchase_order">Purchase order:</label> */}
                     <input
                       disabled={this.paymentMode}
                       onChange={this.handleChange}
                       value={this.state.form.purchase_order}
                       name="purchase_order"
                       type="number"
-                      placeholder="#Purchase order"
+                      placeholder="Purchase order #..."
                     />
                   </React.Fragment>
                 ) : null}
@@ -350,12 +354,23 @@ class CheckOutPage extends Component {
                   onClick={this.handleSubmit}
                   className="btn-final btn-final-primary"
                 >
-                  Place Purchase Order
+                  Place Order
                 </button>
               </div>
               <div className="form-ck">
-                <h3>Bill To</h3>
-                <label>
+                <h3>
+                  Bill To{" "}
+                  <label className="special-label">
+                    <input
+                      name="ship_check"
+                      type="checkbox"
+                      onChange={this.handleCheck}
+                      checked={this.state.shipCheck}
+                    />
+                    <small>Check if same as Ship To </small>
+                  </label>
+                </h3>
+                {/* <label>
                   <input
                     name="ship_check"
                     type="checkbox"
@@ -363,7 +378,7 @@ class CheckOutPage extends Component {
                     checked={this.state.shipCheck}
                   />{" "}
                   Check if same as Ship to{" "}
-                </label>
+                </label> */}
                 <label htmlFor="businessName">Name or Practice:</label>
                 <input
                   onChange={this.handleChange}

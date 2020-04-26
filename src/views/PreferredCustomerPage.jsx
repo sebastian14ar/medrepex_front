@@ -46,7 +46,7 @@ const PreferredCustomerPage = () => {
             </p>
             <p className="text-special">
               1. <strong className="sp-strong">Flat Rate Shipping</strong> on
-              any size order to anywhere.  Just one low flat rate of $6.90
+              any size order to anywhere.  Just one low flat rate of $7.90
               applies to all of your orders no matter what size or what the
               actual shipping cost.
             </p>

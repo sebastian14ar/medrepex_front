@@ -171,3 +171,29 @@ body::-webkit-scrollbar {
   color: #fff;
   background-color: #7dcd40;
 }
+.btn-check {
+  padding: 0.175rem 0.5rem;
+  border-radius: 5px;
+  width: 160px;
+  margin-top: 5px;
+  font-size: 0.75rem;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.btn-check.btn-primary {
+  color: #fff;
+  max-width: 600px;
+  height: auto;
+  font-size: 1em;
+  background-color: #20232a;
+  border: none;
+}
+.btn-check.btn-primary:not(:disabled):not(.disabled):hover {
+  color: #fff;
+  background-color: #7dcd40;
+}
+.btn-check.btn-primary:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #7dcd40;
+}
