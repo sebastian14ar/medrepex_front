@@ -126,7 +126,7 @@ class CartTable extends Component {
               <tr>
                 <td>SHIP-01</td>
 
-                <td>STANDAR GROUND SHIPPING</td>
+                <td>STANDARD GROUND SHIPPING</td>
                 <td className="quantity">N/A</td>
                 <td>$9.90</td>
                 <td>$9.90</td>

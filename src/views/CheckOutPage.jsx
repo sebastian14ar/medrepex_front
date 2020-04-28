@@ -148,7 +148,7 @@ class CheckOutPage extends Component {
       }
     } else {
       if (!this.state.form.cardNameHolder) {
-        this.handleOpenModal("The field Card Name Holder is required");
+        this.handleOpenModal("The field Name on Card is required");
         return;
       }
       if (!this.state.form.numberCard) {
@@ -308,13 +308,13 @@ class CheckOutPage extends Component {
                 {!this.state.paymentMode ? (
                   <React.Fragment>
                     {/* <h3>Option 1: Credit Card Information</h3> */}
-                    <label htmlFor="cardNameHolder">Card Name Holder:</label>
+                    <label htmlFor="cardNameHolder">Name on Card:</label>
                     <input
                       onChange={this.handleChange}
                       defaultValue={this.state.form.cardNameHolder}
                       name="cardNameHolder"
                       type="text"
-                      placeholder="Card Name Holder..."
+                      placeholder="Name on Card..."
                     />
                     <label htmlFor="numberCard">Card Number:</label>
                     <input
