@@ -22,10 +22,12 @@ const TermsPage = () => {
           </div>
           <section className="text-container">
             <p>
-              Our payment terms are net 30 days (due 30 days from Invoice Date).
-              It is requested that payment be made within the terms of the
-              agreement to maintain open account privileges.  A 1.5% charge may
-              be applied to all past due balances.
+              <strong>Payment Terms</strong>
+            </p>
+            <p>
+              Payment can be made by Credit Card from our secure Shopping Cart. 
+              Payment may be made by Invoice with 30 Day Payment Terms if 
+              Pre-approved prior to placing the Order.
             </p>
             <p>
               <strong>Shipping & Handling</strong>

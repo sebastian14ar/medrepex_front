@@ -41,11 +41,10 @@ const CustomerPage = () => {
 
             <p>
               One of the primary goals of our Customer Service Department is to
-              get your orders shipped the next Business Day after receipt. If we
-              fail to do this, we waive the already minimal, flat rate shipping
-              and handling fee. For more details on our Shipping Policy, please
-              click on "Terms & Conditions" found on the right hand side of our
-              Home Page. You will also find our "MONEY BACK GUARANTEE" and easy
+              get your orders shipped the next Business Day after receipt. For 
+              more details on our Shipping Policy, please click on 
+              "Terms & Conditions" found on the right hand side of our Home Page. 
+              You will also find our "MONEY BACK GUARANTEE" and easy
               "Return Policy" detailed on the "Terms & Conditions" page.
             </p>
             <p>

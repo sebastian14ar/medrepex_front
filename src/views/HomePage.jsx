@@ -55,8 +55,7 @@ class HomePage extends Component {
               <div className="surgical-content">
                 <h2 className="surgical-title">Surgical Sutures</h2>
                 <h3 className="surgical-subtitle">
-                  General
-                  Surgery....Oral/Maxilofacial....Plasti/Cosmetic....Ophthalmology....Orthopedic
+                  General Surgery.... Oral/Maxillofacial.... Plastic/Cosmetic.... Ophthalmology.... Orthopedic
                 </h3>
                 <Link to="/store/surgical">
                   <img
@@ -103,7 +102,7 @@ class HomePage extends Component {
               </p>
               <p>
                 Please take a moment to review our product pages. Our Surgical
-                Sutures Blades and Instruments come with the full Manufacturer's
+                Sutures, Blades and Instruments come with the full Manufacturer's
                 Warranty and our "Money Back" Guarantee. If you have any
                 questions or comments, please click on "Customer Service" in the
                 Menu and contact us by any one of the means listed there.

@@ -4,7 +4,6 @@ import SideMenu from "../components/menu/SideMenu";
 import SideMenuProducts from "../components/menu/SideMenuProducts";
 import StoreTitle from "../components/menu/StoreTitle";
 import StoreMenu from "../components/menu/StoreMenu";
-import { Link } from "react-router-dom";
 
 import "./styles/StoreSurgicalPage.css";
 import logo from "../images/logo2.jpg";
@@ -14,7 +13,7 @@ const page = [
     id: 1,
     type: "surgical",
     title:
-      "Oral/Maxilofacial, Plastic/Cosmetic/Dermatology, and Research/Veterinary",
+      "Oral/Maxillofacial, Plastic/Cosmetic/Dermatology, and Research/Veterinary",
   },
   {
     id: 2,
@@ -60,11 +59,11 @@ class StoreSurgicalPage extends Component {
           <div className="main">
             <StoreTitle title={actualPage[0].title} />
             <StoreMenu typePage={actualPage[0].type} />
-            <Link to="/warranty">
+            {/* <Link to="/warranty">
               <h2 className="warranty-sec">
                 Instrument Warranty and Care and Handling
               </h2>
-            </Link>
+            </Link> */}
           </div>
           {/* <div className="footer-page">
             <Footer />
