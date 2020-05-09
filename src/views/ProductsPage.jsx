@@ -4,6 +4,7 @@ import SideMenu from "../components/menu/SideMenu";
 import ProductTable from "../components/ProductTable";
 import SideMenuProducts from "../components/menu/SideMenuProducts";
 import StoreMenuTitle from "../components/menu/StoreMenuTitle";
+import StoreMenuTitleInstruments from "../components/menu/StoreMenuTitleInstruments";
 
 import "./styles/ProductsPage.css";
 import logo from "../images/logo2.jpg";
@@ -666,7 +667,7 @@ const medicalItems = [
           },
           { subtitle: `Initial strength comparable to Nylon & Gut` },
           {
-            subtitle: `Begins to fall off in 7 to 10 Days; no would tension by 10 Days`,
+            subtitle: `Begins to fall off in 7 to 10 Days; no wound tension by 10 Days`,
           },
           { subtitle: `Elicits lower tissue reaction than Chromic Gut` },
           {
@@ -2996,7 +2997,7 @@ const medicalItems = [
           },
           { subtitle: `Initial strength comparable to Nylon & Gut` },
           {
-            subtitle: `Begins to fall off in 7 to 10 Days; no would tension by 10 Days`,
+            subtitle: `Begins to fall off in 7 to 10 Days; no wound tension by 10 Days`,
           },
           { subtitle: `Elicits lower tissue reaction than Chromic Gut` },
           {
@@ -4059,7 +4060,7 @@ const medicalItems = [
           },
           { subtitle: `Initial strength comparable to Nylon & Gut` },
           {
-            subtitle: `Begins to fall off in 7 to 10 Days; no would tension by 10 Days`,
+            subtitle: `Begins to fall off in 7 to 10 Days; no wound tension by 10 Days`,
           },
           { subtitle: `Elicits lower tissue reaction than Chromic Gut` },
           {
@@ -5907,7 +5908,7 @@ const medicalItems = [
           },
           { subtitle: `Initial strength comparable to Nylon & Gut` },
           {
-            subtitle: `Begins to fall off in 7 to 10 Days; no would tension by 10 Days`,
+            subtitle: `Begins to fall off in 7 to 10 Days; no wound tension by 10 Days`,
           },
           { subtitle: `Elicits lower tissue reaction than Chromic Gut` },
           {
@@ -10169,7 +10170,12 @@ class ProductsPage extends Component {
             <SideMenuProducts />
           </div>
           <div className="main">
-            <StoreMenuTitle title={medicalPage[0].title} />
+            {this.props.match.params.type !== "instruments" ? (
+              <StoreMenuTitle title={medicalPage[0].title} />
+            ) : (
+              <StoreMenuTitleInstruments title={medicalPage[0].title} />
+            )}
+
             <div className="product-container">
               <ProductTable type={paramType} items={medicalPage[0].items} />
             </div>

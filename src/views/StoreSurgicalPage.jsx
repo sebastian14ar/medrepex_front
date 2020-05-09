@@ -33,7 +33,7 @@ const page = [
   {
     id: 5,
     type: "instruments",
-    title: "Instruments",
+    title: "Instruments-High Quality German Stainless Steel",
   },
 ];
 

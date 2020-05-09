@@ -129,13 +129,16 @@ const StoreMenu = (props) => {
     <React.Fragment>
       <div className="store-menu-container">
         <div className="table-section-1">
-          <div className="section-1">
-            <h3>SUTURES: Select Type to Compare</h3>
-            <div className="sub-section">
-              <StoreMenuList type={props.typePage} category={categorys[0]} />
-              <StoreMenuList type={props.typePage} category={categorys[1]} />
+          {props.typePage !== "instruments" ? (
+            <div className="section-1">
+              <h3>SUTURES: Select Type to Compare</h3>
+              <div className="sub-section">
+                <StoreMenuList type={props.typePage} category={categorys[0]} />
+                <StoreMenuList type={props.typePage} category={categorys[1]} />
+              </div>
             </div>
-          </div>
+          ) : null}
+
           <div className="section-1">
             <StoreMenuList type={props.typePage} category={categorys[2]} />
           </div>

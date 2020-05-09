@@ -2,17 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/StoreMenuTitle.css";
 
-import stickerSamples from "../../images/menufree.gif";
-
-const StoreMenuTitle = (props) => {
+const StoreMenuTitleInstruments = (props) => {
   console.log(props.paramType);
 
   return (
     <React.Fragment>
       <div className="store-title-menu-container">
-        <div className="title-menu-prod">
+        <div className="title-menu-prod-inst">
           <h2>{props.title}</h2>
-          <img src={stickerSamples} alt="Free samples" />
         </div>
         <div className="buttons">
           <Link to="/cart">
@@ -27,4 +24,4 @@ const StoreMenuTitle = (props) => {
   );
 };
 
-export default StoreMenuTitle;
+export default StoreMenuTitleInstruments;

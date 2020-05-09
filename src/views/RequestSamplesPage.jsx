@@ -96,8 +96,8 @@ class RequestSamplesPage extends Component {
                 <p className="text-special">
                   1. Purchase as little as one box Online or by Phone or Fax and
                   if you are not satisfied with the Product’s Performance, for
-                  any reason, we will refund the full purchase price including
-                  shipping with no return of the product required.
+                  any reason, we will refund the full purchase price with no
+                  return of the product required.
                 </p>
                 <p className="text-special">
                   2. Or... Provide us with the information below by completing

@@ -9,6 +9,12 @@
   justify-content: space-between;
   padding-top: 0.4rem;
 }
+.title-menu-prod-inst {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  padding-top: 0.4rem;
+}
 .store-title-container h2 {
   font-size: 1.8rem;
   margin: 10px 0 15px;
