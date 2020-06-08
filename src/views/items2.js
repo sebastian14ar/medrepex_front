@@ -1190,7 +1190,7 @@ const medicalItems = [
 
             size: `6-0, Needle P-1 Length 18", 12/Box`,
 
-            price: 64.79,
+            price: 68.79,
           },
         ],
       },
@@ -3016,7 +3016,7 @@ const medicalItems = [
 
             size: `6-0, Needle P-1 Length 18", 12/Box`,
 
-            price: 64.79,
+            price: 68.79,
           },
         ],
       },
@@ -6196,7 +6196,7 @@ const medicalItems = [
 
             size: `6-0, Needle P-1 Length 18", 12/Box`,
 
-            price: 64.79,
+            price: 68.79,
           },
         ],
       },
