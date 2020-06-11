@@ -260,6 +260,7 @@ const medicalItems = [
             size: `0, Needle CP-1 Length 30", Violet, 12/Box`,
 
             price: 43.25,
+            price: 46.25,
             imageItem: Vicryl,
           },
 
@@ -410,7 +411,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `5-0, Needle C-3 (13mm)Length 18", Violet, 12/Box`,
 
-            price: 46.25,
+            price: 49.25,
             imageItem: Vicryl,
           },
 
@@ -451,6 +452,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `4-0, Needle FS-2 Length 30", Un-dyed, 12/Box`,
             price: 46.25,
+            price: 49.25,
             imageItem: Vicryl,
           },
 
@@ -461,6 +463,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `3-0, Needle FS-2 Length 27", Un-dyed, 12/Box`,
             price: 46.25,
+            price: 49.25,
             imageItem: Vicryl,
           },
 
@@ -491,6 +494,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `2-0, Needle FS-1 Length 30", Un-dyed, 12/Box`,
             price: 46.25,
+            price: 49.25,
             imageItem: Vicryl,
           },
 
@@ -563,6 +567,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `6-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -573,6 +578,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `5-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -583,6 +589,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `4-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -604,6 +611,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `5-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -615,6 +623,7 @@ const medicalItems = [
 
             size: `4-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -625,6 +634,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `3-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -1338,6 +1348,7 @@ const medicalItems = [
             size: `3-0, Needle FS-2 Length 27", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon1,
           },
 
@@ -1388,6 +1399,7 @@ const medicalItems = [
             size: `4-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon1,
           },
 
@@ -1400,6 +1412,7 @@ const medicalItems = [
             size: `3-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon1,
           },
 
@@ -1437,6 +1450,7 @@ const medicalItems = [
             size: `5-0, Needle P-3 Premium Length 18", 12/Box`,
 
             price: 64.79,
+            price: 68.79,
             imageItem: Ethicon1,
           },
 
@@ -1514,6 +1528,7 @@ const medicalItems = [
             size: `4-0, Needle SH, 1/2" Cir. Taper Point, 26mm Length 30", 12/Box`,
 
             price: 35.84,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -1526,6 +1541,7 @@ const medicalItems = [
             size: `3-0, Needle SH, 1/2 Cir<br />Length 30", 12/Box`,
 
             price: 35.84,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -1622,6 +1638,7 @@ const medicalItems = [
             size: `4-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 38.8,
+            price: 39.96,
             imageItem: Ethicon2,
           },
 
@@ -1634,6 +1651,7 @@ const medicalItems = [
             size: `3-0, Needle CT-1 Length 30", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -1646,6 +1664,7 @@ const medicalItems = [
             size: `2-0, Needle CT-1 Length 30", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -1658,6 +1677,7 @@ const medicalItems = [
             size: `0, Needle CT-1 Length 30", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -1694,6 +1714,7 @@ const medicalItems = [
                         Length 20", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -1706,6 +1727,7 @@ const medicalItems = [
             size: `5-0, Needle C-3, 13mm Cutting Needle Length 18", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -1718,6 +1740,7 @@ const medicalItems = [
                         Length 18", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -2359,6 +2382,7 @@ const medicalItems = [
             size: `5-0, Needle PS-2 Length 18", 12/Box`,
 
             price: 72.0,
+            price: 72.00,
             imageItem: Prolene,
           },
 
@@ -2423,6 +2447,7 @@ const medicalItems = [
             size: `6-0, Needle P-3 Length 18", 12/Box`,
 
             price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
 
@@ -2434,6 +2459,7 @@ const medicalItems = [
             size: `6-0, Needle P-1 Length 18", 12/Box`,
 
             price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
           {
@@ -2444,6 +2470,7 @@ const medicalItems = [
             size: `5-0, Needle P-3 Length 18", 12/Box`,
 
             price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
 
@@ -2455,6 +2482,7 @@ const medicalItems = [
             size: `4-0, Needle P-3 Length 18", 12/Box`,
 
             price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
 
@@ -2514,6 +2542,7 @@ const medicalItems = [
             size: `3-0, Needle X-1, 23mm Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -2527,6 +2556,7 @@ const medicalItems = [
             size: `3-0, Needle FSL, 30mm Length 30", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -2579,6 +2609,7 @@ const medicalItems = [
             size: `3-0, Needle CP-2, 26mm Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -2592,6 +2623,7 @@ const medicalItems = [
             size: `2-0, Needle NSH, 26mm Length 30", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -2618,6 +2650,7 @@ const medicalItems = [
             size: `6-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -2631,6 +2664,7 @@ const medicalItems = [
             size: `5-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -2644,6 +2678,7 @@ const medicalItems = [
             size: `4-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -2657,6 +2692,7 @@ const medicalItems = [
             size: `3-0, Needle FS-1 Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -2670,6 +2706,7 @@ const medicalItems = [
             size: `2-0, Needle FS Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -2683,6 +2720,7 @@ const medicalItems = [
             size: `3-0, Needle X-8, 15mm Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -2696,6 +2734,7 @@ const medicalItems = [
             size: `4-0, Needle X-8, 15mm Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -2709,6 +2748,7 @@ const medicalItems = [
             size: `3-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -2748,6 +2788,7 @@ const medicalItems = [
             size: `6-0, Needle P-1 Length 18", 12/Box`,
 
             price: 65.8,
+            price: 77.12,
             imageItem: Permahand,
           },
 
@@ -2761,6 +2802,7 @@ const medicalItems = [
             size: `5-0, Needle P-3 Length 18", 12/Box`,
 
             price: 67.77,
+            price: 77.12,
             imageItem: Permahand,
           },
 
@@ -2893,6 +2935,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `6-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -2903,6 +2946,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `5-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -2913,6 +2957,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `4-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -2934,6 +2979,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `5-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -2945,6 +2991,7 @@ const medicalItems = [
 
             size: `4-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -2955,6 +3002,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `3-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -3463,6 +3511,7 @@ const medicalItems = [
             size: `5-0, Needle P-3 Premium Length 18", 12/Box`,
 
             price: 64.79,
+            price: 68.79,
             imageItem: Ethicon1,
           },
 
@@ -3719,6 +3768,7 @@ const medicalItems = [
             size: `5-0, Needle PS-2 Length 18", 12/Box`,
 
             price: 72.0,
+            price: 72.00,
             imageItem: Prolene,
           },
 
@@ -3752,6 +3802,7 @@ const medicalItems = [
             size: `6-0, Needle P-3 Length 18", 12/Box`,
 
             price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
 
@@ -3763,6 +3814,7 @@ const medicalItems = [
             size: `6-0, Needle P-1 Length 18", 12/Box`,
 
             price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
           {
@@ -3773,6 +3825,7 @@ const medicalItems = [
             size: `5-0, Needle P-3 Length 18", 12/Box`,
 
             price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
 
@@ -3784,6 +3837,7 @@ const medicalItems = [
             size: `4-0, Needle P-3 Length 18", 12/Box`,
 
             price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
         ],
@@ -3833,6 +3887,7 @@ const medicalItems = [
             size: `6-0, Needle P-1 Length 18", 12/Box`,
 
             price: 65.8,
+            price: 77.12,
             imageItem: Permahand,
           },
 
@@ -3846,6 +3901,7 @@ const medicalItems = [
             size: `5-0, Needle P-3 Length 18", 12/Box`,
 
             price: 67.77,
+            price: 77.12,
             imageItem: Permahand,
           },
 
@@ -3977,6 +4033,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `6-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -3987,6 +4044,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `5-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -3997,6 +4055,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `4-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -4007,6 +4066,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `5-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -4018,6 +4078,7 @@ const medicalItems = [
 
             size: `4-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -4028,6 +4089,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `3-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -4482,6 +4544,7 @@ const medicalItems = [
             size: `3-0, Needle FS-2 Length 27", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon1,
           },
           {
@@ -4504,6 +4567,7 @@ const medicalItems = [
             size: `4-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon1,
           },
 
@@ -4516,6 +4580,7 @@ const medicalItems = [
             size: `3-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon1,
           },
 
@@ -4539,6 +4604,7 @@ const medicalItems = [
             size: `5-0, Needle P-3 Premium Length 18", 12/Box`,
 
             price: 64.79,
+            price: 68.79,
             imageItem: Ethicon1,
           },
 
@@ -4578,6 +4644,7 @@ const medicalItems = [
             size: `4-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 38.8,
+            price: 39.96,
             imageItem: Ethicon2,
           },
           {
@@ -4875,6 +4942,7 @@ const medicalItems = [
             size: `5-0, Needle PS-2 Length 18", 12/Box`,
 
             price: 72.0,
+            price: 72.00,
             imageItem: Prolene,
           },
 
@@ -4908,6 +4976,7 @@ const medicalItems = [
             size: `6-0, Needle P-3 Length 18", 12/Box`,
 
             price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
 
@@ -4919,6 +4988,7 @@ const medicalItems = [
             size: `6-0, Needle P-1 Length 18", 12/Box`,
 
             price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
           {
@@ -4929,6 +4999,7 @@ const medicalItems = [
             size: `5-0, Needle P-3 Length 18", 12/Box`,
 
             price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
 
@@ -4940,6 +5011,7 @@ const medicalItems = [
             size: `4-0, Needle P-3 Length 18", 12/Box`,
 
             price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
         ],
@@ -4977,6 +5049,7 @@ const medicalItems = [
             size: `3-0, Needle X-1, 23mm Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -4990,6 +5063,7 @@ const medicalItems = [
             size: `3-0, Needle FSL, 30mm Length 30", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -5016,6 +5090,7 @@ const medicalItems = [
             size: `3-0, Needle CP-2, 26mm Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -5042,6 +5117,7 @@ const medicalItems = [
             size: `6-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -5055,6 +5131,7 @@ const medicalItems = [
             size: `5-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -5068,6 +5145,7 @@ const medicalItems = [
             size: `4-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -5081,6 +5159,7 @@ const medicalItems = [
             size: `3-0, Needle FS-1 Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -5094,6 +5173,7 @@ const medicalItems = [
             size: `2-0, Needle FS Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -5107,6 +5187,7 @@ const medicalItems = [
             size: `3-0, Needle X-8, 15mm Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -5120,6 +5201,7 @@ const medicalItems = [
             size: `4-0, Needle X-8, 15mm Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -5133,6 +5215,7 @@ const medicalItems = [
             size: `3-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -5159,6 +5242,7 @@ const medicalItems = [
             size: `6-0, Needle P-1 Length 18", 12/Box`,
 
             price: 65.8,
+            price: 77.12,
             imageItem: Permahand,
           },
 
@@ -5172,6 +5256,7 @@ const medicalItems = [
             size: `5-0, Needle P-3 Length 18", 12/Box`,
 
             price: 67.77,
+            price: 77.12,
             imageItem: Permahand,
           },
 
@@ -5500,6 +5585,7 @@ const medicalItems = [
             size: `0, Needle CP-1 Length 30", Violet, 12/Box`,
 
             price: 43.25,
+            price: 46.25,
             imageItem: Vicryl,
           },
 
@@ -5651,6 +5737,7 @@ const medicalItems = [
             size: `5-0, Needle C-3 (13mm)Length 18", Violet, 12/Box`,
 
             price: 46.25,
+            price: 49.25,
             imageItem: Vicryl,
           },
 
@@ -5691,6 +5778,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `4-0, Needle FS-2 Length 30", Un-dyed, 12/Box`,
             price: 46.25,
+            price: 49.25,
             imageItem: Vicryl,
           },
 
@@ -5701,6 +5789,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `3-0, Needle FS-2 Length 27", Un-dyed, 12/Box`,
             price: 46.25,
+            price: 49.25,
             imageItem: Vicryl,
           },
 
@@ -5803,6 +5892,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `6-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -5813,6 +5903,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `5-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -5823,6 +5914,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `4-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -5844,6 +5936,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `5-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -5855,6 +5948,7 @@ const medicalItems = [
 
             size: `4-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -5865,6 +5959,7 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `3-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
             price: 71.89,
+            price: 75.90,
             imageItem: Vicryl,
           },
 
@@ -6800,6 +6895,7 @@ const medicalItems = [
             size: `3-0, Needle FS-2 Length 27", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon1,
           },
 
@@ -6850,6 +6946,7 @@ const medicalItems = [
             size: `4-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon1,
           },
 
@@ -6862,6 +6959,7 @@ const medicalItems = [
             size: `3-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon1,
           },
 
@@ -6899,6 +6997,7 @@ const medicalItems = [
             size: `5-0, Needle P-3 Premium Length 18", 12/Box`,
 
             price: 64.79,
+            price: 68.79,
             imageItem: Ethicon1,
           },
 
@@ -7138,6 +7237,7 @@ const medicalItems = [
             size: `4-0, Needle SH, 1/2" Cir. Taper Point, 26mm Length 30", 12/Box`,
 
             price: 35.84,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -7150,6 +7250,7 @@ const medicalItems = [
             size: `3-0, Needle SH, 1/2 Cir<br />Length 30", 12/Box`,
 
             price: 35.84,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -7246,6 +7347,7 @@ const medicalItems = [
             size: `4-0, Needle FS-2 Length 18", 12/Box`,
 
             price: 38.8,
+            price: 39.96,
             imageItem: Ethicon2,
           },
 
@@ -7258,6 +7360,7 @@ const medicalItems = [
             size: `3-0, Needle CT-1 Length 30", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -7270,6 +7373,7 @@ const medicalItems = [
             size: `2-0, Needle CT-1 Length 30", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -7282,6 +7386,7 @@ const medicalItems = [
             size: `0, Needle CT-1 Length 30", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -7318,6 +7423,7 @@ const medicalItems = [
                         Length 20", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -7330,6 +7436,7 @@ const medicalItems = [
             size: `5-0, Needle C-3, 13mm Cutting Needle Length 18", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -7342,6 +7449,7 @@ const medicalItems = [
                         Length 18", 12/Box`,
 
             price: 39.96,
+            price: 43.16,
             imageItem: Ethicon2,
           },
 
@@ -8136,7 +8244,7 @@ const medicalItems = [
 
             size: `5-0, Needle PS-2 Length 18", 12/Box`,
 
-            price: 72.0,
+            price: 72.00,
             imageItem: Prolene,
           },
 
@@ -8212,7 +8320,7 @@ const medicalItems = [
 
             size: `6-0, Needle P-3 Length 18", 12/Box`,
 
-            price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
 
@@ -8225,7 +8333,7 @@ const medicalItems = [
 
             size: `6-0, Needle P-1 Length 18", 12/Box`,
 
-            price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
 
@@ -8238,7 +8346,7 @@ const medicalItems = [
 
             size: `5-0, Needle P-3 Length 18", 12/Box`,
 
-            price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
 
@@ -8251,7 +8359,7 @@ const medicalItems = [
 
             size: `4-0, Needle P-3 Length 18", 12/Box`,
 
-            price: 72.0,
+            price: 78.80,
             imageItem: Prolene,
           },
 
@@ -8373,7 +8481,7 @@ const medicalItems = [
 
             size: `3-0, Needle X-1, 23mm Length 18", 12/Box`,
 
-            price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -8386,7 +8494,7 @@ const medicalItems = [
 
             size: `3-0, Needle FSL, 30mm Length 30", 12/Box`,
 
-            price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -8438,7 +8546,7 @@ const medicalItems = [
 
             size: `3-0, Needle CP-2, 26mm Length 18", 12/Box`,
 
-            price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -8451,7 +8559,7 @@ const medicalItems = [
 
             size: `2-0, Needle NSH, 26mm Length 30", 12/Box`,
 
-            price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -8477,7 +8585,7 @@ const medicalItems = [
 
             size: `6-0, Needle FS-2 Length 18", 12/Box`,
 
-            price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -8490,7 +8598,7 @@ const medicalItems = [
 
             size: `5-0, Needle FS-2 Length 18", 12/Box`,
 
-            price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -8503,7 +8611,7 @@ const medicalItems = [
 
             size: `4-0, Needle FS-2 Length 18", 12/Box`,
 
-            price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -8516,7 +8624,7 @@ const medicalItems = [
 
             size: `3-0, Needle FS-1 Length 18", 12/Box`,
 
-            price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -8529,7 +8637,7 @@ const medicalItems = [
 
             size: `2-0, Needle FS Length 18", 12/Box`,
 
-            price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -8542,7 +8650,7 @@ const medicalItems = [
 
             size: `3-0, Needle X-8, 15mm Length 18", 12/Box`,
 
-            price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -8555,7 +8663,7 @@ const medicalItems = [
 
             size: `4-0, Needle X-8, 15mm Length 18", 12/Box`,
 
-            price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -8568,7 +8676,7 @@ const medicalItems = [
 
             size: `3-0, Needle FS-2 Length 18", 12/Box`,
 
-            price: 35.92,
+            price: 39.90,
             imageItem: Permahand,
           },
 
@@ -8607,7 +8715,7 @@ const medicalItems = [
 
             size: `6-0, Needle P-1 Length 18", 12/Box`,
 
-            price: 65.8,
+            price: 77.12,
             imageItem: Permahand,
           },
 
@@ -8620,7 +8728,7 @@ const medicalItems = [
 
             size: `5-0, Needle P-3 Length 18", 12/Box`,
 
-            price: 67.77,
+            price: 77.12,
             imageItem: Permahand,
           },
 
