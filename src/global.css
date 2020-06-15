@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
 }
 .navbar {
   grid-area: navbar;
-  background-color: #021f59;
+  background-color: #050382;
   /* background-color: white; */
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
