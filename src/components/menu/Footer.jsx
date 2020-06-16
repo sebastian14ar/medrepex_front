@@ -125,7 +125,7 @@ const Footer = () => {
         <hr />
         <div className="footer-final-text">
           <span>2003-2019 MedRep Express</span>
-          <span>2003-2019 MedRep Express</span>
+        
         </div>
       </div>
     </div>

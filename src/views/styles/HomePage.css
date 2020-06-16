@@ -31,11 +31,13 @@
 }
 .text-container {
   padding: 0 10px;
-
-  text-align: justify;
+  margin-left: 100px;
+  margin-right: 150px;
+  text-align: center;
 }
 .text-special {
   margin: 0 2px;
+  text-align: center;
 }
 .navbar-container {
   width: 100%;
