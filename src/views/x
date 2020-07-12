@@ -224,6 +224,14 @@
         size: `4-0, Needle FS-2 Length 18", Violet, 12/Box`,
         price: 46.25,
       },
+      { 
+        Code: "397A",
+        ethiconCode:"",
+        description:"Visorb(PGA)",
+        category:"Absorbable Sutures",
+        size:'4-0, FS-2, 30" Suture, Violet, 12/Box',
+        price: 49.25,
+      },
 
       {
         code: "398A",
@@ -262,9 +270,7 @@
         description: "Visorb(PGA)",
         category: "Absorbable Sutures",
         size: `3-0, Needle FS-2 Length 27", Un-dyed, 12/Box`,
-<<<<<<< HEAD
-        price: 46.25,
-=======
+
         price: 49.25,
 >>>>>>> 94fd6bf... cambio de precios
       },
@@ -275,7 +281,7 @@
         description: "Visorb(PGA)",
         category: "Absorbable Sutures",
         size: `3-0, Needle FS-1 Length 30", Violet, 12/Box`,
-        price: 46.25,
+        price: 49.25,
       },
 
       {
@@ -5213,6 +5219,15 @@
         price: 46.25,
       },
 
+      { 
+        Code: "397A",
+        ethiconCode:"",
+        description:"Visorb(PGA)",
+        category:"Absorbable Sutures",
+        size:'4-0, FS-2, 30" Suture, Violet, 12/Box',
+        price: 49.25,
+      },
+
       {
         code: "398A",
         ethiconCode: "J398G",
@@ -5250,9 +5265,7 @@
         description: "Visorb(PGA)",
         category: "Absorbable Sutures",
         size: `3-0, Needle FS-2 Length 27", Un-dyed, 12/Box`,
-<<<<<<< HEAD
-        price: 46.25,
-=======
+
         price: 49.25,
 >>>>>>> 94fd6bf... cambio de precios
       },
@@ -5263,7 +5276,7 @@
         description: "Visorb(PGA)",
         category: "Absorbable Sutures",
         size: `3-0, Needle FS-1 Length 30", Violet, 12/Box`,
-        price: 46.25,
+        price: 49.25,
       },
 
       {
