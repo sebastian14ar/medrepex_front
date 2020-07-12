@@ -17,12 +17,13 @@ import * as storeActions from "../actions/storeActions";
 import storeReducers from "../reducers/storeReducers";
 
 class HomePage extends Component {
+  className= "modal"
   constructor(props) {
     super(props);
     this.state = {
       modalIsOpen: false,
       text:
-        "Our Website is temporarily closed for Maintenance.  Please call: 877-740-9133 or email: Sales@MedRepExpress.com to place an order or inquiry.  We apologize for the inconvenience.",
+        "To Have a Better Shopping Experience We Recommend to Use The Following Browsers",
     };
   }
 
