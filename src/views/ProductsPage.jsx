@@ -470,7 +470,7 @@ const medicalItems = [
             description: "Visorb(PGA)",
             category: "Absorbable Sutures",
             size: `3-0, Needle FS-1 Length 30", Violet, 12/Box`,
-            price: 46.25,
+            price: 49.25,
             imageItem: Vicryl,
           },
 
@@ -5709,7 +5709,7 @@ const medicalItems = [
             description: "Visorb(PGA)",
             category: "Absorbable Sutures",
             size: `3-0, Needle FS-1 Length 30", Violet, 12/Box`,
-            price: 46.25,
+            price: 49.25,
             imageItem: Vicryl,
           },
 
