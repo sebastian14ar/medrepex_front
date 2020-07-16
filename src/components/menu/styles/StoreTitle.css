@@ -1,0 +1,16 @@
+.store-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.store-title-container h2 {
+  font-size: 1.8rem;
+  margin: 10px 0 15px;
+}
+.store-title-container h4 {
+  color: #d92938;
+  text-decoration: underline;
+}
+.text-bolder {
+  font-weight: bold;
+}

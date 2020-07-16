@@ -1,0 +1,64 @@
+.custom-width-100 {
+  width: 100%;
+}
+.table-head {
+  background-color: #021f59;
+  color: white;
+  border: none;
+  text-align: left;
+  font-size: 0.8rem;
+}
+.table-products {
+  border-collapse: collapse;
+}
+.table-products td {
+  padding: 0.3rem 0.3rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 1;
+}
+
+.table-row-center {
+  text-align: center;
+}
+.line-table {
+  margin: 0;
+  border-color: #dee2e6;
+  border-style: solid;
+}
+.custom-th-width-10 {
+  width: 10%;
+  padding-right: 0.5rem;
+}
+.custom-th-width-30 {
+  width: 30%;
+}
+.shop-icon {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-right: 0.2rem;
+}
+.header-section {
+  margin-bottom: 1rem;
+}
+.header-section-title h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.header-section-content {
+  display: flex;
+}
+.header-section-content img {
+  width: 200px;
+  height: auto;
+  object-fit: scale-down;
+}
+.sub-header {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.sub-header ul {
+  margin: 1rem 1.5rem;
+  font-weight: bold;
+}

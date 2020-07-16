@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap");
+body {
+  margin: 0;
+  /* overflow: hidden; */
+  background-color: white;
+  /* font-family: "Fira Sans Condensed", sans-serif; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: 80px 1fr auto;
+
+  grid-template-areas:
+    "navbar navbar"
+    "menu main"
+    "footer-page footer-page";
+  height: 100vh;
+}
+.navbar {
+  grid-area: navbar;
+  background-color: #050382;
+  /* background-color: white; */
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.menu {
+  grid-area: menu;
+  background-color: #f7f7f7;
+  /* border: 1px solid greenyellow; */
+  padding: 0px 5px 5px;
+}
+.main {
+  grid-area: main;
+  background-color: #fcfcfc;
+  padding: 10px;
+}
+.footer-page {
+  grid-area: footer-page;
+}
+
+.btn {
+  padding: 0.175rem 1rem;
+  border-radius: 5px;
+  width: 110px;
+  margin-top: 5px;
+  font-size: 0.75rem;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.btn-special {
+  padding: 0.1rem 1rem;
+  border-radius: 2px;
+  width: auto;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.btn-special.btn-primary {
+  color: #fff;
+  max-width: 600px;
+  height: 30px;
+  font-size: 1em;
+  background-color: #417ae8;
+  border: none;
+}
+.btn-special.btn-primary:hover {
+  color: black;
+
+  background-color: white;
+}
+.btn.btn-primary {
+  color: #fff;
+  max-width: 600px;
+  height: 30px;
+  font-size: 1em;
+  background-color: #20232a;
+  border: none;
+}
+.btn.btn-secondary {
+  color: #fff;
+  background-color: #7dcd40;
+  border-color: #7dcd40;
+}
+.btn.btn-grey {
+  color: #fff;
+  background-color: #989a9c;
+  border-color: #989a9c;
+}
+.btn.btn-primary:not(:disabled):not(.disabled):hover {
+  color: #fff;
+  background-color: #7dcd40;
+}
+.btn.btn-primary:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #7dcd40;
+}
+
+.btn-gn {
+  padding: 0.175rem 1rem;
+  border-radius: 5px;
+  width: 110px;
+  cursor: pointer;
+  margin: 0 10px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.btn-gn.btn-dark {
+  color: #fff;
+  max-width: 600px;
+  height: 30px;
+  font-size: 0.9em;
+  background-color: #20232a;
+  border: none;
+}
+.btn-gn.btn-dark:not(:disabled):not(.disabled):hover {
+  color: #fff;
+  background-color: gray;
+}
+.btn-shop {
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  width: 105px;
+  cursor: pointer;
+  margin: 0;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.btn-shop.btn-dark {
+  color: #fff;
+  max-width: 600px;
+  height: 25px;
+  font-size: 0.7em;
+  background-color: #20232a;
+  border: none;
+}
+.btn-shop.btn-dark:not(:disabled):not(.disabled):hover {
+  color: #fff;
+  background-color: gray;
+}
+.btn-final {
+  padding: 0.175rem 1rem;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 0.75rem;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.btn-final.btn-final-primary {
+  color: #fff;
+  max-width: 600px;
+  height: 30px;
+  font-size: 1em;
+  background-color: #20232a;
+  border: none;
+}
+.btn-final.btn-final-primary:not(:disabled):not(.disabled):hover {
+  color: #fff;
+  background-color: #7dcd40;
+}
+.btn-check {
+  padding: 0.175rem 0.5rem;
+  border-radius: 5px;
+  width: 160px;
+  margin-top: 5px;
+  font-size: 0.75rem;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.btn-check.btn-primary {
+  color: #fff;
+  max-width: 600px;
+  height: auto;
+  font-size: 1em;
+  background-color: #20232a;
+  border: none;
+}
+.btn-check.btn-primary:not(:disabled):not(.disabled):hover {
+  color: #fff;
+  background-color: #7dcd40;
+}
+.btn-check.btn-primary:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #7dcd40;
+}
