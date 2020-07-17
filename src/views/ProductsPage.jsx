@@ -557,6 +557,16 @@ const medicalItems = [
           },
 
           {
+            code: "426A",
+            ethiconCode: "",
+            description: "Visorb(PGA)",
+            category: "Absorbable Sutures",
+            size: `4-0, NPS-2 Needle, Undyed, 30" Suture, 12/Box`,
+            price: 71.89,
+            imageItem: Vicryl,
+          },
+
+          {
             code: "492A",
             ethiconCode: "J492G",
             description: "Visorb(PGA)",
@@ -2384,17 +2394,6 @@ const medicalItems = [
           },
 
           {
-            code: "8648P",
-            ethiconCode: "8648G",
-            description: "CP Medical Blue",
-            category: "Polypropylene Sutures",
-            size: `7-0, P6, 8mm Needle Length 18", 12/Box`,
-
-            price: 88.58,
-            imageItem: Prolene,
-          },
-
-          {
             code: "8687P",
             ethiconCode: "",
             description: "CP Medical Blue",
@@ -2881,6 +2880,16 @@ const medicalItems = [
             description: "Visorb(PGA)",
             category: "Absorbable Sutures",
             size: `3-0, Needle PS-2 Length 30", Un-dyed, 12/Box`,
+            price: 71.89,
+            imageItem: Vicryl,
+          },
+
+          {
+            code: "426A",
+            ethiconCode: "",
+            description: "Visorb(PGA)",
+            category: "Absorbable Sutures",
+            size: `4-0, NPS-2 Needle, Undyed, 30" Suture, 12/Box`,
             price: 71.89,
             imageItem: Vicryl,
           },
@@ -3965,6 +3974,16 @@ const medicalItems = [
             description: "Visorb(PGA)",
             category: "Absorbable Sutures",
             size: `3-0, Needle PS-2 Length 30", Un-dyed, 12/Box`,
+            price: 71.89,
+            imageItem: Vicryl,
+          },
+
+          {
+            code: "426A",
+            ethiconCode: "",
+            description: "Visorb(PGA)",
+            category: "Absorbable Sutures",
+            size: `4-0, NPS-2 Needle, Undyed, 30" Suture, 12/Box`,
             price: 71.89,
             imageItem: Vicryl,
           },
@@ -5791,6 +5810,16 @@ const medicalItems = [
             description: "Visorb(PGA)",
             category: "Absorbable Sutures",
             size: `3-0, Needle PS-2 Length 30", Un-dyed, 12/Box`,
+            price: 71.89,
+            imageItem: Vicryl,
+          },
+
+          {
+            code: "426A",
+            ethiconCode: "",
+            description: "Visorb(PGA)",
+            category: "Absorbable Sutures",
+            size: `4-0, NPS-2 Needle, Undyed, 30" Suture, 12/Box`,
             price: 71.89,
             imageItem: Vicryl,
           },
@@ -8162,19 +8191,6 @@ const medicalItems = [
             size: `5-0, Needle PS-3 Length 18", 12/Box`,
 
             price: 72.00,
-            imageItem: Prolene,
-          },
-
-          {
-            code: "8648P",
-            ethiconCode: "8648G",
-
-            description: "CP Medical Blue",
-            category: "Polypropylene Sutures",
-
-            size: `7-0, P6, 8mm Needle Length 18", 12/Box`,
-
-            price: 88.58,
             imageItem: Prolene,
           },
 

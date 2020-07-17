@@ -1833,16 +1833,6 @@ const medicalItems = [
   },
 
   {
-    code: "8648P",
-    ethiconCode: "8648G",
-    description: "CP Medical Blue",
-    category: "Polypropylene Sutures",
-    size: `7-0, P6, 8mm Needle Length 18", 12/Box`,
-
-    price: 88.58,
-  },
-
-  {
     code: "8687P",
     ethiconCode: "",
     description: "CP Medical Blue",
@@ -2138,18 +2128,6 @@ const medicalItems = [
         size: `5-0, Needle PS-3 Length 18", 12/Box`,
 
         price: 72.0,
-      },
-
-      {
-        code: "8648P",
-        ethiconCode: "8648G",
-
-        description: "CP Medical Blue",
-        category: "Polypropylene Sutures",
-
-        size: `7-0, P6, 8mm Needle Length 18", 12/Box`,
-
-        price: 88.58,
       },
 
       {
