@@ -1571,16 +1571,6 @@ const medicalItems = [
 
     price: 66.74,
   },
-  {
-    code: "1665B",
-    ethiconCode: "",
-    description: "CP Medical",
-    category: "Monomid Black Nylon Sutures",
-
-    size: `6-0, Needle PS-3 Length 18", 12/Box`,
-
-    price: 66.74,
-  },
 
   {
     code: "1273B",
@@ -2258,7 +2248,7 @@ const medicalItems = [
     description: "CP Medical Silk Black",
     category: "Braided Sutures",
 
-    size: `6-0, Needle C-3<br />3/8" Cir., Rev. Cut, 13mm Length 18", 12/Box`,
+    size: `6-0, Needle C-3 3/8" Cir., Rev. Cut, 13mm Length 18", 12/Box`,
 
     price: 41.07,
   },
@@ -2270,19 +2260,7 @@ const medicalItems = [
     description: "CP Medical Silk Black",
     category: "Braided Sutures",
 
-    size: `4-0, Needle C-3<br />3/8" Cir., Rev. Cut, 13mm Length 18", 12/Box`,
-
-    price: 41.07,
-  },
-
-  {
-    code: "795S",
-    ethiconCode: "795G",
-
-    description: "CP Medical Silk Black",
-    category: "Braided Sutures",
-
-    size: `3-0, Needle C-2, 13mm Length 18", 12/Box`,
+    size: `4-0, Needle C-3 3/8" Cir., Rev. Cut, 13mm Length 18", 12/Box`,
 
     price: 41.07,
   },
@@ -2396,18 +2374,6 @@ const medicalItems = [
   },
 
   {
-    code: "7763S",
-    ethiconCode: "7763",
-
-    description: "CP Medical Silk Black",
-    category: "Braided Sutures",
-
-    size: `4-0, Needle X-8, 15mm Length 18", 12/Box`,
-
-    price: 39.90,
-  },
-
-  {
     code: "7772S",
     ethiconCode: "7772",
 
@@ -2477,18 +2443,6 @@ const medicalItems = [
     size: `4-0, Needle P-3 Length 18", 12/Box`,
 
     price: 67.77,
-  },
-
-  {
-    code: "1588S",
-    ethiconCode: "1588H",
-
-    description: "CP Medical Silk Black",
-    category: "Braided Sutures",
-
-    size: `2-0, Needle PS, 26mm Length 18", 12/Box`,
-
-    price: 77.12,
   },
 
   {
