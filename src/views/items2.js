@@ -73,42 +73,6 @@ const medicalItems = [
           },
 
           {
-            code: "351A",
-            ethiconCode: "J351G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `2-0, Needle CT Length 30", Violet, 12/Box`,
-            price: 43.98,
-          },
-
-          {
-            code: "352A",
-            ethiconCode: "J352G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `0, Needle CT Length 30", Violet, 12/Box`,
-            price: 43.98,
-          },
-
-          {
-            code: "354A",
-            ethiconCode: "J354G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `2, Needle CT Length 30", Violet, 12/Box`,
-            price: 43.98,
-          },
-
-          {
-            code: "338A",
-            ethiconCode: "J338G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `3-0, Needle CT-1 Length 30", Violet, 12/Box`,
-            price: 43.98,
-          },
-
-          {
             code: "345A",
             ethiconCode: "J345G",
             description: "Visorb(PGA)",
@@ -154,15 +118,6 @@ const medicalItems = [
           },
 
           {
-            code: "332A",
-            ethiconCode: "J332G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `3-0, Needle CT-2 Length 30", Violet, 12/Box`,
-            price: 43.98,
-          },
-
-          {
             code: "333A",
             ethiconCode: "J333G",
             description: "Visorb(PGA)",
@@ -186,15 +141,6 @@ const medicalItems = [
             description: "Visorb(PGA)",
             category: "Absorbable Sutures",
             size: `2-0, Needle FSL Length 30", Violet, 12/Box`,
-            price: 48.31,
-          },
-
-          {
-            code: "589A",
-            ethiconCode: "J589G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `2-0, Needle FSL Length 30", Un-dyed, 12/Box`,
             price: 48.31,
           },
 
@@ -327,15 +273,6 @@ const medicalItems = [
           },
 
           {
-            code: "427A",
-            ethiconCode: "J427G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `3-0, Needle PS-2 Length 30", Un-dyed, 12/Box`,
-            price: 71.89,
-          },
-
-          {
             code: "426A",
             ethiconCode: "",
             description: "Visorb(PGA)",
@@ -407,15 +344,6 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `3-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
             price: 75.90,
-          },
-
-          {
-            code: "683A",
-            ethiconCode: "",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `3-0, Needle PS-1 Length 18", Un-dyed, 12/Box`,
-            price: 71.89,
           },
 
           {
@@ -514,15 +442,6 @@ const medicalItems = [
                     Length 18", Un-dyed, 12/Box`,
             price: 95.28,
           },
-          {
-            code: "VQ935",
-            ethiconCode: "VR935",
-            description: "Visorb Quick",
-            category: "Absorbable Sutures",
-            size: `3-0, Needle PS-1
-                    Length 30", Un-dyed, 12/Box`,
-            price: 95.28,
-          },
         ],
       },
     ],
@@ -597,15 +516,6 @@ const medicalItems = [
             description: "Monodox(PDO)",
             category: "Monofilament Sutures",
             size: `2-0, Needle CT-2
-                    Length 30", Violet, 12/Box`,
-            price: 51.26,
-          },
-          {
-            code: "M334",
-            ethiconCode: "Z334",
-            description: "Monodox(PDO)",
-            category: "Monofilament Sutures",
-            size: `0, Needle CT-2
                     Length 30", Violet, 12/Box`,
             price: 51.26,
           },
@@ -700,15 +610,6 @@ const medicalItems = [
             price: 51.29,
           },
           {
-            code: "M969",
-            ethiconCode: "Z969",
-            description: "Monodox(PDO)",
-            category: "Monofilament Sutures",
-            size: `2-0, Needle CP-2
-                    Length 30", Violet, 12/Box`,
-            price: 56.44,
-          },
-          {
             code: "M970",
             ethiconCode: "Z970",
             description: "Monodox(PDO)",
@@ -746,267 +647,138 @@ const medicalItems = [
         ],
         codes: [
           {
-            code: "L310",
-            ethiconCode: "Y310G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `4-0, Needle SH-1 Length 30", Violet, 12/Box`,
-
-            price: 61.59,
-          },
-
-          {
             code: "L315",
             ethiconCode: "Y315G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `4-0, Needle SH Length 30", Violet, 12/Box`,
-
             price: 45.84,
           },
 
           {
             code: "L316",
             ethiconCode: "Y316G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `3-0, Needle SH Length 30", Violet, 12/Box`,
-
             price: 45.84,
           },
 
           {
             code: "L317",
             ethiconCode: "Y317G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `2-0, Needle SH Length 30", Violet, 12/Box`,
-
-            price: 45.84,
-          },
-
-          {
-            code: "L344",
-            ethiconCode: "Y344G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `3-0, Needle CT-1 Length 36", Violet, 12/Box`,
-
-            price: 45.84,
-          },
-
-          {
-            code: "L345",
-            ethiconCode: "Y345G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `2-0, Needle CT-1 Length 36", Violet, 12/Box`,
-
-            price: 45.84,
-          },
-
-          {
-            code: "L346",
-            ethiconCode: "Y346G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `0, Needle CT-1 Length 36", Violet, 12/Box`,
-
-            price: 45.84,
-          },
-
-          {
-            code: "L762",
-            ethiconCode: "Y762G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `2-0, Needle CT-2 Length 36", Violet, 12/Box`,
-
             price: 45.84,
           },
 
           {
             code: "L495",
             ethiconCode: "Y495G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `5-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
-
             price: 80.86,
           },
 
           {
             code: "L426",
             ethiconCode: "Y426G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `4-0, Needle PS-2 Length 30", Un-dyed, 12/Box`,
-
             price: 80.86,
           },
 
           {
             code: "L496",
             ethiconCode: "Y496G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `4-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
-
             price: 80.86,
           },
 
           {
             code: "L427",
             ethiconCode: "Y427G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `3-0, Needle PS-2 Length 30", Un-dyed, 12/Box`,
-
             price: 80.86,
           },
 
           {
             code: "L497",
             ethiconCode: "Y497G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `3-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
-
-            price: 80.86,
-          },
-
-          {
-            code: "L936",
-            ethiconCode: "Y936G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `3-0, Needle PS-1 Length 30", Un-dyed, 12/Box`,
-
             price: 80.86,
           },
 
           {
             code: "L463",
             ethiconCode: "Y463G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `5-0, Needle P-3 Length 18", Violet, 12/Box`,
-
             price: 80.86,
           },
 
           {
             code: "L493",
             ethiconCode: "Y493G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `5-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
-
             price: 80.86,
           },
 
           {
             code: "L494",
             ethiconCode: "Y494G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `4-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
-
             price: 80.86,
           },
 
           {
             code: "L922",
             ethiconCode: "Y922G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `4-0, Needle FS-2 Length 36", Violet, 12/Box`,
-
             price: 51.29,
           },
 
           {
             code: "L923",
             ethiconCode: "Y923G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `3-0, Needle FS-2 Length 36", Violet, 12/Box`,
-
             price: 51.29,
           },
 
           {
             code: "L942",
             ethiconCode: "Y942G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `3-0, Needle FS-1 Length 36", Violet, 12/Box`,
-
             price: 51.29,
           },
 
           {
             code: "L943",
             ethiconCode: "Y943G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `2-0, Needle FS-1 Length 36", Violet, 12/Box`,
-
             price: 51.29,
-          },
-
-          {
-            code: "L987",
-            ethiconCode: "Y987G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `0, Needle FSL Length 36", Violet, 12/Box`,
-
-            price: 61.59,
           },
         ],
       },
@@ -1032,48 +804,36 @@ const medicalItems = [
           {
             code: "820PG",
             ethiconCode: "H820G",
-
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `5-0, Needle FS-2 Length 27", 12/Box`,
-
             price: 43.16,
           },
 
           {
             code: "821PG",
             ethiconCode: "H821G",
-
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `4-0, Needle FS-2 Length 27", 12/Box`,
-
             price: 43.16,
           },
 
           {
             code: "822PG",
             ethiconCode: "H822G",
-
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `3-0, Needle FS-2 Length 27", 12/Box`,
-
             price: 43.16,
           },
 
           {
             code: "810PG",
             ethiconCode: "H810G",
-
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `3-0, Needle FS-1 Length 30", 12/Box`,
-
             price: 43.16,
           },
 
@@ -1082,22 +842,8 @@ const medicalItems = [
             ethiconCode: "612G",
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `3-0, Needle X-1, 23mm, 1/2" Cir. Cutting Needle Length 18", 12/Box`,
-
             price: 43.16,
-          },
-
-          {
-            code: "537PG",
-            ethiconCode: "",
-            description: "CP Medical",
-
-            category: "Plain Gut Sutures",
-
-            size: `4-0, Needle X-8, 15mm, 1/2" Cir. Cutting Needle Length 18", 12/Box`,
-
-            price: 56.44,
           },
 
           {
@@ -1105,9 +851,7 @@ const medicalItems = [
             ethiconCode: "591G",
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `4-0, Needle FS-2 Length 18", 12/Box`,
-
             price: 43.16,
           },
 
@@ -1116,9 +860,7 @@ const medicalItems = [
             ethiconCode: "592G",
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `3-0, Needle FS-2 Length 18", 12/Box`,
-
             price: 43.16,
           },
 
@@ -1127,22 +869,8 @@ const medicalItems = [
             ethiconCode: "593G",
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `4-0, Needle CP-2 Length 18", 12/Box`,
-
             price: 56.44,
-          },
-
-          {
-            code: "535PG",
-            ethiconCode: "",
-            description: "CP Medical",
-
-            category: "Plain Gut Sutures",
-
-            size: `5-0, Needle C-2, 13mm, 3/8" Cir. Cutting Needle Length 18", 12/Box`,
-
-            price: 43.16,
           },
 
           {
@@ -1150,9 +878,7 @@ const medicalItems = [
             ethiconCode: "686G",
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `5-0, Needle P-3 Premium Length 18", 12/Box`,
-
             price: 68.79,
           },
 
@@ -1161,9 +887,7 @@ const medicalItems = [
             ethiconCode: "",
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `5-0, Needle PC-1 Length 18", 12/Box`,
-
             price: 82.3,
           },
 
@@ -1172,21 +896,16 @@ const medicalItems = [
             ethiconCode: "",
             description: "CP Medical",
             category: "lain Gut Sutures",
-
             size: `6-0, Needle PC-1 Length 18", 12/Box`,
-
             price: 82.3,
           },
 
           {
             code: "1644PG",
             ethiconCode: "H1644G",
-
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `4-0, Needle FP-3 Length 18", 12/Box`,
-
             price: 64.79,
           },
 
@@ -1195,9 +914,7 @@ const medicalItems = [
             ethiconCode: "",
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `6-0, Needle P-1 Length 18", 12/Box`,
-
             price: 68.79,
           },
         ],
@@ -1219,9 +936,7 @@ const medicalItems = [
             ethiconCode: "121G",
             description: "CP Medical",
             category: "Chromic Gut Sutures",
-
             size: `4-0, Needle SH, 1/2" Cir. Taper Point, 26mm Length 30", 12/Box`,
-
             price: 43.16,
           },
 
@@ -1230,9 +945,7 @@ const medicalItems = [
             ethiconCode: "122G",
             description: "CP Medical",
             category: "Chromic Gut Sutures",
-
             size: `3-0, Needle SH, 1/2 Cir<br />Length 30", 12/Box`,
-
             price: 43.16,
           },
 
@@ -1241,9 +954,7 @@ const medicalItems = [
             ethiconCode: "123G",
             description: "CP Medical",
             category: "Chromic Gut Sutures",
-
             size: `2-0, Needle SH, 1/2 Cir<br />Length 30", 12/Box`,
-
             price: 35.84,
           },
 
@@ -1253,9 +964,7 @@ const medicalItems = [
 
             description: "CP Medical",
             category: "Chromic Gut Sutures",
-
             size: `4-0, Needle RB-1, 1/2 Cir, 17mm<br />Length 30", 12/Box`,
-
             price: 43.16,
           },
 
@@ -1265,7 +974,6 @@ const medicalItems = [
             description: "CP Medical",
             category: "Chromic Gut Sutures",
             size: `4-0, Needle SH-1, 1/2 Cir 22mm Length 30", 12/Box`,
-
             price: 51.4,
           },
 
@@ -1274,9 +982,7 @@ const medicalItems = [
             ethiconCode: "182G",
             description: "CP Medical",
             category: "Chromic Gut Sutures",
-
             size: `3-0, Needle SH-1, 1/2 Cir 26mm Length 30", 12/Box`,
-
             price: 51.4,
           },
 
@@ -1285,9 +991,7 @@ const medicalItems = [
             ethiconCode: "634G",
             description: "CP Medical",
             category: "Chromic Gut Sutures",
-
             size: `5-0, Needle FS-2 Length 30", 12/Box`,
-
             price: 39.96,
           },
 
@@ -1296,9 +1000,7 @@ const medicalItems = [
             ethiconCode: "635G",
             description: "CP Medical",
             category: "Chromic Gut Sutures",
-
             size: `4-0, Needle FS-2 Length 27", 12/Box`,
-
             price: 3.96,
           },
 
@@ -1307,9 +1009,7 @@ const medicalItems = [
             ethiconCode: "636G",
             description: "CP Medical",
             category: "Chromic Gut Sutures",
-
             size: `3-0, Needle FS-2 Length 27", 12/Box`,
-
             price: 39.96,
           },
 
@@ -1318,9 +1018,7 @@ const medicalItems = [
             ethiconCode: "558G",
             description: "CP Medical",
             category: "Chromic Gut Sutures",
-
             size: `4-0, Needle FS-2 Length 18", 12/Box`,
-
             price: 39.96,
           },
 
@@ -1329,9 +1027,7 @@ const medicalItems = [
             ethiconCode: "810G",
             description: "CP Medical",
             category: "Chromic Gut Sutures",
-
             size: `3-0, Needle CT-1 Length 30", 12/Box`,
-
             price: 43.16,
           },
 
@@ -1340,9 +1036,7 @@ const medicalItems = [
             ethiconCode: "811G",
             description: "CP Medical",
             category: "Chromic Gut Sutures",
-
             size: `2-0, Needle CT-1 Length 30", 12/Box`,
-
             price: 46.13,
           },
 
@@ -1351,9 +1045,7 @@ const medicalItems = [
             ethiconCode: "812G",
             description: "CP Medical",
             category: "Chromic Gut Sutures",
-
             size: `0, Needle CT-1 Length 30", 12/Box`,
-
             price: 43.16,
           },
 
@@ -1362,20 +1054,7 @@ const medicalItems = [
             ethiconCode: "813G",
             description: "CP Medical",
             category: "Chromic Gut Sutures",
-
             size: `1, Needle CT-1 Length 30", 12/Box`,
-
-            price: 51.4,
-          },
-
-          {
-            code: "817CG",
-            ethiconCode: "817G",
-            description: "CP Medical",
-            category: "Chromic Gut Sutures",
-
-            size: `0, Needle CP-1 Length 30", 12/Box`,
-
             price: 51.4,
           },
 
@@ -1386,7 +1065,6 @@ const medicalItems = [
             category: "Chromic Gut Sutures",
             size: `4-0, Needle X-1, 23mm, 1/2" Cir. Cutting Needle 
                         Length 20", 12/Box`,
-
             price: 43.16,
           },
 
@@ -1395,9 +1073,7 @@ const medicalItems = [
             ethiconCode: "543G",
             description: "CP Medical",
             category: "Chromic Gut Sutures",
-
             size: `5-0, Needle C-3, 13mm Cutting Needle Length 18", 12/Box`,
-
             price: 43.16,
           },
 
@@ -1486,9 +1162,7 @@ const medicalItems = [
             ethiconCode: "660G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `6-0, Needle FS-3 Length 18", 12/Box`,
-
             price: 35.92,
           },
 
@@ -1497,9 +1171,7 @@ const medicalItems = [
             ethiconCode: "661G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `5-0, Needle FS-2 Length 18", 12/Box`,
-
             price: 35.92,
           },
 
@@ -1508,9 +1180,7 @@ const medicalItems = [
             ethiconCode: "944G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `4-0, Needle FS-2 Length 10", 12/Box`,
-
             price: 35.92,
           },
 
@@ -1519,9 +1189,7 @@ const medicalItems = [
             ethiconCode: "945G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `5-0, Needle FS-2 Length 10", 12/Box`,
-
             price: 35.92,
           },
 
@@ -1530,9 +1198,7 @@ const medicalItems = [
             ethiconCode: "662G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `4-0, Needle FS-2 Length 18", 12/Box`,
-
             price: 35.92,
           },
 
@@ -1541,9 +1207,7 @@ const medicalItems = [
             ethiconCode: "662H",
             description: "CP Medical",
             category: "Monomid Blue Nylon Sutures",
-
             size: `4-0, Needle FS-2 Length 30", 12/Box`,
-
             price: 35.92,
           },
 
@@ -1552,9 +1216,7 @@ const medicalItems = [
             ethiconCode: "928G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `3-0, Needle FS-2 Length 18", 12/Box`,
-
             price: 35.92,
           },
 
@@ -1563,9 +1225,7 @@ const medicalItems = [
             ethiconCode: "663G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `3-0, Needle FS-1 Length 18", 12/Box`,
-
             price: 35.92,
           },
 
@@ -1574,9 +1234,7 @@ const medicalItems = [
             ethiconCode: "663H",
             description: "CP Medical",
             category: "Monomid Blue Nylon Sutures",
-
             size: `3-0, Needle FS-1 Length 30", 12/Box`,
-
             price: 35.92,
           },
 
@@ -1585,9 +1243,7 @@ const medicalItems = [
             ethiconCode: "664G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `2-0, Needle FS Length 18", 12/Box`,
-
             price: 35.92,
           },
 
@@ -1596,9 +1252,7 @@ const medicalItems = [
             ethiconCode: "664H",
             description: "CP Medical",
             category: "Monomid Blue Nylon Sutures",
-
             size: `2-0, Needle FS Length 30", 12/Box`,
-
             price: 35.92,
           },
 
@@ -1607,9 +1261,7 @@ const medicalItems = [
             ethiconCode: "667G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `6-0, Needle C-2, 13mm Length 18", 12/Box`,
-
             price: 35.92,
           },
           {
@@ -1617,9 +1269,7 @@ const medicalItems = [
             ethiconCode: "",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `7-0, Needle P-1, 11mm Length 18", 12/Box`,
-
             price: 77.04,
           },
           {
@@ -1627,9 +1277,7 @@ const medicalItems = [
             ethiconCode: "668G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `5-0, Needle C-2, 13mm Length 18", 12/Box`,
-
             price: 35.92,
           },
 
@@ -1638,9 +1286,7 @@ const medicalItems = [
             ethiconCode: "697G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `6-0, Needle P-1 Length 18", 12/Box`,
-
             price: 66.74,
           },
 
@@ -1649,9 +1295,7 @@ const medicalItems = [
             ethiconCode: "1698G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `6-0, Needle P-3 Length 18", 12/Box`,
-
             price: 66.74,
           },
 
@@ -1660,9 +1304,7 @@ const medicalItems = [
             ethiconCode: "698G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `5-0, Needle P-3 Length 18", 12/Box`,
-
             price: 66.74,
           },
           {
@@ -1670,9 +1312,7 @@ const medicalItems = [
             ethiconCode: "",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `3-0, Needle PS-1, 24mm Length 18", 12/Box`,
-
             price: 66.74,
           },
           {
@@ -1680,9 +1320,7 @@ const medicalItems = [
             ethiconCode: "699G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `4-0, Needle P-3 Length 18", 12/Box`,
-
             price: 66.74,
           },
 
@@ -1691,9 +1329,7 @@ const medicalItems = [
             ethiconCode: "1666G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `5-0, Needle PS-2 Length 18", 12/Box`,
-
             price: 66.74,
           },
 
@@ -1702,9 +1338,7 @@ const medicalItems = [
             ethiconCode: "1667G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `4-0, Needle PS-2 Length 18", 12/Box`,
-
             price: 66.74,
           },
           {
@@ -1712,102 +1346,44 @@ const medicalItems = [
             ethiconCode: "",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `3-0, Needle PS-2 Length 18", 12/Box`,
-
             price: 66.74,
           },
-          {
-            code: "593B",
-            ethiconCode: "",
-            description: "CP Medical",
-            category: "Monomid Black Nylon Sutures",
-
-            size: `2-0, Needle PS-2 Length 18", 12/Box`,
-
-            price: 66.74,
-          },
-          {
-            code: "1668B",
-            ethiconCode: "",
-            description: "CP Medical",
-            category: "Monomid Black Nylon Sutures",
-
-            size: `5-0, Needle PS-3, 16mm Length 18", 12/Box`,
-
-            price: 66.74,
-          },
-
+         
           {
             code: "1273B",
             ethiconCode: "",
-
             description: `Short Black Nylon`,
             category: "Monomid Sutures",
-
             size: `6-0, Needle P-3 (13mm cutting) Length 10", 12/Box`,
-
             price: 66.74,
           },
 
           {
             code: "911B",
             ethiconCode: "",
-
             description: `Short Black Nylon`,
             category: "Monomid Sutures",
-
             size: `6-0, Needle C-3 (13mm cutting) Length 10", 12/Box`,
-
             price: 35.92,
           },
 
           {
             code: "913B",
             ethiconCode: "",
-
             description: `Short Black Nylon`,
             category: "Monomid Sutures",
-
             size: `5-0, Needle C-3 (13mm cutting) Length 10", 12/Box`,
-
             price: 35.92,
           },
 
           {
             code: "931B",
             ethiconCode: "",
-
             description: `Short Black Nylon`,
             category: "Monomid Sutures",
-
             size: `4-0, Needle C-3 (13mm cutting) Length 10", 12/Box`,
-
             price: 35.92,
-          },
-          {
-            code: "690",
-            ethiconCode: "",
-            description: `CP Medical Monomid CLEAR`,
-            category: "Nylon Sutures",
-
-            size: `5-0, Needle P-3 (13mm cutting) 
-                        Length 18", 12/Box`,
-
-            price: 60.67,
-          },
-          {
-            code: "691",
-
-            ethiconCode: "",
-
-            description: "CP Medical Monomid CLEAR",
-            category: "Nylon Sutures",
-
-            size: `4-0, Needle P-3 (13mm cutting) 
-                        Length 18", 12/Box`,
-
-            price: 60.67,
           },
         ],
       },
@@ -2420,15 +1996,6 @@ const medicalItems = [
         ],
         codes: [
           {
-            code: "427A",
-            ethiconCode: "J427G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `3-0, Needle PS-2 Length 30", Un-dyed, 12/Box`,
-            price: 71.89,
-          },
-
-          {
             code: "426A",
             ethiconCode: "",
             description: "Visorb(PGA)",
@@ -2500,15 +2067,6 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `3-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
             price: 75.90,
-          },
-
-          {
-            code: "683A",
-            ethiconCode: "",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `3-0, Needle PS-1 Length 18", Un-dyed, 12/Box`,
-            price: 71.89,
           },
 
           {
@@ -2599,15 +2157,6 @@ const medicalItems = [
                       Length 18", Un-dyed, 12/Box`,
             price: 95.28,
           },
-          {
-            code: "VQ935",
-            ethiconCode: "VR935",
-            description: "Visorb Quick",
-            category: "Absorbable Sutures",
-            size: `3-0, Needle PS-1
-                      Length 30", Un-dyed, 12/Box`,
-            price: 95.28,
-          },
         ],
       },
     ],
@@ -2682,15 +2231,6 @@ const medicalItems = [
             description: "Monodox(PDO)",
             category: "Monofilament Sutures",
             size: `2-0, Needle CT-2
-                      Length 30", Violet, 12/Box`,
-            price: 51.26,
-          },
-          {
-            code: "M334",
-            ethiconCode: "Z334",
-            description: "Monodox(PDO)",
-            category: "Monofilament Sutures",
-            size: `0, Needle CT-2
                       Length 30", Violet, 12/Box`,
             price: 51.26,
           },
@@ -2785,15 +2325,6 @@ const medicalItems = [
             price: 51.29,
           },
           {
-            code: "M969",
-            ethiconCode: "Z969",
-            description: "Monodox(PDO)",
-            category: "Monofilament Sutures",
-            size: `2-0, Needle CP-2
-                      Length 30", Violet, 12/Box`,
-            price: 56.44,
-          },
-          {
             code: "M970",
             ethiconCode: "Z970",
             description: "Monodox(PDO)",
@@ -2886,18 +2417,6 @@ const medicalItems = [
             category: "Absorbable Sutures",
 
             size: `3-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
-
-            price: 80.86,
-          },
-
-          {
-            code: "L936",
-            ethiconCode: "Y936G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `3-0, Needle PS-1 Length 30", Un-dyed, 12/Box`,
 
             price: 80.86,
           },
@@ -3416,15 +2935,6 @@ const medicalItems = [
         ],
         codes: [
           {
-            code: "427A",
-            ethiconCode: "J427G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `3-0, Needle PS-2 Length 30", Un-dyed, 12/Box`,
-            price: 71.89,
-          },
-
-          {
             code: "426A",
             ethiconCode: "",
             description: "Visorb(PGA)",
@@ -3646,15 +3156,6 @@ const medicalItems = [
             price: 51.26,
           },
           {
-            code: "M334",
-            ethiconCode: "Z334",
-            description: "Monodox(PDO)",
-            category: "Monofilament Sutures",
-            size: `0, Needle CT-2
-                      Length 30", Violet, 12/Box`,
-            price: 51.26,
-          },
-          {
             code: "M339",
             ethiconCode: "Z339",
             description: "Monodox(PDO)",
@@ -3745,15 +3246,6 @@ const medicalItems = [
             price: 51.29,
           },
           {
-            code: "M969",
-            ethiconCode: "Z969",
-            description: "Monodox(PDO)",
-            category: "Monofilament Sutures",
-            size: `2-0, Needle CP-2
-                      Length 30", Violet, 12/Box`,
-            price: 56.44,
-          },
-          {
             code: "M970",
             ethiconCode: "Z970",
             description: "Monodox(PDO)",
@@ -3793,72 +3285,45 @@ const medicalItems = [
           {
             code: "L496",
             ethiconCode: "Y496G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `4-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
-
             price: 80.86,
           },
 
           {
             code: "L497",
             ethiconCode: "Y497G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `3-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
-
-            price: 80.86,
-          },
-
-          {
-            code: "L936",
-            ethiconCode: "Y936G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `3-0, Needle PS-1 Length 30", Un-dyed, 12/Box`,
-
             price: 80.86,
           },
 
           {
             code: "L463",
             ethiconCode: "Y463G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `5-0, Needle P-3 Length 18", Violet, 12/Box`,
-
             price: 80.86,
           },
 
           {
             code: "L493",
             ethiconCode: "Y493G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `5-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
-
             price: 80.86,
           },
 
           {
             code: "L494",
             ethiconCode: "Y494G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `4-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
-
             price: 80.86,
           },
         ],
@@ -4818,44 +4283,7 @@ const medicalItems = [
             description: "Visorb(PGA)",
             category: "Absorbable Sutures",
             size: `0, Needle CP-1 Length 30", Violet, 12/Box`,
-
             price: 46.25,
-          },
-
-          {
-            code: "351A",
-            ethiconCode: "J351G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `2-0, Needle CT Length 30", Violet, 12/Box`,
-            price: 43.98,
-          },
-
-          {
-            code: "352A",
-            ethiconCode: "J352G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `0, Needle CT Length 30", Violet, 12/Box`,
-            price: 43.98,
-          },
-
-          {
-            code: "354A",
-            ethiconCode: "J354G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `2, Needle CT Length 30", Violet, 12/Box`,
-            price: 43.98,
-          },
-
-          {
-            code: "338A",
-            ethiconCode: "J338G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `3-0, Needle CT-1 Length 30", Violet, 12/Box`,
-            price: 43.98,
           },
 
           {
@@ -4904,15 +4332,6 @@ const medicalItems = [
           },
 
           {
-            code: "332A",
-            ethiconCode: "J332G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `3-0, Needle CT-2 Length 30", Violet, 12/Box`,
-            price: 43.98,
-          },
-
-          {
             code: "333A",
             ethiconCode: "J333G",
             description: "Visorb(PGA)",
@@ -4936,15 +4355,6 @@ const medicalItems = [
             description: "Visorb(PGA)",
             category: "Absorbable Sutures",
             size: `2-0, Needle FSL Length 30", Violet, 12/Box`,
-            price: 48.31,
-          },
-
-          {
-            code: "589A",
-            ethiconCode: "J589G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `2-0, Needle FSL Length 30", Un-dyed, 12/Box`,
             price: 48.31,
           },
 
@@ -5078,15 +4488,6 @@ const medicalItems = [
           },
 
           {
-            code: "427A",
-            ethiconCode: "J427G",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `3-0, Needle PS-2 Length 30", Un-dyed, 12/Box`,
-            price: 71.89,
-          },
-
-          {
             code: "426A",
             ethiconCode: "",
             description: "Visorb(PGA)",
@@ -5158,15 +4559,6 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `3-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
             price: 75.90,
-          },
-
-          {
-            code: "683A",
-            ethiconCode: "",
-            description: "Visorb(PGA)",
-            category: "Absorbable Sutures",
-            size: `3-0, Needle PS-1 Length 18", Un-dyed, 12/Box`,
-            price: 71.89,
           },
 
           {
@@ -5264,15 +4656,6 @@ const medicalItems = [
             category: "Absorbable Sutures",
             size: `3-0, Needle PS-2
                       Length 18", Un-dyed, 12/Box`,
-            price: 95.28,
-          },
-          {
-            code: "VQ935",
-            ethiconCode: "VR935",
-            description: "Visorb Quick",
-            category: "Absorbable Sutures",
-            size: `3-0, Needle PS-1
-                      Length 30", Un-dyed, 12/Box`,
             price: 95.28,
           },
         ],
@@ -5533,15 +4916,6 @@ const medicalItems = [
             price: 51.26,
           },
           {
-            code: "M334",
-            ethiconCode: "Z334",
-            description: "Monodox(PDO)",
-            category: "Monofilament Sutures",
-            size: `0, Needle CT-2
-          Length 30", Violet, 12/Box`,
-            price: 51.26,
-          },
-          {
             code: "M339",
             ethiconCode: "Z339",
             description: "Monodox(PDO)",
@@ -5632,15 +5006,6 @@ const medicalItems = [
             price: 51.29,
           },
           {
-            code: "M969",
-            ethiconCode: "Z969",
-            description: "Monodox(PDO)",
-            category: "Monofilament Sutures",
-            size: `2-0, Needle CP-2
-          Length 30", Violet, 12/Box`,
-            price: 56.44,
-          },
-          {
             code: "M970",
             ethiconCode: "Z970",
             description: "Monodox(PDO)",
@@ -5677,123 +5042,49 @@ const medicalItems = [
           },
         ],
         codes: [
-          {
-            code: "L310",
-            ethiconCode: "Y310G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `4-0, Needle SH-1 Length 30", Violet, 12/Box`,
-
-            price: 61.59,
-          },
 
           {
             code: "L315",
             ethiconCode: "Y315G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `4-0, Needle SH Length 30", Violet, 12/Box`,
-
             price: 45.84,
           },
 
           {
             code: "L316",
             ethiconCode: "Y316G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `3-0, Needle SH Length 30", Violet, 12/Box`,
-
             price: 45.84,
           },
 
           {
             code: "L317",
             ethiconCode: "Y317G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `2-0, Needle SH Length 30", Violet, 12/Box`,
-
-            price: 45.84,
-          },
-
-          {
-            code: "L344",
-            ethiconCode: "Y344G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `3-0, Needle CT-1 Length 36", Violet, 12/Box`,
-
-            price: 45.84,
-          },
-
-          {
-            code: "L345",
-            ethiconCode: "Y345G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `2-0, Needle CT-1 Length 36", Violet, 12/Box`,
-
-            price: 45.84,
-          },
-
-          {
-            code: "L346",
-            ethiconCode: "Y346G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `0, Needle CT-1 Length 36", Violet, 12/Box`,
-
-            price: 45.84,
-          },
-
-          {
-            code: "L762",
-            ethiconCode: "Y762G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `2-0, Needle CT-2 Length 36", Violet, 12/Box`,
-
             price: 45.84,
           },
 
           {
             code: "L495",
             ethiconCode: "Y495G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `5-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
-
             price: 80.86,
           },
 
           {
             code: "L426",
             ethiconCode: "Y426G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `4-0, Needle PS-2 Length 30", Un-dyed, 12/Box`,
-
             price: 80.86,
           },
 
@@ -5827,45 +5118,25 @@ const medicalItems = [
 
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `3-0, Needle PS-2 Length 18", Un-dyed, 12/Box`,
-
-            price: 80.86,
-          },
-
-          {
-            code: "L936",
-            ethiconCode: "Y936G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `3-0, Needle PS-1 Length 30", Un-dyed, 12/Box`,
-
             price: 80.86,
           },
 
           {
             code: "L463",
             ethiconCode: "Y463G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `5-0, Needle P-3 Length 18", Violet, 12/Box`,
-
             price: 80.86,
           },
 
           {
             code: "L493",
             ethiconCode: "Y493G",
-
             description: "CP Medical Monoswift",
             category: "Absorbable Sutures",
-
             size: `5-0, Needle P-3 Length 18", Un-dyed, 12/Box`,
-
             price: 80.86,
           },
 
@@ -5927,18 +5198,6 @@ const medicalItems = [
             size: `2-0, Needle FS-1 Length 36", Violet, 12/Box`,
 
             price: 51.29,
-          },
-
-          {
-            code: "L987",
-            ethiconCode: "Y987G",
-
-            description: "CP Medical Monoswift",
-            category: "Absorbable Sutures",
-
-            size: `0, Needle FSL Length 36", Violet, 12/Box`,
-
-            price: 61.59,
           },
         ],
       },
@@ -6035,22 +5294,8 @@ const medicalItems = [
             ethiconCode: "612G",
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `3-0, Needle X-1, 23mm, 1/2" Cir. Cutting Needle Length 18", 12/Box`,
-
             price: 43.16,
-          },
-
-          {
-            code: "537PG",
-            ethiconCode: "",
-            description: "CP Medical",
-
-            category: "Plain Gut Sutures",
-
-            size: `4-0, Needle X-8, 15mm, 1/2" Cir. Cutting Needle Length 18", 12/Box`,
-
-            price: 56.44,
           },
 
           {
@@ -6058,9 +5303,7 @@ const medicalItems = [
             ethiconCode: "591G",
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `4-0, Needle FS-2 Length 18", 12/Box`,
-
             price: 43.16,
           },
 
@@ -6069,9 +5312,7 @@ const medicalItems = [
             ethiconCode: "592G",
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `3-0, Needle FS-2 Length 18", 12/Box`,
-
             price: 43.16,
           },
 
@@ -6080,22 +5321,8 @@ const medicalItems = [
             ethiconCode: "593G",
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `4-0, Needle CP-2 Length 18", 12/Box`,
-
             price: 56.44,
-          },
-
-          {
-            code: "535PG",
-            ethiconCode: "",
-            description: "CP Medical",
-
-            category: "Plain Gut Sutures",
-
-            size: `5-0, Needle C-2, 13mm, 3/8" Cir. Cutting Needle Length 18", 12/Box`,
-
-            price: 43.16,
           },
 
           {
@@ -6103,9 +5330,7 @@ const medicalItems = [
             ethiconCode: "686G",
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `5-0, Needle P-3 Premium Length 18", 12/Box`,
-
             price: 68.79,
           },
 
@@ -6114,9 +5339,7 @@ const medicalItems = [
             ethiconCode: "",
             description: "CP Medical",
             category: "Plain Gut Sutures",
-
             size: `5-0, Needle PC-1 Length 18", 12/Box`,
-
             price: 82.3,
           },
 
@@ -6125,9 +5348,7 @@ const medicalItems = [
             ethiconCode: "",
             description: "CP Medical",
             category: "lain Gut Sutures",
-
             size: `6-0, Needle PC-1 Length 18", 12/Box`,
-
             price: 82.3,
           },
 
@@ -6464,22 +5685,10 @@ const medicalItems = [
             ethiconCode: "813G",
             description: "CP Medical",
             category: "Chromic Gut Sutures",
-
             size: `1, Needle CT-1 Length 30", 12/Box`,
-
             price: 51.4,
           },
 
-          {
-            code: "817CG",
-            ethiconCode: "817G",
-            description: "CP Medical",
-            category: "Chromic Gut Sutures",
-
-            size: `0, Needle CP-1 Length 30", 12/Box`,
-
-            price: 51.4,
-          },
 
           {
             code: "547CG",
@@ -6488,7 +5697,6 @@ const medicalItems = [
             category: "Chromic Gut Sutures",
             size: `4-0, Needle X-1, 23mm, 1/2" Cir. Cutting Needle 
                         Length 20", 12/Box`,
-
             price: 43.16,
           },
 
@@ -6611,31 +5819,23 @@ const medicalItems = [
             code: "MV-663",
 
             description: "Nylon Monofilament Suture",
-
             size: `3-0, Needle FS-1 Length 30"`,
-
             price: 21.9,
           },
 
           {
             code: "MV-664",
-
             description: "Nylon Monofilament Suture",
-
             size: `2-0, Needle FS
           Length 30"`,
-
             price: 21.9,
           },
 
           {
             code: "MV-1629",
-
             description: "Nylon Monofilament Suture",
-
             size: `4-0, Needle FS-1
-          Length 30"`,
-
+                     Length 30"`,
             price: 21.9,
           },
 
@@ -6645,9 +5845,7 @@ const medicalItems = [
             ethiconCode: "660G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `6-0, Needle FS-3 Length 18", 12/Box`,
-
             price: 35.92,
           },
 
@@ -6656,9 +5854,7 @@ const medicalItems = [
             ethiconCode: "661G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `5-0, Needle FS-2 Length 18", 12/Box`,
-
             price: 35.92,
           },
 
@@ -6667,9 +5863,7 @@ const medicalItems = [
             ethiconCode: "944G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `4-0, Needle FS-2 Length 10", 12/Box`,
-
             price: 35.92,
           },
 
@@ -6678,9 +5872,7 @@ const medicalItems = [
             ethiconCode: "945G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `5-0, Needle FS-2 Length 10", 12/Box`,
-
             price: 35.92,
           },
 
@@ -6689,9 +5881,7 @@ const medicalItems = [
             ethiconCode: "662G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `4-0, Needle FS-2 Length 18", 12/Box`,
-
             price: 35.92,
           },
 
@@ -6700,9 +5890,7 @@ const medicalItems = [
             ethiconCode: "662H",
             description: "CP Medical",
             category: "Monomid Blue Nylon Sutures",
-
             size: `4-0, Needle FS-2 Length 30", 12/Box`,
-
             price: 35.92,
           },
 
@@ -6711,9 +5899,7 @@ const medicalItems = [
             ethiconCode: "928G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `3-0, Needle FS-2 Length 18", 12/Box`,
-
             price: 35.92,
           },
 
@@ -6722,9 +5908,7 @@ const medicalItems = [
             ethiconCode: "663G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `3-0, Needle FS-1 Length 18", 12/Box`,
-
             price: 35.92,
           },
 
@@ -6733,9 +5917,7 @@ const medicalItems = [
             ethiconCode: "663H",
             description: "CP Medical",
             category: "Monomid Blue Nylon Sutures",
-
             size: `3-0, Needle FS-1 Length 30", 12/Box`,
-
             price: 35.92,
           },
 
@@ -6744,9 +5926,7 @@ const medicalItems = [
             ethiconCode: "664G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `2-0, Needle FS Length 18", 12/Box`,
-
             price: 35.92,
           },
 
@@ -6755,9 +5935,7 @@ const medicalItems = [
             ethiconCode: "664H",
             description: "CP Medical",
             category: "Monomid Blue Nylon Sutures",
-
             size: `2-0, Needle FS Length 30", 12/Box`,
-
             price: 35.92,
           },
 
@@ -6766,9 +5944,7 @@ const medicalItems = [
             ethiconCode: "667G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `6-0, Needle C-2, 13mm Length 18", 12/Box`,
-
             price: 35.92,
           },
           {
@@ -6776,9 +5952,7 @@ const medicalItems = [
             ethiconCode: "",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `7-0, Needle P-1, 11mm Length 18", 12/Box`,
-
             price: 77.04,
           },
           {
@@ -6786,9 +5960,7 @@ const medicalItems = [
             ethiconCode: "668G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `5-0, Needle C-2, 13mm Length 18", 12/Box`,
-
             price: 35.92,
           },
 
@@ -6797,9 +5969,7 @@ const medicalItems = [
             ethiconCode: "697G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `6-0, Needle P-1 Length 18", 12/Box`,
-
             price: 66.74,
           },
 
@@ -6808,9 +5978,7 @@ const medicalItems = [
             ethiconCode: "1698G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `6-0, Needle P-3 Length 18", 12/Box`,
-
             price: 66.74,
           },
 
@@ -6819,9 +5987,7 @@ const medicalItems = [
             ethiconCode: "698G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `5-0, Needle P-3 Length 18", 12/Box`,
-
             price: 66.74,
           },
           {
@@ -6829,9 +5995,7 @@ const medicalItems = [
             ethiconCode: "",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `3-0, Needle PS-1, 24mm Length 18", 12/Box`,
-
             price: 66.74,
           },
           {
@@ -6839,9 +6003,7 @@ const medicalItems = [
             ethiconCode: "699G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `4-0, Needle P-3 Length 18", 12/Box`,
-
             price: 66.74,
           },
 
@@ -6850,9 +6012,7 @@ const medicalItems = [
             ethiconCode: "1666G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `5-0, Needle PS-2 Length 18", 12/Box`,
-
             price: 66.74,
           },
 
@@ -6861,9 +6021,7 @@ const medicalItems = [
             ethiconCode: "1667G",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `4-0, Needle PS-2 Length 18", 12/Box`,
-
             price: 66.74,
           },
           {
@@ -6871,102 +6029,44 @@ const medicalItems = [
             ethiconCode: "",
             description: "CP Medical",
             category: "Monomid Black Nylon Sutures",
-
             size: `3-0, Needle PS-2 Length 18", 12/Box`,
-
             price: 66.74,
           },
-          {
-            code: "593B",
-            ethiconCode: "",
-            description: "CP Medical",
-            category: "Monomid Black Nylon Sutures",
-
-            size: `2-0, Needle PS-2 Length 18", 12/Box`,
-
-            price: 66.74,
-          },
-          {
-            code: "1668B",
-            ethiconCode: "",
-            description: "CP Medical",
-            category: "Monomid Black Nylon Sutures",
-
-            size: `5-0, Needle PS-3, 16mm Length 18", 12/Box`,
-
-            price: 66.74,
-          },
-
+        
           {
             code: "1273B",
             ethiconCode: "",
-
             description: `Short Black Nylon`,
             category: "Monomid Sutures",
-
             size: `6-0, Needle P-3 (13mm cutting) Length 10", 12/Box`,
-
             price: 66.74,
           },
 
           {
             code: "911B",
             ethiconCode: "",
-
             description: `Short Black Nylon`,
             category: "Monomid Sutures",
-
             size: `6-0, Needle C-3 (13mm cutting) Length 10", 12/Box`,
-
             price: 35.92,
           },
 
           {
             code: "913B",
             ethiconCode: "",
-
             description: `Short Black Nylon`,
             category: "Monomid Sutures",
-
             size: `5-0, Needle C-3 (13mm cutting) Length 10", 12/Box`,
-
             price: 35.92,
           },
 
           {
             code: "931B",
             ethiconCode: "",
-
             description: `Short Black Nylon`,
             category: "Monomid Sutures",
-
             size: `4-0, Needle C-3 (13mm cutting) Length 10", 12/Box`,
-
             price: 35.92,
-          },
-          {
-            code: "690",
-            ethiconCode: "",
-            description: `CP Medical Monomid CLEAR`,
-            category: "Nylon Sutures",
-
-            size: `5-0, Needle P-3 (13mm cutting) 
-            Length 18", 12/Box`,
-
-            price: 60.67,
-          },
-          {
-            code: "691",
-
-            ethiconCode: "",
-
-            description: "CP Medical Monomid CLEAR",
-            category: "Nylon Sutures",
-
-            size: `4-0, Needle P-3 (13mm cutting) 
-            Length 18", 12/Box`,
-
-            price: 60.67,
           },
         ],
       },
