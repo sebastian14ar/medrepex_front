@@ -557,7 +557,6 @@ const medicalItems = [
           },
 
           {
-<<<<<<< HEAD
             code: "426A",
             ethiconCode: "",
             description: "Visorb(PGA)",
@@ -568,8 +567,6 @@ const medicalItems = [
           },
 
           {
-=======
->>>>>>> 7402cd971387a9009ca52b059af5954a16e3b95b
             code: "492A",
             ethiconCode: "J492G",
             description: "Visorb(PGA)",
@@ -2397,17 +2394,6 @@ const medicalItems = [
           },
 
           {
-            code: "8648P",
-            ethiconCode: "8648G",
-            description: "CP Medical Blue",
-            category: "Polypropylene Sutures",
-            size: `7-0, P6, 8mm Needle Length 18", 12/Box`,
-
-            price: 88.58,
-            imageItem: Prolene,
-          },
-
-          {
             code: "8687P",
             ethiconCode: "",
             description: "CP Medical Blue",
@@ -2899,7 +2885,6 @@ const medicalItems = [
           },
 
           {
-<<<<<<< HEAD
             code: "426A",
             ethiconCode: "",
             description: "Visorb(PGA)",
@@ -2910,8 +2895,6 @@ const medicalItems = [
           },
 
           {
-=======
->>>>>>> 7402cd971387a9009ca52b059af5954a16e3b95b
             code: "492A",
             ethiconCode: "J492G",
             description: "Visorb(PGA)",
@@ -3996,7 +3979,6 @@ const medicalItems = [
           },
 
           {
-<<<<<<< HEAD
             code: "426A",
             ethiconCode: "",
             description: "Visorb(PGA)",
@@ -4007,8 +3989,6 @@ const medicalItems = [
           },
 
           {
-=======
->>>>>>> 7402cd971387a9009ca52b059af5954a16e3b95b
             code: "492A",
             ethiconCode: "J492G",
             description: "Visorb(PGA)",
@@ -5835,7 +5815,6 @@ const medicalItems = [
           },
 
           {
-<<<<<<< HEAD
             code: "426A",
             ethiconCode: "",
             description: "Visorb(PGA)",
@@ -5846,8 +5825,6 @@ const medicalItems = [
           },
 
           {
-=======
->>>>>>> 7402cd971387a9009ca52b059af5954a16e3b95b
             code: "492A",
             ethiconCode: "J492G",
             description: "Visorb(PGA)",
@@ -8214,19 +8191,6 @@ const medicalItems = [
             size: `5-0, Needle PS-3 Length 18", 12/Box`,
 
             price: 72.00,
-            imageItem: Prolene,
-          },
-
-          {
-            code: "8648P",
-            ethiconCode: "8648G",
-
-            description: "CP Medical Blue",
-            category: "Polypropylene Sutures",
-
-            size: `7-0, P6, 8mm Needle Length 18", 12/Box`,
-
-            price: 88.58,
             imageItem: Prolene,
           },
 
