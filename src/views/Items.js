@@ -49,7 +49,6 @@ const medicalItems = [
     description: "Visorb(PGA)",
     category: "Absorbable Sutures",
     size: `0, Needle CP-1 Length 30", Violet, 12/Box`,
-
     price: 46.25,
   },
 
@@ -739,9 +738,7 @@ const medicalItems = [
     ethiconCode: "592G",
     description: "CP Medical",
     category: "Plain Gut Sutures",
-
     size: `3-0, Needle FS-2 Length 18", 12/Box`,
-
     price: 43.16,
   },
 
@@ -823,7 +820,7 @@ const medicalItems = [
     description: "CP Medical",
     category: "Chromic Gut Sutures",
     size: `2-0, Needle SH, 1/2 Cir<br />Length 30", 12/Box`,
-    price: 35.84,
+    price: 43.16,
   },
 
   {
@@ -883,9 +880,7 @@ const medicalItems = [
     ethiconCode: "636G",
     description: "CP Medical",
     category: "Chromic Gut Sutures",
-
     size: `3-0, Needle FS-2 Length 27", 12/Box`,
-
     price: 39.96,
   },
 
@@ -894,9 +889,7 @@ const medicalItems = [
     ethiconCode: "558G",
     description: "CP Medical",
     category: "Chromic Gut Sutures",
-
     size: `4-0, Needle FS-2 Length 18", 12/Box`,
-
     price: 39.96,
   },
 
@@ -905,9 +898,7 @@ const medicalItems = [
     ethiconCode: "810G",
     description: "CP Medical",
     category: "Chromic Gut Sutures",
-
     size: `3-0, Needle CT-1 Length 30", 12/Box`,
-
     price: 43.16,
   },
 
@@ -916,9 +907,7 @@ const medicalItems = [
     ethiconCode: "811G",
     description: "CP Medical",
     category: "Chromic Gut Sutures",
-
     size: `2-0, Needle CT-1 Length 30", 12/Box`,
-
     price: 43.16,
   },
 
@@ -927,9 +916,7 @@ const medicalItems = [
     ethiconCode: "812G",
     description: "CP Medical",
     category: "Chromic Gut Sutures",
-
     size: `0, Needle CT-1 Length 30", 12/Box`,
-
     price: 43.16,
   },
 
@@ -1286,7 +1273,6 @@ const medicalItems = [
     description: "CP Medical Blue",
     category: "Polypropylene Sutures",
     size: `5-0, Needle C-3, 13mm Length 10", 12/Box`,
-
     price: 33.78,
   },
 
@@ -1296,8 +1282,16 @@ const medicalItems = [
     description: "CP Medical Blue",
     category: "Polypropylene Sutures",
     size: `4-0, Needle C-3, 13mm Length 10", 12/Box`,
-
     price: 33.78,
+  },
+
+  {
+    code: "1698P",
+    ethiconCode: "",
+    description: "CP Medical Blue",
+    category: "Polypropylene Sutures",
+    size: `10", 5-0  Suture, P-3, 13mm Needle, 12/Box`,
+    price: 70.97,
   },
 
   {
@@ -1557,36 +1551,36 @@ const medicalItems = [
       {
         code: "1031P",
         ethiconCode: "1031G",
-
         description: "CP Medical Blue",
         category: "Polypropylene Sutures",
-
         size: `4-0, Needle C-3, 13mm Length 10", 12/Box`,
-
         price: 33.78,
+      },
+
+      {
+        code: "1698P",
+        ethiconCode: "",
+        description: "CP Medical Blue",
+        category: "Polypropylene Sutures",
+        size: `10", 5-0  Suture, P-3, 13mm Needle, 12/Box`,
+        price: 70.97,
       },
 
       {
         code: "8661P",
         ethiconCode: "8661G",
-
         description: "CP Medical Blue",
         category: "Polypropylene Sutures",
-
         size: `5-0, Needle FS-2 Length 18", 12/Box`,
-
         price: 46.14,
       },
 
       {
         code: "8683P",
         ethiconCode: "8683G",
-
         description: "CP Medical Blue",
         category: "Polypropylene Sutures",
-
         size: `4-0, Needle FS-2 Length 18", 12/Box`,
-
         price: 46.14,
       },
 
