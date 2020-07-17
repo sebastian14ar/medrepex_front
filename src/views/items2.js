@@ -323,6 +323,10 @@ const medicalItems = [
             description: "Visorb(PGA)",
             category: "Absorbable Sutures",
             size: `5-0, Needle P-1 (11mm) Length 18", Un-dyed, 12/Box`,
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7402cd971387a9009ca52b059af5954a16e3b95b
             price: 81.89,
           },
 
@@ -336,6 +340,7 @@ const medicalItems = [
           },
 
           {
+<<<<<<< HEAD
             code: "426A",
             ethiconCode: "",
             description: "Visorb(PGA)",
@@ -345,6 +350,8 @@ const medicalItems = [
           },
 
           {
+=======
+>>>>>>> 7402cd971387a9009ca52b059af5954a16e3b95b
             code: "492A",
             ethiconCode: "J492G",
             description: "Visorb(PGA)",
@@ -2485,6 +2492,7 @@ const medicalItems = [
           },
 
           {
+<<<<<<< HEAD
             code: "426A",
             ethiconCode: "",
             description: "Visorb(PGA)",
@@ -2494,6 +2502,8 @@ const medicalItems = [
           },
 
           {
+=======
+>>>>>>> 7402cd971387a9009ca52b059af5954a16e3b95b
             code: "492A",
             ethiconCode: "J492G",
             description: "Visorb(PGA)",
@@ -3493,6 +3503,7 @@ const medicalItems = [
           },
 
           {
+<<<<<<< HEAD
             code: "426A",
             ethiconCode: "",
             description: "Visorb(PGA)",
@@ -3502,6 +3513,8 @@ const medicalItems = [
           },
 
           {
+=======
+>>>>>>> 7402cd971387a9009ca52b059af5954a16e3b95b
             code: "492A",
             ethiconCode: "J492G",
             description: "Visorb(PGA)",
@@ -5167,6 +5180,7 @@ const medicalItems = [
           },
 
           {
+<<<<<<< HEAD
             code: "426A",
             ethiconCode: "",
             description: "Visorb(PGA)",
@@ -5176,6 +5190,8 @@ const medicalItems = [
           },
 
           {
+=======
+>>>>>>> 7402cd971387a9009ca52b059af5954a16e3b95b
             code: "492A",
             ethiconCode: "J492G",
             description: "Visorb(PGA)",
